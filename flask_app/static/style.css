@@ -1,0 +1,133 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+.container {
+    width: 90%;  /* Make it a bit more responsive */
+    max-width: 800px;  /* Limit max width */
+    background-color: #ffffff;  /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);  /* Light border to define the box */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);  /* Shadow effect */
+    text-align: left;
+    margin: 20px auto;
+    font-size: 1.1em;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    border-radius: 10px 10px 0 0;
+    text-align: center;  /* Center the text */
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.9em; /* Make the font size a little smaller */
+}
+
+.contact-info a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    color: #2980b9;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+p, li {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-auto-rows: auto;  /* Automatically adjusts row height */
+    gap: 10px; /* Adds space between the items */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.skills-list li:nth-child(odd) {
+    grid-column: 1; /* Ensures odd items stay in the first column */
+}
+
+ul.skills-list li:nth-child(even) {
+    grid-column: 2; /* Ensures even items go to the second column */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a6e99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center; /* Ensure that contact info is centered on small screens */
+    }
+
+    ul.skills-list li {
+        width: 100%;  /* Make the skills take full width on smaller screens */
+    }
+}
+

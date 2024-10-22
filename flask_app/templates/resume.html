@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <!-- <style> -->
+    <!--     .container { max-width: 800px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; } -->
+    <!--     h1, h2 { color: #2980b9; } -->
+    <!--     .contact-info p { margin: 5px 0; } -->
+    <!--     ul { list-style-type: none; padding: 0; } -->
+    <!--     ul li { margin: 10px 0; } -->
+    <!-- </style> -->
+</head>
+<body>
+
+    <div class="container">
+        <!-- Button at the top to populate resume -->
+        <button id="populateBtn" onclick="populateResume()">Populate Resume</button>
+
+        <!-- Name Section -->
+        <div class="sidebar">
+            <h1 id="name">Name Placeholder</h1>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <span id="email">Email Placeholder</span></p>
+                <p><strong>Phone:</strong> <span id="phone">Phone Placeholder</span></p>
+                <p><strong>Location:</strong> <span id="location">Location Placeholder</span></p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Professional Summary</h2>
+            <p id="summary">Professional summary will be populated here.</p>
+            <hr>
+
+            <h2>Experience</h2>
+            <ul id="experience-list">
+                <!-- Experience details will be populated here -->
+            </ul>
+            <hr>
+
+            <h2>Education</h2>
+            <ul id="education-list">
+                <!-- Education details will be populated here -->
+            </ul>
+            <hr>
+
+            <h2>Skills</h2>
+            <ul class="skills-list" id="skills-list">
+                <!-- JavaScript will dynamically append <li> elements here -->
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- JavaScript to fetch and populate resume data -->
+    <script>
+    function populateResume() {
+        fetch('/get_resume_data')  // Call the Flask API endpoint
+            .then(response => response.json())
+            .then(data => {
+                // Populate basic info
+                document.getElementById('name').innerText = data.name;
+                document.getElementById('email').innerText = data.email;
+                document.getElementById('phone').innerText = data.phone;
+                document.getElementById('location').innerText = data.location;
+
+                // Professional summary
+             
+                document.getElementById('summary').innerText = data.summary;
+
+                // Experience
+                const experienceList = document.getElementById('experience-list');
+                experienceList.innerHTML = '';  // Clear existing content
+                data.experience.forEach(exp => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<strong>${exp.title}</strong> - ${exp.company} (${exp.dates}) <p>${exp.description}</p>`;
+                    experienceList.appendChild(listItem);
+                });
+
+                // Education
+                const educationList = document.getElementById('education-list');
+                educationList.innerHTML = '';  // Clear existing content
+                data.education.forEach(edu => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<strong>${edu.degree}</strong> - ${edu.school} (${edu.year})`;
+                    educationList.appendChild(listItem);
+                });
+
+                // Skills
+                const skillsList = document.getElementById('skills-list');
+                skillsList.innerHTML = '';  // Clear existing content
+                data.skills.forEach(skill => {
+                    const skillItem = document.createElement('li');
+                    skillItem.innerText = skill;
+                    skillsList.appendChild(skillItem);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    }
+    </script>
+
+</body>
+</html>
+
