@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def resume():
-    return render_template('resume.html')  # Your HTML page template with a button
+    return render_template('resume.html')  
 
 @app.route('/get_resume_data', methods=['GET'])
 def get_resume_data():
@@ -41,7 +41,7 @@ def get_resume_data():
             "Python", "Flask", "Cybersecurity", "Cloud Administration", "DevOps"
         ]
     }
-    return jsonify(resume_data)  # Return resume data as JSON
+    return jsonify(resume_data)  
 
 
 
