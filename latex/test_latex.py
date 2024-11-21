@@ -3,52 +3,36 @@ import zipfile
 import os
 import subprocess
 
-
-#from latex_writer import LatexWriter
-class LatexWriter:
-    var_template = "\\newcommand{\\%s}{%s}\n"
-
-    def __init__(self, filepath: str) -> None:
-        self.filepath = filepath
-
-    def write(self, var_name: str, value: str) -> None:
-        with open(self.filepath, "a") as f:
-            f.write(LatexWriter.var_template % (var_name, value))
-
-    def write_all(self, var_values: dict[str, str]) -> None:
-        with open(self.filepath, "a") as f:
-            for var, value in var_values.items():
-                f.write(LatexWriter.var_template % (var, value))
+from latex_writer import LatexWriter
 
 
+# def create_zip(main_tex, dependencies, zip_path="resume.zip", base_dir="."):
+#     with zipfile.ZipFile(zip_path, "w") as zf:
+#         zf.write(os.path.join(base_dir, main_tex), os.path.basename(main_tex))
+#         for dep in dependencies:
+#             zf.write(os.path.join(base_dir, dep), os.path.basename(dep))
+#     return zip_path
 
-def create_zip(main_tex, dependencies, zip_path="resume.zip", base_dir="."):
-    with zipfile.ZipFile(zip_path, "w") as zf:
-        zf.write(os.path.join(base_dir, main_tex), os.path.basename(main_tex))
-        for dep in dependencies:
-            zf.write(os.path.join(base_dir, dep), os.path.basename(dep))
-    return zip_path
 
-
-def compile_latex(zip_file, main_tex="resume2.tex", output_pdf = "resume.pdf"):
-    url = "http://latexonline.cc/compile"
-    with open(zip_file, "rb") as file:
-        response = requests.post(
-            url, 
-            files={"file": file},
-            data={"target": main_tex}
-        )
+# def compile_latex(zip_file, main_tex="resume2.tex", output_pdf = "resume.pdf"):
+#     url = "http://latexonline.cc/compile"
+#     with open(zip_file, "rb") as file:
+#         response = requests.post(
+#             url, 
+#             files={"file": file},
+#             data={"target": main_tex}
+#         )
     
-    print(f"Status Code: {response.status_code}")
-    print(f"Response Text: {response.text}")
+#     print(f"Status Code: {response.status_code}")
+#     print(f"Response Text: {response.text}")
 
-    # Save the output PDF
-    if response.status_code == 200:
-        with open(output_pdf, "wb") as pdf:
-            pdf.write(response.content)
-        print(f"PDF compiled successfully: {output_pdf}")
-    else:
-        print(f"Error: {response.status_code} - {response.text}")
+#     # Save the output PDF
+#     if response.status_code == 200:
+#         with open(output_pdf, "wb") as pdf:
+#             pdf.write(response.content)
+#         print(f"PDF compiled successfully: {output_pdf}")
+#     else:
+#         print(f"Error: {response.status_code} - {response.text}")
 
 
 
@@ -83,6 +67,7 @@ def main() -> None:
         "GPA" : "3.97"
     }
     lw.write_all(values)
+
 
     # zipped = create_zip("resume2.tex", [dependency_path], "resume.zip", base_dir=".")
     # compile_latex(zipped, "resume.pdf")
