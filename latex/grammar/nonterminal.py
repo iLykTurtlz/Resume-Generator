@@ -1,4 +1,4 @@
-from __future__ import annotations
+# from __future__ import annotations
 import random
 import sys
 from abc import ABC
@@ -23,6 +23,9 @@ class Nonterminal(Symbol):
 
     def has_expanded(self):
         return self.children is not None
+    
+    def __str__(self):
+        return type(self).__name__
 
     
 
@@ -35,9 +38,6 @@ class S(Nonterminal):
     def __init__(self):
         # instance attributes
         super().__init__(S.rules)
-
-    def __str__(self):
-        return "S"
     
     def get_leaves(self):
         if self.has_expanded():

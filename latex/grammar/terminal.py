@@ -1,5 +1,6 @@
 from roman import toRoman, fromRoman
 from abc import ABC 
+from grammar.symbol import Symbol, SymbolFactory
 
 class Terminal(Symbol):
     pass

@@ -1,4 +1,4 @@
-from abc import ABC 
+from abc import ABC, abstractmethod
 import sys
 
 class SymbolFactory:
@@ -9,5 +9,6 @@ class SymbolFactory:
 
 
 class Symbol(ABC):
+    @abstractmethod
     def expand(self):
         raise NotImplementedError("You must implement this method.")
