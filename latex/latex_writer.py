@@ -2,7 +2,6 @@
 class LatexWriter:
     var_template = "\\newcommand{\\%s}{%s}\n"
 
-    
 
     def __init__(self, filepath: str) -> None:
         self.filepath = filepath
