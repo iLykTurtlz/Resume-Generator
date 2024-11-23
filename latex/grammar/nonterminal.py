@@ -1,56 +1,48 @@
 # from __future__ import annotations
 import random
-import sys
-from abc import ABC
 from roman import toRoman, fromRoman
 from grammar.symbol import Symbol, SymbolFactory
+import latex_formats as lf
+# from collections import ChainMap
 
-# class NonterminalFactory:
-#     @staticmethod
-#     def create_instances(class_names):
-#         current_module = sys.modules[__name__]
-#         return [getattr(current_module, name)() for name in class_names]
 
 class Nonterminal(Symbol):
-    def __init__(self, rules):
+    def __init__(self, rules, latex):
         self.rules = rules
+        self.latex = latex
         self.children = None
 
     def expand(self):
-        children = random.choice(zip(*self.rules))
-        self.children = [child.expand() for child in SymbolFactory.create_instances(children)]
+        print(f"rules: {self.rules}")
+        child_types = random.choices(*zip(*self.rules))[0]
+        self.children = [child.expand() for child in SymbolFactory.create_instances(child_types)]
         return self
 
     def has_expanded(self):
         return self.children is not None
     
-    def __str__(self):
-        return type(self).__name__
-
+    def to_latex(self):
+        if self.has_expanded():
+            return self.latex % ("\n".join(child.to_latex() for child in self.children),)
+        else:
+            raise Exception(f"{self} must be expanded first")
     
+
 
 class S(Nonterminal):
     rules = [
-        (("Head", "Body"), 1.0),
-        (("Head", "Body", "Footer"), 0.0)
+        # (("Head", "Body"), 1.0),
+        # (("Head", "Body", "Footer"), 0.0)
+        (("Head",), 1.0)
     ]
+    latex = lf.latex["S"]
 
     def __init__(self):
         # instance attributes
-        super().__init__(S.rules)
+        super().__init__(S.rules, S.latex)
     
-    def get_leaves(self):
-        if self.has_expanded():
-            pass
-            #TODO: get stuff from the terminals
+    
 
-    
-class Head(Nonterminal):
-    rules = [
-        (("Experience",), 1.0)
-    ]
-    def __init__(self):
-        super().__init__(Head.rules)
 
 class Body(Nonterminal):
     rules = [
