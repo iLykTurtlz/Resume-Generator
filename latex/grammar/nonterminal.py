@@ -13,7 +13,7 @@ class Nonterminal(Symbol):
         self.children = None
 
     def expand(self):
-        print(f"rules: {self.rules}")
+        # print(f"rules: {self.rules}")
         child_types = random.choices(*zip(*self.rules))[0]
         self.children = [child.expand() for child in SymbolFactory.create_instances(child_types)]
         return self
