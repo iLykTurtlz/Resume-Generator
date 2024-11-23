@@ -205,7 +205,7 @@ latex = {
 \vspace{-6mm}
 ''',
 
-
+#LinkedInField, GitHubField are both nonterminal
 "LinkedInGitHub": r'''
 \begin{center}
     \small{

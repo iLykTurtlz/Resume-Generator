@@ -3,10 +3,11 @@ import random
 from roman import toRoman, fromRoman
 from grammar.symbol import Symbol, SymbolFactory
 import latex_formats as lf
+from abc import ABC
 # from collections import ChainMap
 
 
-class Nonterminal(Symbol):
+class Nonterminal(Symbol, ABC):
     def __init__(self, rules, latex):
         self.rules = rules
         self.latex = latex
