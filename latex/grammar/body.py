@@ -6,87 +6,49 @@ from collections import ChainMap
 class Body(Nonterminal):
     rules = [
         #(("Education", "ExperienceSection"), 1.0)
-        (("ExperienceSection", "ProjectSection"), 1.0)
+        (("EducationSection", "ExperienceSection", "ProjectSection"), 1.0)
+        # (("EducationSection",), 1.0)
     ]
     latex = lf.latex["Body"]
 
     def __init__(self):
         super().__init__(Body.rules, Body.latex)
 
+class EducationSection(Nonterminal):
+    rules = [
+        (("CalPolyEducation",), 0.5),
+        (("CalPolyEducation", "Education"), 0.5)
+    ]
+    latex = lf.latex["EducationSection"]
+
+    def __init__(self):
+        super().__init__(EducationSection.rules, EducationSection.latex)
+
+class CalPolyEducation(Nonterminal):
+    rules = [
+        (("CalPoly", "CalPolyEduGeographicalInfo", "EduDegreeName", "EduDate", "EduGPA"), 1.0)
+    ]
+    latex = lf.latex["Education"]
+
+    def __init__(self):
+        super().__init__(CalPolyEducation.rules, CalPolyEducation.latex)
+    def to_latex(self):
+        if self.has_expanded():
+            return self.latex % tuple(child.to_latex() for child in self.children)
+        else:
+            raise Exception(f"{self} must be expanded first")
 
 class Education(Nonterminal):
     rules = [
-        (("Institution", "GeographicalInfoField", "DegreeName", "MMYYYY_Date", "GPA"), 1.0)
+        (("EduInstitution", "EduGeographicalInfo", "EduDegreeName", "EduDate", "EduGPA"), 1.0)
     ]
     latex = lf.latex["Education"]
 
     def __init__(self):
         super().__init__(Education.rules, Education.latex)
-    
-
-class Institution(Nonterminal):
-    rules = [
-        (("CalPoly",), 0.8),
-        (("EduInstitution",), 0.2)
-    ]
-    latex = lf.latex["Institution"]
-    def __init__(self):
-        super().__init__(Institution.rules, Institution.latex)
-
-class GeographicalInfoField(Nonterminal):
-    rules = [
-        (("EduGeographicalInfoField",), 1.0)
-    ]
-    latex = lf.latex["GeographicalInfoField"]
-    def __init__(self):
-        super().__init__(GeographicalInfoField.rules, GeographicalInfoField.latex)
-
-
-class DegreeName(Nonterminal):
-    rules = [
-        (("EduDegreeName",), 1.0)
-    ]
-    latex = lf.latex["DegreeName"]
-    def __init__(self):
-        super().__init__(DegreeName.rules, DegreeName.latex)
-
-
-class MMYYYY_Date(Nonterminal):
-    rules = [
-        (("EduDate",), 1.0)
-    ]
-    latex = lf.latex["MMYYYY_Date"]
-    def __init__(self):
-        super().__init__(MMYYYY_Date.rules, MMYYYY_Date.latex)
-
-
-class GPA(Nonterminal):
-    rules = [
-        (("EduGPA",), 1.0)
-    ]
-    latex = lf.latex["GPA"]
-    def __init__(self):
-        super().__init__(GPA.rules, GPA.latex)
-
-
-# class PhoneEmail(Nonterminal):
-#     rules = [
-#         (("Phone", "Email"), 0.5),
-#         (("Email", "Phone"), 0.5),
-#     ]
-#     latex = lf.latex["PhoneEmail"]
-#
-#     def __init__(self):
-#         super().__init__(PhoneEmail.rules, PhoneEmail.latex)
-#
-#     def to_latex(self):
-#         if self.has_expanded():
-#             assert (len(self.children) == 2)
-#             # print(f"type: {self}")
-#             # print(f"children: {self.children}")
-#             c1, c2 = self.children
-#             values = ChainMap(c1.get(), c2.get())
-#             return self.latex % (values[str(c1)], values[str(c2)])
-#         else:
-#             raise Exception(f"{self} must be expanded first")
+    def to_latex(self):
+        if self.has_expanded():
+            return self.latex % tuple(child.to_latex() for child in self.children)
+        else:
+            raise Exception(f"{self} must be expanded first")
 

@@ -13,42 +13,43 @@ class CalPoly(Terminal):
 class EduInstitution(Terminal):
     def __init__(self):
         self.value = None
-
+    # TODO: add other institutions
     def expand(self):
+        inst = random.choice(["Cuesta College"])
         self.value = {
-            "EduInstitution": "Some Other Institution"
+            "EduInstitution": inst
         }
         return self
 
-# field?
+
 class EduGeographicalInfo(Terminal):
     def __init__(self):
         self.value = None
 
     def expand(self):
         """TODO: vary the info string formats"""
-        self.value = {"EduGeographicalInfo": "San Luis Obispo, CA"}
+        inst = random.choice(["Champaign, IL", "Paris, France", "Palo Alto, CA", "Berkeley, CA"])
+        self.value = {"EduGeographicalInfo": inst}
         return self
 
-# TODO: Are these the same? What is htis??  
-class EduGeographicalInfoField(Terminal):
+class CalPolyEduGeographicalInfo(Terminal):
     def __init__(self):
         self.value = None
 
     def expand(self):
         """TODO: vary the info string formats"""
-        self.value = {"EduGeographicalInfoField": "San Luis Obispo, CA"}
+        self.value = {"CalPolyEduGeographicalInfo": "San Luis Obispo, CA"}
         return self
 
 
 class EduDegreeName(Terminal):
-    """TODO: generate DegreeName fields in expand"""
     def __init__(self):
         self.value = None
 
     def expand(self):
+        degree = random.choice(["B.S. Computer Science", "M.S. Computer Science"])
         self.value = {
-            "EduDegreeName": "B.S."
+            "EduDegreeName": degree
         }
         return self
 
@@ -60,7 +61,7 @@ class EduDate(Terminal):
     def expand(self):
         month = random.choice(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
         year = random.randint(2017, 2024)
-        date = " ".join(month, str(year))
+        date = month + " " + str(year)
         self.value = {"EduDate": date}
         return self
 
@@ -70,7 +71,7 @@ class EduGPA(Terminal):
 
     def expand(self):
         fourscale = 4.0
-        gpa = random.uniform(0.0, 4.0)
+        gpa = random.normalvariate(3.0, 0.5)
         formats = "{}/{}"
         number = formats.format(str(round(gpa, 1)), str(fourscale))
         self.value = {"EduGPA": number}

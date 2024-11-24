@@ -263,25 +263,32 @@ latex = {
 ''',
 
 
-
-
-
+# \resumeSubheading
+# {University Name}{City, Country}
+# {Degree Name}{Month Year - Month Year}
+# \resumeItemListStart
+# \item GPA: X.XX/4.00
+# \resumeItemListEnd
 
 # Education: Institution | GeographicalInfoField | Degree Name | MMYYYY_Date | GPA
-"Education" : r'''
+"EducationSection" : r'''
 \section{\textbf{Education}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-{University Name}{City, Country}
-{Degree Name}{Month Year - Month Year}
-\resumeItemListStart
-\item GPA: X.XX/4.00
-\resumeItemListEnd
+%s
 
 \resumeSubHeadingListEnd
 \vspace{-6mm}
+''',
+
+"Education": r'''
+\resumeSubheading
+    {%s}{%s}
+    {%s}{%s}
+\resumeItemListStart
+\item GPA: {%s}
+\resumeItemListEnd
 ''',
 
 "ExperienceSection": r'''
@@ -304,8 +311,4 @@ latex = {
     \resumeItemListEnd 
 ''',
 
-"Institution": r'''TODO''',
-"DegreeName": r'''TODO''',
-"MMYYYY_Date": r'''TODO''',
-"GPA": r'''TODO''',
 }
