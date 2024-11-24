@@ -13,6 +13,7 @@ class Nonterminal(Symbol, ABC):
         self.latex = latex
         self.children = None
 
+    #Nonterminals do not need to override expand
     def expand(self):
         # print(f"rules: {self.rules}")
         child_types = random.choices(*zip(*self.rules))[0]
@@ -22,6 +23,7 @@ class Nonterminal(Symbol, ABC):
     def has_expanded(self):
         return self.children is not None
     
+    #sometimes need to override this
     def to_latex(self):
         if self.has_expanded():
             return self.latex % ("\n".join(child.to_latex() for child in self.children),)
