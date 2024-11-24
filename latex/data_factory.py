@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 import random
+import pandas as pd
+import numpy as np
 
 class DataFactory(ABC):
     # def __init__(self):
@@ -11,8 +13,50 @@ class DataFactory(ABC):
         
 
 class NameDataFactory(DataFactory):
+    path_to_dir = "./name_distributions/"
+    cp_r = (['white', 'black', 'api', 'latinx'], [0.589522, 0.008218, 0.15972, 0.24254])
+    cp_s = (['m', 'f'], [0.7, 0.3])
+
+    def __init__(self):
+        self.f = pd.read_csv(NameDataFactory.path_to_dir + "female_names.csv")
+        self.m = pd.read_csv(NameDataFactory.path_to_dir + "male_names.csv")
+        self.l = pd.read_csv(NameDataFactory.path_to_dir + "last_names.csv")
+
+    def sample_fn(self, r: str, sex: str) -> str:
+        """sex in {'m', 'f'}"""
+        if sex.lower() == 'm':
+            fn_m = self.m[self.m['Ethnicity'] == r]
+            return np.random.choice(fn_m["Child's First Name"], p=fn_m['P'] / fn_m['P'].sum()).title()
+        elif sex.lower() == 'f':
+            fn_f = self.f[self.f['Ethnicity'] == r]
+            return np.random.choice(fn_f["Child's First Name"], p=fn_f['P'] / fn_f['P'].sum()).title()
+        else:
+            raise Exception("sex in {'m','f'}")
+        
+    def sample_ln(self, r : str) -> str:
+        return np.random.choice(self.l['name'], p=self.l[r]).title()
+
+    def sample_full_name(self, r: str, sex: str) -> str:
+        return self.sample_fn(r, sex) + " " + self.sample_ln(r)
+
     def generate(self, context):
-        pass
+        rs, ps = NameDataFactory.cp_r
+        r = np.random.choice(a=rs, p=ps)
+        ss, ps = NameDataFactory.cp_s
+        s = np.random.choice(a=ss, p=ps)
+        return self.sample_full_name(r, s)
+
+
+
+
+
+    
+
+
+
+        
+
+
 
 class ProjectDataFactory(DataFactory):
     verb_phrases = [

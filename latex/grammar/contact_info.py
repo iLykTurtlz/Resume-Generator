@@ -1,22 +1,29 @@
 from grammar.terminal import Terminal
 import random
-
+from data_factory import NameDataFactory
 
 class FullName(Terminal):
+    data_factory = NameDataFactory()
     def __init__(self):
         self.value = None
 
     def expand(self):
-        """TODO: Replace with name generator module"""
-        letters = 'abcdefghijklmnopqrstuvwxyz'
-        fn_length = random.randint(5,10)
-        ln_length = random.randint(5,15)
         self.value = {
-            "FullName" : "".join(random.choice(letters) for _ in range(fn_length)).capitalize() + " " + \
-                "".join(random.choice(letters) for _ in range(ln_length)).capitalize()
-              
+            "FullName" : FullName.data_factory.generate(None)
         }
         return self
+
+    # def expand(self):
+    #     """TODO: Replace with name generator module"""
+    #     letters = 'abcdefghijklmnopqrstuvwxyz'
+    #     fn_length = random.randint(5,10)
+    #     ln_length = random.randint(5,15)
+    #     self.value = {
+    #         "FullName" : "".join(random.choice(letters) for _ in range(fn_length)).capitalize() + " " + \
+    #             "".join(random.choice(letters) for _ in range(ln_length)).capitalize()
+              
+    #     }
+    #     return self
 
 class GitHub(Terminal):
     def __init__(self):
