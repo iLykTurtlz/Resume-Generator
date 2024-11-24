@@ -5,7 +5,8 @@ from collections import ChainMap
 
 class Body(Nonterminal):
     rules = [
-        (("Education",), 1.0)
+        #(("Education", "ExperienceSection"), 1.0)
+        (("ExperienceSection",), 1.0)
     ]
     latex = lf.latex["Body"]
 
@@ -21,7 +22,7 @@ class Education(Nonterminal):
 
     def __init__(self):
         super().__init__(Education.rules, Education.latex)
-
+    
 
 class Institution(Nonterminal):
     rules = [

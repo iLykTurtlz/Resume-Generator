@@ -283,4 +283,28 @@ latex = {
 \vspace{-6mm}
 ''',
 
+"ExperienceSection": r'''
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  
+  %s
+  
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+''',
+
+"Experience": r'''
+\resumeSubheading
+    {{%s}}{%s}
+    {%s}{%s}
+    \resumeItemListStart
+        %s
+    \resumeItemListEnd 
+''',
+
+"Institution": r'''TODO''',
+"DegreeName": r'''TODO''',
+"MMYYYY_Date": r'''TODO''',
+"GPA": r'''TODO''',
 }
