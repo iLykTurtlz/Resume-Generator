@@ -20,6 +20,7 @@ class EduInstitution(Terminal):
         }
         return self
 
+# field?
 class EduGeographicalInfo(Terminal):
     def __init__(self):
         self.value = None
@@ -27,6 +28,16 @@ class EduGeographicalInfo(Terminal):
     def expand(self):
         """TODO: vary the info string formats"""
         self.value = {"EduGeographicalInfo": "San Luis Obispo, CA"}
+        return self
+
+# TODO: Are these the same? What is htis??  
+class EduGeographicalInfoField(Terminal):
+    def __init__(self):
+        self.value = None
+
+    def expand(self):
+        """TODO: vary the info string formats"""
+        self.value = {"EduGeographicalInfoField": "San Luis Obispo, CA"}
         return self
 
 

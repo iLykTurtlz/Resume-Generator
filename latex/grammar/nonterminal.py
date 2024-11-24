@@ -36,7 +36,7 @@ class S(Nonterminal):
     rules = [
         # (("Head", "Body"), 1.0),
         # (("Head", "Body", "Footer"), 0.0)
-        (("Head",), 1.0)
+        (("Head", "Body"), 1.0)
     ]
     latex = lf.latex["S"]
 
@@ -45,72 +45,4 @@ class S(Nonterminal):
         super().__init__(S.rules, S.latex)
     
     
-
-
-class Body(Nonterminal):
-    rules = [
-        (("Experience"), 1.0)
-    ]
-    def __init__(self):
-        super().__init__(Body.rules)
-
-
-    #sequence of subheadings
-
-class Experience(Nonterminal):
-    rules = []
-    latex = '''
-        \\section{\\textbf{Experience}}
-        \\vspace{-0.4mm}
-        \resumeSubHeadingListStart
-            %s
-        \resumeSubHeadingListEnd
-        \vspace{-6mm}
-    '''
-    # ExperienceSubHeadings
-    #latex % expsubheading.to_latex()
-    def __init__(self):
-        super().__init__(Experience.rules)
-
-
-class ExperienceSubheading(Nonterminal):
-    count = 0
-    rules = [
-        (("ExperienceDetails", "ExperienceItemList"), 1.0)
-    ]
-
-    #ExpSub -> JobDeets(Term) JobAchievements(Nonterm)
-    #JobAchievements -> item *
-
-    latex = '''
-         \resumeSubheading
-            {{Company A}}{City, Country}
-            {Job Title A}{Month Year - Month Year}
-            \resumeItemListStart
-                \item Developed [specific achievement] achieving [specific metric] in [specific area]
-                \item Implemented [technology/method], enhancing [specific aspect] by [specific percentage]
-                \item Conducted analysis on [specific data], identifying [key findings]
-                \item Presented findings at [specific event], receiving [specific recognition]
-            \resumeItemListEnd 
-    '''
-    
-    def __init__(self):
-        ExperienceSubheading.count += 1
-        self.id = ExperienceSubheading.count
-
-    #f"company{toRoman(self.id)}"
-        
-
-    
-
-
-
-
-class Footer(Nonterminal):
-    pass
-
-
-
-
-        
     
