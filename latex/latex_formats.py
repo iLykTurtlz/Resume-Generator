@@ -165,6 +165,12 @@ latex = {
 \vspace{2mm}
 ''',
 
+"Body": r'''
+%% Body
+%s
+\vspace{2mm}
+''',
+
 
 "Objective": r'''
 \section{\textbf{Objective}}
@@ -225,6 +231,23 @@ latex = {
 #href, visible_label
 "GitHubField": r'''
 \socialicon{\faGithub} \href{%s}{%s}
+''',
+
+# Education: Institution | GeographicalInfoField | Degree Name | MMYYYY_Date | GPA
+"Education": r'''
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{University Name}{City, Country}
+{Degree Name}{Month Year - Month Year}
+\resumeItemListStart
+\item GPA: X.XX/4.00
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
 ''',
 
 }
