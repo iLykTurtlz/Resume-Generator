@@ -25,6 +25,7 @@ class Nonterminal(Symbol, ABC):
     
     #sometimes need to override this
     def to_latex(self):
+        print(f"{self}")
         if self.has_expanded():
             return self.latex % ("\n".join(child.to_latex() for child in self.children),)
         else:

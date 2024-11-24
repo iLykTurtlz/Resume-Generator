@@ -6,3 +6,4 @@ from .contact_info import *
 from .body import *
 from .education import *
 from .experience import *
+from .project import *

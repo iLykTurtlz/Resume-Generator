@@ -6,7 +6,7 @@ from collections import ChainMap
 class Body(Nonterminal):
     rules = [
         #(("Education", "ExperienceSection"), 1.0)
-        (("ExperienceSection",), 1.0)
+        (("ExperienceSection", "ProjectSection"), 1.0)
     ]
     latex = lf.latex["Body"]
 

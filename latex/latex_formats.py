@@ -253,13 +253,14 @@ latex = {
   {%s}
   {%s}
   %%{{}[\href{https://github.com/your-username/project-a}{\textcolor{darkblue}{\faGithub}}]}
+  %s
 ''',
 
 "ProjectAchievements": r'''
 \resumeItemListStart
     %s
 \resumeItemListEnd
-'''
+''',
 
 
 
@@ -267,7 +268,7 @@ latex = {
 
 
 # Education: Institution | GeographicalInfoField | Degree Name | MMYYYY_Date | GPA
-"Education": r'''
+"Education" : r'''
 \section{\textbf{Education}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart

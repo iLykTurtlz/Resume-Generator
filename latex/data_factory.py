@@ -42,17 +42,22 @@ class ProjectDataFactory(DataFactory):
     dates = ["May 2016", "September 2017", "May 2018", "October 2019", "Febuary 2021"]
     def generate(self, context):
         n = context["number_of_projects"]
-        for i in range(n, 0):
+        # print(f"n: {n}")
+        for i in range(n, 0, -1):
+            # print(f"i: {i}")
             proj = context[f"Project_{i}"]
             proj["ProjectDescription"].value = {
                 "ProjectDescription" : "This is the description of a project lorem ipsum lorem ipsum."
             }
+            # print(f"DESCRIPTION: {proj['ProjectDescription'].value}")
             proj["ProjectTools"].value = {"ProjectTools" : "PyTorch, NLTK, SpaCy"}
             proj["ProjectDate"].value = {"ProjectDate" : ProjectDataFactory.dates[n - i]}
-            achievements = random.choices(ProjectDataFactory.verb_phrases, replace=False, k=len(proj["ProjectAchievements"]))
+            achievements = random.choices(ProjectDataFactory.verb_phrases, k=len(proj["ProjectAchievements"]))
             for pa, achievement in zip(proj["ProjectAchievements"], achievements):
                 pa.value = {"ProjectAchievementItem" : achievement}
-    
+                # print(f"ACHIEVEMENT: {pa.value}")
+        # print("FILLED IN VALUES")
+
 
 
 

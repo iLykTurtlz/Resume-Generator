@@ -4,6 +4,7 @@ import latex_formats as lf
 from roman import toRoman, fromRoman
 from data_factory import ProjectDataFactory
 
+
 class ProjectSection(Nonterminal):
     data_factory = ProjectDataFactory()
     rules = [
@@ -15,15 +16,36 @@ class ProjectSection(Nonterminal):
     latex = lf.latex["ProjectSection"]
     def __init__(self):
         super().__init__(ProjectSection.rules, ProjectSection.latex)
-        #self.context = {}
-        self.context[str(self)] = {}
+        self.context = {}
+        # self.context[str(self)] = {}
         
 
     def expand(self):
         super().expand()
         self.context["number_of_projects"] = len(self.children)
+        for child in self.children:
+            if isinstance(child, Nonterminal):
+                self.context[child.id] = child.context
+            else:
+                self.context[child.id] = child
+            # ctx = {}
+            # self.context[child.id] = child.context
+            # child.context = ctx
         ProjectSection.data_factory.generate(self.context)
+        # print(self.context)
+        # self.debug()
         return self
+    
+    
+    def debug(self):
+        def dfs(d):
+            if isinstance(d, Terminal):
+                print(f"{d}: {d.value}")
+            elif isinstance(d, dict):
+                for e in d.values():
+                    dfs(e)
+
+        dfs(self.context)
 
 
 class Project(Nonterminal):
@@ -38,12 +60,20 @@ class Project(Nonterminal):
         Project.count += 1
         self.id = f"{self}_{Project.count}"
 
+
     def expand(self):
-        self.context[self.id] = {}
         super().expand()
+        self.context = {}
         for child in self.children:
-            child.add_to_context(self.context, self.id)
+            if isinstance(child, Nonterminal):
+                self.context[str(child)] = child.context
+            else:
+                self.context[str(child)] = child
         return self
+    
+    def to_latex(self):
+        # print(tuple(child.to_latex() for child in self.children))
+        return self.latex % tuple(child.to_latex() for child in self.children)
 
         
 '''
@@ -75,14 +105,14 @@ Context is
 class ProjectDescription(Terminal):
     # count = 0
     def __init__(self):
-        ProjectDescription.count += 1
+        # ProjectDescription.count += 1
         # self.id = f"{self}_{toRoman(ProjectDescription.count)}"
-        self.parent_id = None
+        # self.parent_id = None
         self.value = None
 
-    def add_to_context(self, parent_id):
-        self.parent_id = parent_id
-        self.context[self.parent_id][str(self)] = self #adding self allows self.value to be updated by the DataFactory
+    # def add_to_context(self, parent_id):
+    #     self.parent_id = parent_id
+    #     self.context[self.parent_id][str(self)] = self #adding self allows self.value to be updated by the DataFactory
 
     def expand(self):
         return self
@@ -92,9 +122,9 @@ class ProjectTools(Terminal):
         self.parent_id = None
         self.value = None
     
-    def add_to_context(self, parent_id):
-        self.parent_id = parent_id
-        self.context[self.parent_id][str(self)] = self
+    # def add_to_context(self, parent_id):
+    #     self.parent_id = parent_id
+    #     self.context[self.parent_id][str(self)] = self
 
     def expand(self):
         return self
@@ -104,9 +134,9 @@ class ProjectDate(Terminal):
         self.parent_id = None
         self.value = None
     
-    def add_to_context(self, parent_id):
-        self.parent_id = parent_id
-        self.context[self.parent_id][str(self)] = self
+    # def add_to_context(self, parent_id):
+    #     self.parent_id = parent_id
+    #     self.context[self.parent_id][str(self)] = self
 
     def expand(self):
         return self
@@ -121,15 +151,12 @@ class ProjectAchievements(Nonterminal):
     ]
     latex = lf.latex["ProjectAchievements"]
     def __init__(self):
-        self.parent_id = None
         self.value = None
     
-    def add_to_context(self, parent_id):
-        if self.has_expanded():
-            self.parent_id = parent_id
-            self.context[self.parent_id][str(self)] = [child for child in self.children]
-        else:
-            raise Exception(f"{self} must be expanded before it can be added to context")
+    def expand(self):
+        super().expand()
+        self.context = [child for child in self.children]
+        return self
         
     # def to_latex(self):
     #     if self.has_expanded():
