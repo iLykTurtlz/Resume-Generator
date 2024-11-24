@@ -172,11 +172,12 @@ latex = {
 ''',
 
 
+
 "Objective": r'''
 \section{\textbf{Objective}}
 \vspace{1mm}
 \small{
-\selfSummary
+    %s
 }
 \vspace{-2mm}
 ''',
