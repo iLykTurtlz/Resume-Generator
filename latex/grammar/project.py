@@ -15,7 +15,9 @@ class ProjectSection(Nonterminal):
     latex = lf.latex["ProjectSection"]
     def __init__(self):
         super().__init__(ProjectSection.rules, ProjectSection.latex)
-        self.context = {}
+        #self.context = {}
+        self.context[str(self)] = {}
+        
 
     def expand(self):
         super().expand()
@@ -27,15 +29,14 @@ class ProjectSection(Nonterminal):
 class Project(Nonterminal):
     count = 0
     rules = [
-        (("ProjectDescription", "Tools", "StartDate", "EndDate", "ProjectAchievements"), 0.5),
-        (("ProjectDescription", "Tools", "EndDate", "ProjectAchievements"), 0.5),
+        (("ProjectDescription", "ProjectTools", "ProjectDate", "ProjectAchievements"), 0.5),
+        
     ]
     latex = lf.latex["Project"]
     def __init__(self):
         super().__init__(Project.rules, Project.latex)
         Project.count += 1
-        self.id = f"{self}_{toRoman(Project.count)}"
-
+        self.id = f"{self}_{Project.count}"
 
     def expand(self):
         self.context[self.id] = {}
@@ -48,17 +49,24 @@ class Project(Nonterminal):
 '''
 Context is
 {
-    "number_of_projects":2,
-    "Project_I": {
-        "ProjectDescription": obj,
-        "Tools": obj,
-        "StartDate": obj,
-        "EndDate": obj,
-        "ProjectAchievements": obj
-    },
-    "Project_II": {
-        ...
-    },
+
+    "Experiences" : [
+        
+    ]
+
+    "Projects" : {
+        "number_of_projects":2,
+        "Project_I": {
+            "ProjectDescription": obj,
+            "ProjectTools": obj,
+            "ProjectDate": obj,
+            "ProjectAchievements": [obj]
+        },
+        "Project_II": {
+            ...
+        },
+    }
+
 }
 '''    
         
@@ -79,23 +87,69 @@ class ProjectDescription(Terminal):
     def expand(self):
         return self
     
-class Tools(Terminal):
+class ProjectTools(Terminal):
     def __init__(self):
         self.parent_id = None
         self.value = None
     
     def add_to_context(self, parent_id):
         self.parent_id = parent_id
-        self.context
+        self.context[self.parent_id][str(self)] = self
+
+    def expand(self):
+        return self
+
+class ProjectDate(Terminal):
+    def __init__(self):
+        self.parent_id = None
+        self.value = None
+    
+    def add_to_context(self, parent_id):
+        self.parent_id = parent_id
+        self.context[self.parent_id][str(self)] = self
+
+    def expand(self):
+        return self
+    
+
+    
+class ProjectAchievements(Nonterminal):
+    rules = [
+        (("ProjectAchievementItem",), 0.2),
+        (("ProjectAchievementItem","ProjectAchievementItem"), 0.5),
+        (("ProjectAchievementItem","ProjectAchievementItem","ProjectAchievementItem"), 0.3),
+    ]
+    latex = lf.latex["ProjectAchievements"]
+    def __init__(self):
+        self.parent_id = None
+        self.value = None
+    
+    def add_to_context(self, parent_id):
+        if self.has_expanded():
+            self.parent_id = parent_id
+            self.context[self.parent_id][str(self)] = [child for child in self.children]
+        else:
+            raise Exception(f"{self} must be expanded before it can be added to context")
         
-        
+    # def to_latex(self):
+    #     if self.has_expanded():
+    #         return self.latex % ("\n".join(r"\item "+child.to_latex() for child in self.children),)
+    #     else:
+    #         raise Exception(f"{self} must be expanded first")
 
 
-
+    #.expand is default
     
+class ProjectAchievementItem(Terminal):
+    def __init__(self):
+        self.value = None
+    
+    def expand(self):
+        return self
+    
+    def to_latex(self):
+        return r"\item "+super().to_latex()
 
-    
-    
 
 
 
