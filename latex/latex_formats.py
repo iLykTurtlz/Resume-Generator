@@ -228,4 +228,31 @@ latex = {
 \socialicon{\faGithub} \href{%s}{%s}
 ''',
 
+
+
+"ProjectSection": r'''
+\section{\textbf{Projects}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+    %s
+\resumeSubHeadingListEnd
+''',
+
+# either {Month Year} or {Month Year - Month Year}
+"Project" : r'''
+\resumeProject
+  {Project A: [Brief Description]}
+  {Tools: [List of tools and technologies used]}
+  {Month Year - Month Year}
+  %%{{}[\href{https://github.com/your-username/project-a}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Developed [specific feature/system] for [specific purpose]
+  \item Implemented [specific technology] for [specific goal], achieving [specific result]
+  \item Created [specific component], ensuring [specific benefit]
+  \item Applied [specific method] to analyze [specific aspect]
+\resumeItemListEnd
+''',
+
+"Project"
+
 }
