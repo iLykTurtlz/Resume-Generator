@@ -12,15 +12,6 @@ class Terminal(Symbol, ABC):
     
     def to_latex(self):
         return self.value
- 
-        
-    # def get(self):
-    #     if self.has_expanded():
-    #         return self.value
-    #     else:
-    #         raise Exception(f"{self} must be expanded first")
-
-
 
 
 

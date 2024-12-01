@@ -30,7 +30,6 @@ class Nonterminal(Symbol, ABC):
             return self.latex % ("\n".join(child.to_latex() for child in self.children),)
         else:
             raise Exception(f"{self} must be expanded first")
-    
 
 
 class S(Nonterminal):

@@ -113,9 +113,7 @@ class FullName(Terminal):
         self.value = None
 
     def expand(self):
-        self.value = {
-            "FullName" : FullName.data_factory.generate(None)
-        }
+        self.value = FullName.data_factory.generate(None)
         return self
 
     # def expand(self):

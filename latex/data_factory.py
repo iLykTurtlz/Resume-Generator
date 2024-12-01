@@ -11,7 +11,6 @@ class DataFactory(ABC):
     def generate(self, context):
         raise NotImplementedError("You must implement this method.")
         
-
 class NameDataFactory(DataFactory):
     path_to_dir = "./name_distributions/"
     cp_r = (['white', 'black', 'api', 'latinx'], [0.589522, 0.008218, 0.15972, 0.24254])
