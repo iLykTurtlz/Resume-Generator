@@ -41,9 +41,7 @@ class ExperienceTask(Terminal):
         self.value = None
         
     def expand(self):
-        self.value = {
-            "ExperienceTask": "Did a thing"
-        }
+        self.value = "Did a thing"
         return self
 
 class CompanyName(Terminal):
@@ -57,9 +55,7 @@ class CompanyName(Terminal):
         
     def expand(self):
         company = random.choice(list(self.COMPANY_MAP.keys()))
-        self.value = {
-            "CompanyName": r'''%s [\href{%s}{\faIcon{globe}}]''' % (company, self.COMPANY_MAP[company])
-        }
+        self.value = r'''%s [\href{%s}{\faIcon{globe}}]''' % (company, self.COMPANY_MAP[company])
         return self
     
 class JobTitle(Terminal):
@@ -67,9 +63,7 @@ class JobTitle(Terminal):
         self.value = None
         
     def expand(self):
-        self.value = {
-            "JobTitle": "Software Engineer"
-        }
+        self.value = "Software Engineer"
         return self
     
 class DateRange(Terminal):
@@ -77,7 +71,5 @@ class DateRange(Terminal):
         self.value = None
         
     def expand(self):
-        self.value = {
-            "DateRange": "June 2022 - Present"
-        }
+        self.value = "June 2022 - Present"
         return self
