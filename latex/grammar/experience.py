@@ -21,7 +21,7 @@ class Experience(Nonterminal):
         super().__init__(Experience.rules, Experience.latex)
         
     def to_latex(self):
-        if self.has_expanded():
+        if self.has_expanded(): 
             return self.latex % tuple([child.to_latex() for child in self.children])
         else:
             raise Exception(f"{self} must be expanded first")

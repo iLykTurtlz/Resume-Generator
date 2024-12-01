@@ -11,16 +11,14 @@ class Terminal(Symbol, ABC):
         return self.value is not None
     
     def to_latex(self):
-        if self.has_expanded():
-            return self.value[str(self)]
-        else:
-            raise Exception(f"{self} must be expanded first")
+        return self.value
+ 
         
-    def get(self):
-        if self.has_expanded():
-            return self.value
-        else:
-            raise Exception(f"{self} must be expanded first")
+    # def get(self):
+    #     if self.has_expanded():
+    #         return self.value
+    #     else:
+    #         raise Exception(f"{self} must be expanded first")
 
 
 
