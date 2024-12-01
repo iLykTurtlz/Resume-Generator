@@ -38,9 +38,10 @@ class PhoneEmail(Nonterminal):
             assert(len(self.children) == 2)
             # print(f"type: {self}")
             # print(f"children: {self.children}")
-            c1, c2 = self.children
-            values = ChainMap(c1.get(), c2.get())
-            return self.latex % (values[str(c1)], values[str(c2)])
+            # c1, c2 = self.children
+            # values = ChainMap(c1.get(), c2.get())
+            # return self.latex % (values[str(c1)], values[str(c2)])
+            return self.latex % tuple(child.to_latex() for child in self.children)
         else:
             raise Exception(f"{self} must be expanded first")
 
@@ -72,12 +73,12 @@ class LinkedInField(Nonterminal):
     def __init__(self):
         super().__init__(LinkedInField.rules, LinkedInField.latex)
 
-    def to_latex(self):
-        if self.has_expanded():
-            values = self.children[0].value
-            return self.latex % (values["href"], values[str(self.children[0])])
-        else:
-            raise Exception(f"{self} must be expanded first")
+    # def to_latex(self):
+    #     if self.has_expanded():
+    #         values = self.children[0].value
+    #         return self.latex % (values["href"], values[str(self.children[0])])
+    #     else:
+    #         raise Exception(f"{self} must be expanded first")
 
 
 class GitHubField(Nonterminal):
@@ -88,14 +89,14 @@ class GitHubField(Nonterminal):
     def __init__(self):
         super().__init__(GitHubField.rules, GitHubField.latex)
 
-    def to_latex(self):
-        if self.has_expanded():
-            assert(len(self.children) == 1)
-            c = self.children[0]
-            values = c.get()
-            return self.latex % (values["href"], values[str(c)])
-        else:
-            raise Exception(f"{self} must be expanded first")
+    # def to_latex(self):
+    #     if self.has_expanded():
+    #         assert(len(self.children) == 1)
+    #         c = self.children[0]
+    #         values = c.get()
+    #         return self.latex % (values["href"], values[str(c)])
+    #     else:
+    #         raise Exception(f"{self} must be expanded first")
 
 class GeographicalInfoField(Nonterminal):
     rules = [
@@ -108,12 +109,12 @@ class GeographicalInfoField(Nonterminal):
     
 
 class FullName(Terminal):
-    data_factory = NameDataFactory()
+    # data_factory = NameDataFactory()
     def __init__(self):
         self.value = None
 
     def expand(self):
-        self.value = FullName.data_factory.generate(None)
+        # self.value = FullName.data_factory.generate(None)
         return self
 
     # def expand(self):
@@ -138,10 +139,10 @@ class GitHub(Terminal):
         2. register the class in a central DataFactory that generates the fields once it has ALL instances
         Option 2 is better for interdependent fields.
         """
-        self.value = {
-            "href" : "https://github.com/iLykTurtlz",
-            "GitHub" : "iLykTurtlz"
-        }
+        # self.value = {
+        #     "href" : "https://github.com/iLykTurtlz",
+        #     "GitHub" : "iLykTurtlz"
+        # }
         return self
         
 
@@ -152,10 +153,10 @@ class LinkedIn(Terminal):
         self.value = None
     
     def expand(self):
-        self.value = {
-            "href" : "https://www.linkedin.com/in/paul-jarski-a4a04386/",
-            "LinkedIn" : "paul-jarski-a4a04386"
-        }
+        # self.value = {
+        #     "href" : "https://www.linkedin.com/in/paul-jarski-a4a04386/",
+        #     "LinkedIn" : "paul-jarski-a4a04386"
+        # }
         return self
          
          
@@ -172,7 +173,7 @@ class Phone(Terminal):
         formats = ["({}) 555-{}", "{}-555-{}", "+1 {}-555-{}", "1-{}-555-{}"]
         #TODO: add format weights
         number = random.choice(formats).format("".join(str(num) for num in area_code), "".join(str(num) for num in last_four))
-        self.value = {"Phone" : number}
+        self.value = number
         return self
 
 
@@ -181,7 +182,7 @@ class Email(Terminal):
         self.value = None
 
     def expand(self):
-        self.value = {"Email" : "pjarski@calpoly.edu"}
+        # self.value = {"Email" : "pjarski@calpoly.edu"}
         return self
     
 
@@ -191,6 +192,6 @@ class GeographicalInfo(Terminal):
         self.value = None
 
     def expand(self):
-        """TODO: vary the info string formats"""
-        self.value = {"GeographicalInfo": "San Luis Obispo, CA"}
+        # """TODO: vary the info string formats"""
+        # self.value = {"GeographicalInfo": "San Luis Obispo, CA"}
         return self

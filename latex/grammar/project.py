@@ -16,25 +16,21 @@ class ProjectSection(Nonterminal):
     latex = lf.latex["ProjectSection"]
     def __init__(self):
         super().__init__(ProjectSection.rules, ProjectSection.latex)
-        self.context = {}
-        # self.context[str(self)] = {}
+        # self.context = {}
+        
         
 
-    def expand(self):
-        super().expand()
-        self.context["number_of_projects"] = len(self.children)
-        for child in self.children:
-            if isinstance(child, Nonterminal):
-                self.context[child.id] = child.context
-            else:
-                self.context[child.id] = child
-            # ctx = {}
-            # self.context[child.id] = child.context
-            # child.context = ctx
-        ProjectSection.data_factory.generate(self.context)
-        # print(self.context)
-        # self.debug()
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.context["number_of_projects"] = len(self.children)
+    #     for child in self.children:
+    #         if isinstance(child, Nonterminal):
+    #             self.context[child.id] = child.context
+    #         else:
+    #             self.context[child.id] = child
+
+    #     ProjectSection.data_factory.generate(self.context)
+    #     return self
     
     
     def debug(self):
@@ -61,15 +57,15 @@ class Project(Nonterminal):
         self.id = f"{self}_{Project.count}"
 
 
-    def expand(self):
-        super().expand()
-        self.context = {}
-        for child in self.children:
-            if isinstance(child, Nonterminal):
-                self.context[str(child)] = child.context
-            else:
-                self.context[str(child)] = child
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.context = {}
+    #     for child in self.children:
+    #         if isinstance(child, Nonterminal):
+    #             self.context[str(child)] = child.context
+    #         else:
+    #             self.context[str(child)] = child
+    #     return self
     
     def to_latex(self):
         # print(tuple(child.to_latex() for child in self.children))
@@ -79,6 +75,7 @@ class Project(Nonterminal):
 '''
 Context is
 {
+
 
     "Experiences" : [
         
@@ -95,6 +92,14 @@ Context is
         "Project_II": {
             ...
         },
+    }
+
+    "Skills" : {
+        
+    
+        "DataScienceSkills": {
+        
+        }
     }
 
 }
@@ -114,32 +119,32 @@ class ProjectDescription(Terminal):
     #     self.parent_id = parent_id
     #     self.context[self.parent_id][str(self)] = self #adding self allows self.value to be updated by the DataFactory
 
-    def expand(self):
-        return self
+    # def expand(self):
+    #     return self
     
 class ProjectTools(Terminal):
     def __init__(self):
-        self.parent_id = None
+        # self.parent_id = None
         self.value = None
     
     # def add_to_context(self, parent_id):
     #     self.parent_id = parent_id
     #     self.context[self.parent_id][str(self)] = self
 
-    def expand(self):
-        return self
+    # def expand(self):
+    #     return self
 
 class ProjectDate(Terminal):
     def __init__(self):
-        self.parent_id = None
+        # self.parent_id = None
         self.value = None
     
     # def add_to_context(self, parent_id):
     #     self.parent_id = parent_id
     #     self.context[self.parent_id][str(self)] = self
 
-    def expand(self):
-        return self
+    # def expand(self):
+    #     return self
     
 
     

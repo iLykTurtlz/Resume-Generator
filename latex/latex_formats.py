@@ -224,14 +224,20 @@ latex = {
 
 
 #href, visible_label
+# "LinkedInField": r'''
+# \socialicon{\faLinkedin} \href{%s}{%s}
+# ''',
 "LinkedInField": r'''
-\socialicon{\faLinkedin} \href{%s}{%s}
+\socialicon{\faLinkedin} {%s}
 ''',
 
 
 #href, visible_label
+# "GitHubField": r'''
+# \socialicon{\faGithub} \href{%s}{%s}
+# ''',
 "GitHubField": r'''
-\socialicon{\faGithub} \href{%s}{%s}
+\socialicon{\faGithub} {%s}
 ''',
 
 

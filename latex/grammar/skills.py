@@ -7,6 +7,7 @@ class SkillsSection(Nonterminal):
     latex = lf.latex['Skills']
     def __init__(self):
         super().__init__(SkillsSection.rules, SkillsSection.latex)
+        self.context = {}
     #default expand, to_latex
         
         
@@ -116,32 +117,33 @@ class OtherSkills(Nonterminal):
     
 
 class ProgrammingLanguage(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
+
     
 class WebTechnology(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
     
 class DatabaseSystem(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
     
 class DataScienceML(Terminal):
-    def expand(self):
-        return self
-    
+    def __init__(self):
+        self.value = None
+
 class Cloud(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
 
 class DevOps(Terminal):
-    def expand(self):
-        return self   
+    def __init__(self):
+        self.value = None
 
 class Other(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
     
 
 
