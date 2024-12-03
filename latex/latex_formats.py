@@ -287,7 +287,7 @@ latex = {
     {%s}{%s}
     {%s}{%s}
 \resumeItemListStart
-\item GPA: {%s}
+\item GPA: %s
 \resumeItemListEnd
 ''',
 
@@ -364,6 +364,16 @@ latex = {
 "OtherSkills" : r'''
   \resumeSubItem{%s}
     {%s}
+''',
+
+
+"SelfSummarySection": r'''
+\section{\textbf{Objective}}
+\vspace{1mm}
+\small{
+%s
+}
+\vspace{-2mm}
 ''',
 
 

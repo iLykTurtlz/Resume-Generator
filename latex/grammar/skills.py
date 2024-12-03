@@ -79,10 +79,9 @@ class DataScienceMLSkills(Nonterminal):
 
 class CloudSkills(Nonterminal):
     rules = [
-        (("Cloud",), 0.1),
-        (("Cloud", "Cloud"), 0.2),
-        (("Cloud", "Cloud", "Cloud"), 0.3),
-        (("Cloud", "Cloud", "Cloud", "Cloud"), 0.4)
+        (("Cloud",), 0.8),
+        (("Cloud", "Cloud"), 0.15),
+        (("Cloud", "Cloud", "Cloud"), 0.05), #this person is dead inside
     ]
     latex = lf.latex['CloudSkills']
     def __init__(self):

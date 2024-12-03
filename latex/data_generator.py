@@ -100,7 +100,38 @@ class EducationDataGenerator(DataGenerator):
         gpa = random.normalvariate(3.0, 0.5)
         formats = "{}/{}"
         number = formats.format(str(round(gpa, 1)), str(fourscale))
-        context[0]["EduGPA"].value = number
+        #We can insert GPA after the courses are stuck to it (see below)
+
+       
+        # FOR COURSES: These need to be tacked on to GPA (see below)
+        # TODO: Use the data from Dr. Clements instead
+        courses = [
+            "Algorithms",
+            "Data Structures",
+            "Speech and Language Processing",
+            "Knowledge Discovery from Data",
+            "Advanced Data Mining",
+            "Linear Algebra",
+            "Probability Theory",
+            "Operating Systems",
+            "Software Engineering",
+            "Functional Programming",
+            "Database Management Systems",
+            "Stochastic Processes",
+            "Advanced Algorithm Analysis and Design",
+            "Advanced Artificial Intelligence",
+            "Advanced Deep Learning",
+        ]
+        nb_courses = random.randint(2,6)
+        assert len(courses) >= nb_courses, "Population size is smaller than sample size!"
+        
+
+        
+        selected_courses = np.random.choice(courses, size=nb_courses, replace=False) #kwarg p for a proba distribution
+
+        courses_str = "\n\\item Relevant Coursework: \\footnotesize{%s}" % (', '.join(selected_courses),)
+        context[0]["EduGPA"].value = number + courses_str
+
 
         # TODO support more than two institutions?  Or different kinds, like HS?
         if len(context) > 1:
@@ -174,7 +205,7 @@ class ProjectDataGenerator(DataGenerator):
 class SkillsDataGenerator(DataGenerator):
     def generate(self, context):
         skill_types = {
-            "ProgrammingLanguageSkills": ["C", "C++", "Ada", "Rust", "Fortran", "OCaml", "Coq", "Haskell", "Standard ML", "Java", "Python", "PL/SQL", "SQL", "Matlab", "R", "HTML/CSS", "JavaScript", "TypeScript", "Racket", "Prolog"],
+            "ProgrammingLanguageSkills": ["C", "C++", "Ada", "Pascal", "Zig", "Golang", "Rust", "Fortran", "OCaml", "Coq", "Haskell", "Standard ML", "Java", "Python", "PL/SQL", "SQL", "Matlab", "R", "HTML/CSS", "JavaScript", "TypeScript", "Racket", "Prolog"],
             "WebTechnologySkills": ["React", "Angular", "Node.js", "Django"],
             "DatabaseSystemSkills": ["MariaDB", "PostgreSQL", "MySQL", "Microsoft SQL Server", "Redis", "MongoDB", "ElasticSearch"],
             "DataScienceMLSkills": ["Scikit-Learn", "PyTorch", "TensorFlow", "NLTK", "SpaCy", "Pandas", "Matplotlib", "Numpy"],
@@ -191,7 +222,11 @@ class SkillsDataGenerator(DataGenerator):
                     term.value = skill
 
 
-
+class SelfSummaryDataGenerator(DataGenerator):
+    def generate(self, context):
+        # TODO LLM magic
+        context["SelfSummary"].value = "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+        
         
 
 
@@ -207,6 +242,11 @@ class BodyDataGenerator(DataGenerator):
             ProjectDataGenerator().generate(context["ProjectSection"])
         if "SkillsSection" in context:
             SkillsDataGenerator().generate(context["SkillsSection"])
+        if "SelfSummarySection" in context:
+            SelfSummaryDataGenerator().generate(context["SelfSummarySection"])
+
+
+
 
 
     
