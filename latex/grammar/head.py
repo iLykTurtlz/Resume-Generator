@@ -1,7 +1,10 @@
 
 from grammar.nonterminal import Nonterminal
+from grammar.terminal import Terminal
 import latex_formats as lf
 from collections import ChainMap
+import random
+from data_factory import NameDataFactory
 
 class Head(Nonterminal):
     rules = [
@@ -10,6 +13,7 @@ class Head(Nonterminal):
     latex = lf.latex["Head"]
     def __init__(self):
         super().__init__(Head.rules, Head.latex)
+        self.ordered = False
 
 class Title(Nonterminal):
     rules = [
@@ -18,6 +22,7 @@ class Title(Nonterminal):
     latex = lf.latex["Title"]
     def __init__(self):
         super().__init__(Title.rules, Title.latex)
+        self.ordered = False
 
 
 
@@ -29,6 +34,7 @@ class PhoneEmail(Nonterminal):
     latex = lf.latex["PhoneEmail"]
     def __init__(self):
         super().__init__(PhoneEmail.rules, PhoneEmail.latex)
+        self.ordered = False
 
     def to_latex(self):
         if self.has_expanded():
@@ -36,8 +42,7 @@ class PhoneEmail(Nonterminal):
             # print(f"type: {self}")
             # print(f"children: {self.children}")
             c1, c2 = self.children
-            values = ChainMap(c1.get(), c2.get())
-            return self.latex % (values[str(c1)], values[str(c2)])
+            return self.latex % (c1.to_latex(), c2.to_latex())
         else:
             raise Exception(f"{self} must be expanded first")
 
@@ -52,6 +57,7 @@ class LinkedInGitHub(Nonterminal):
     latex = lf.latex["LinkedInGitHub"]
     def __init__(self):
         super().__init__(LinkedInGitHub.rules, LinkedInGitHub.latex)
+        self.ordered = False
 
     def to_latex(self):
         if self.has_expanded():
@@ -68,11 +74,13 @@ class LinkedInField(Nonterminal):
     latex = lf.latex["LinkedInField"]
     def __init__(self):
         super().__init__(LinkedInField.rules, LinkedInField.latex)
+        self.ordered = False
 
     def to_latex(self):
         if self.has_expanded():
-            values = self.children[0].value
-            return self.latex % (values["href"], values[str(self.children[0])])
+            assert(len(self.children) == 1)
+            c = self.children[0]
+            return self.latex % (c.to_latex(),)
         else:
             raise Exception(f"{self} must be expanded first")
 
@@ -84,13 +92,13 @@ class GitHubField(Nonterminal):
     latex = lf.latex["GitHubField"]
     def __init__(self):
         super().__init__(GitHubField.rules, GitHubField.latex)
+        self.ordered = False
 
     def to_latex(self):
         if self.has_expanded():
             assert(len(self.children) == 1)
             c = self.children[0]
-            values = c.get()
-            return self.latex % (values["href"], values[str(c)])
+            return self.latex % (c.to_latex(),)
         else:
             raise Exception(f"{self} must be expanded first")
 
@@ -101,5 +109,96 @@ class GeographicalInfoField(Nonterminal):
     latex = lf.latex["GeographicalInfoField"]
     def __init__(self):
         super().__init__(GeographicalInfoField.rules, GeographicalInfoField.latex)
+        self.ordered = False
 
     
+
+class FullName(Terminal):
+    #TODO: move the data factory up to object in main
+    data_factory = NameDataFactory()
+    def __init__(self):
+        self.value = None
+        self.ordered = False
+
+    def expand(self):
+        super().expand()
+        self.value = FullName.data_factory.generate(None)
+        return self
+
+    # def expand(self):
+    #     """TODO: Replace with name generator module"""
+    #     letters = 'abcdefghijklmnopqrstuvwxyz'
+    #     fn_length = random.randint(5,10)
+    #     ln_length = random.randint(5,15)
+    #     self.value = {
+    #         "FullName" : "".join(random.choice(letters) for _ in range(fn_length)).capitalize() + " " + \
+    #             "".join(random.choice(letters) for _ in range(ln_length)).capitalize()
+              
+    #     }
+    #     return self
+
+class GitHub(Terminal):
+    def __init__(self):
+        self.value = None
+
+    def expand(self):
+        """TODO: 2 options
+        1. replace each field with a call to an info generator
+        2. register the class in a central DataFactory that generates the fields once it has ALL instances
+        Option 2 is better for interdependent fields.
+        """
+        super().expand()
+        self.value = "sweetDude"
+        return self
+        
+
+
+class LinkedIn(Terminal):
+    """TODO: generate LinkedIn fields in expand"""
+    def __init__(self):
+        self.value = None
+    
+    def expand(self):
+        super().expand()
+        self.value = "anastasia-beaverhousen-a4a06969"
+        return self
+         
+         
+
+
+class Phone(Terminal):
+    def __init__(self):
+        self.value = None
+
+    def expand(self):
+        super().expand()
+        #TODO: make area code statistically representative, NOT all Bay Area
+        area_code = [4,1,5]
+        last_four = [random.randint(0,9) for _ in range(4)]
+        formats = ["({}) 555-{}", "{}-555-{}", "+1 {}-555-{}", "1-{}-555-{}"]
+        #TODO: add format weights
+        number = random.choice(formats).format("".join(str(num) for num in area_code), "".join(str(num) for num in last_four))
+        self.value = number
+        return self
+
+
+class Email(Terminal):
+    def __init__(self):
+        self.value = None
+
+    def expand(self):
+        super().expand()
+        self.value = "sweetDude@calpoly.edu"
+        return self
+    
+
+
+class GeographicalInfo(Terminal):
+    def __init__(self):
+        self.value = None
+
+    def expand(self):
+        super().expand()
+        """TODO: vary the info string formats"""
+        self.value = "San Luis Obispo, CA"
+        return self

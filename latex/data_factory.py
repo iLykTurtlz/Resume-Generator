@@ -85,22 +85,29 @@ class ProjectDataFactory(DataFactory):
     #     pass
     dates = ["May 2016", "September 2017", "May 2018", "October 2019", "Febuary 2021"]
     def generate(self, context):
-        n = context["number_of_projects"]
-        # print(f"n: {n}")
-        for i in range(n, 0, -1):
-            # print(f"i: {i}")
-            proj = context[f"Project_{i}"]
-            proj["ProjectDescription"].value = {
-                "ProjectDescription" : "This is the description of a project lorem ipsum lorem ipsum."
-            }
-            # print(f"DESCRIPTION: {proj['ProjectDescription'].value}")
-            proj["ProjectTools"].value = {"ProjectTools" : "PyTorch, NLTK, SpaCy"}
-            proj["ProjectDate"].value = {"ProjectDate" : ProjectDataFactory.dates[n - i]}
+        n = len(context)
+        for i, proj in enumerate(context[::-1]):
+            proj["ProjectDescription"].value = "This is the description of a project lorem ipsum lorem ipsum."
+            proj["ProjectTools"].value = "PyTorch, NLTK, SpaCy"
+            proj["ProjectDate"].value = ProjectDataFactory.dates[i]
             achievements = random.choices(ProjectDataFactory.verb_phrases, k=len(proj["ProjectAchievements"]))
             for pa, achievement in zip(proj["ProjectAchievements"], achievements):
-                pa.value = {"ProjectAchievementItem" : achievement}
+                pa.value = achievement
                 # print(f"ACHIEVEMENT: {pa.value}")
-        # print("FILLED IN VALUES")
+
+        # print(f"n: {n}")
+        # for i in range(n, 0, -1): #chronological order
+        #     # print(f"i: {i}")
+        #     proj = context[f"Project_{i}"]
+        #     proj["ProjectDescription"].value = "This is the description of a project lorem ipsum lorem ipsum."
+        #     # print(f"DESCRIPTION: {proj['ProjectDescription'].value}")
+        #     proj["ProjectTools"].value = "PyTorch, NLTK, SpaCy"
+        #     proj["ProjectDate"].value = ProjectDataFactory.dates[n - i]
+        #     achievements = random.choices(ProjectDataFactory.verb_phrases, k=len(proj["ProjectAchievements"]))
+        #     for pa, achievement in zip(proj["ProjectAchievements"], achievements):
+        #         pa.value = achievement
+        #         # print(f"ACHIEVEMENT: {pa.value}")
+        # # print("FILLED IN VALUES")
 
 
 

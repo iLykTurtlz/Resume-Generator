@@ -5,7 +5,6 @@ class SymbolFactory:
     @staticmethod
     def create_instances(class_names):
         ns = sys.modules["grammar"]
-        # print(f"names: {class_names}")
         return [getattr(ns, name)() for name in class_names]
 
 

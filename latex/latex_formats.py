@@ -225,13 +225,13 @@ latex = {
 
 #href, visible_label
 "LinkedInField": r'''
-\socialicon{\faLinkedin} \href{%s}{%s}
+\socialicon{\faLinkedin} {%s}
 ''',
 
 
 #href, visible_label
 "GitHubField": r'''
-\socialicon{\faGithub} \href{%s}{%s}
+\socialicon{\faGithub} {%s}
 ''',
 
 
@@ -306,9 +306,12 @@ latex = {
 \resumeSubheading
     {{%s}}{%s}
     {%s}{%s}
-    \resumeItemListStart
-        %s
-    \resumeItemListEnd 
+    %s
 ''',
 
+"ExperienceTasks": r'''
+\resumeItemListStart
+    %s
+\resumeItemListEnd 
+'''
 }
