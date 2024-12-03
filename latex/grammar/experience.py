@@ -49,44 +49,44 @@ class ExperienceTask(Terminal):
     def __init__(self):
         self.value = None
         
-    def expand(self):
-        super().expand()
-        self.value = "Did a thing"
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.value = "Did a thing"
+    #     return self
     
     def to_latex(self):
         return r'\item '+self.value
 
 
 class CompanyName(Terminal):
-    COMPANY_MAP = {
-        "Google": "https://www.google.com",
-        "Apple, Inc.": "https://www.apple.com"
-    }
+    # COMPANY_MAP = {
+    #     "Google": "https://www.google.com",
+    #     "Apple, Inc.": "https://www.apple.com"
+    # }
     
     def __init__(self):
         self.value = None
         
-    def expand(self):
-        super().expand()
-        company = random.choice(list(self.COMPANY_MAP.keys()))
-        self.value = r'''%s [\href{%s}{\faIcon{globe}}]''' % (company, self.COMPANY_MAP[company])
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     company = random.choice(list(self.COMPANY_MAP.keys()))
+    #     self.value = r'''%s [\href{%s}{\faIcon{globe}}]''' % (company, self.COMPANY_MAP[company])
+    #     return self
     
 class JobTitle(Terminal):
     def __init__(self):
         self.value = None
         
-    def expand(self):
-        super().expand()
-        self.value = "Software Engineer"
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.value = "Software Engineer"
+    #     return self
     
 class DateRange(Terminal):
     def __init__(self):
         self.value = None
         
-    def expand(self):
-        super().expand()
-        self.value = "June 2022 - Present"
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.value = "June 2022 - Present"
+    #     return self

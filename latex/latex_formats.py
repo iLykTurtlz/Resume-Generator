@@ -313,5 +313,62 @@ latex = {
 \resumeItemListStart
     %s
 \resumeItemListEnd 
-'''
+''',
+
+
+"Skills" : r'''
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+    %s
+ \resumeHeadingSkillEnd
+''',
+
+#comma separated
+"ProgrammingLanguageSkills" : r'''
+  \resumeSubItem{Programming Languages:}
+    {%s}
+''',
+
+#comma separated
+"WebTechnologySkills" : r'''
+  \resumeSubItem{Web Technologies:}
+    {%s}
+''',
+
+#comma separated
+"DatabaseSystemSkills" : r'''
+ \resumeSubItem{Database Systems:}
+    {%s}
+''',
+
+#comma separated
+"DataScienceMLSkills" : r'''
+  \resumeSubItem{Data Science \& Machine Learning:}
+    {%s}
+''',
+
+#comma separated
+"CloudSkills" : r'''
+  \resumeSubItem{Cloud Technologies:}
+    {%s}
+''',
+
+#comma separated
+"DevOpsSkills": r'''
+ \resumeSubItem{DevOps \& Version Control:}
+    {%s}
+''',
+
+#comma separated, two fields
+"OtherSkills" : r'''
+  \resumeSubItem{%s}
+    {%s}
+''',
+
+
+
+
+
+
 }

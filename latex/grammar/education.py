@@ -6,8 +6,8 @@ import latex_formats as lf
 
 class EducationSection(Nonterminal):
     rules = [
-        (("CalPolyEducation",), 0.5),
-        (("CalPolyEducation", "Education"), 0.5)
+        (("Education",), 0.5),
+        (("Education", "Education"), 0.5)
     ]
     latex = lf.latex["EducationSection"]
 
@@ -15,12 +15,12 @@ class EducationSection(Nonterminal):
         super().__init__(EducationSection.rules, EducationSection.latex)
         self.ordered = True
 
-    def expand(self):
-        super().expand()
-        self.context = {}
-        for child in self.children:
-            self.context[str(child)] = child.context
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.context = {}
+    #     for child in self.children:
+    #         self.context[str(child)] = child.context
+    #     return self
 
 
 class CalPolyEducation(Nonterminal):
@@ -103,34 +103,27 @@ class EduDegreeName(Terminal):
     def __init__(self):
         self.value = None
 
-    def expand(self):
-        super().expand()
-        degree = random.choice(["B.S. Computer Science", "M.S. Computer Science"])
-        self.value = degree
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     degree = random.choice(["B.S. Computer Science", "M.S. Computer Science"])
+    #     self.value = degree
+    #     return self
 
 
 class EduDate(Terminal):
     def __init__(self):
         self.value = None
 
-    def expand(self):
-        super().expand()
-        month = random.choice(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
-        year = random.randint(2017, 2024)
-        date = month + " " + str(year)
-        self.value = date
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     month = random.choice(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
+    #     year = random.randint(2017, 2024)
+    #     date = month + " " + str(year)
+    #     self.value = date
+    #     return self
 
 class EduGPA(Terminal):
     def __init__(self):
         self.value = None
 
-    def expand(self):
-        super().expand()
-        fourscale = 4.0
-        gpa = random.normalvariate(3.0, 0.5)
-        formats = "{}/{}"
-        number = formats.format(str(round(gpa, 1)), str(fourscale))
-        self.value = number
-        return self
+ 

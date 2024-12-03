@@ -1,11 +1,10 @@
 from grammar.nonterminal import Nonterminal
 from grammar.terminal import Terminal
 import latex_formats as lf
-from data_factory import ProjectDataFactory
+
 
 
 class ProjectSection(Nonterminal):
-    data_factory = ProjectDataFactory()
     rules = [
         (("Project",), 0.1),
         (("Project", "Project"), 0.2),
@@ -18,10 +17,10 @@ class ProjectSection(Nonterminal):
         self.ordered = True
         # self.context[str(self)] = {}
         
-    def expand(self):
-        super().expand()
-        ProjectSection.data_factory.generate(self.context)
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     ProjectSection.data_factory.generate(self.context)
+    #     return self
 
 
     # def expand(self):
@@ -41,18 +40,18 @@ class ProjectSection(Nonterminal):
     #     return self
     
     
-    def debug(self):
-        def dfs(d):
-            if isinstance(d, Terminal):
-                print(f"{d}: {d.value}")
-            elif isinstance(d, dict):
-                for e in d.values():
-                    dfs(e)
-            elif isinstance(d, list):
-                for e in d:
-                    dfs(e)
+    # def debug(self):
+    #     def dfs(d):
+    #         if isinstance(d, Terminal):
+    #             print(f"{d}: {d.value}")
+    #         elif isinstance(d, dict):
+    #             for e in d.values():
+    #                 dfs(e)
+    #         elif isinstance(d, list):
+    #             for e in d:
+    #                 dfs(e)
 
-        dfs(self.context)
+    #     dfs(self.context)
 
 
 class Project(Nonterminal):

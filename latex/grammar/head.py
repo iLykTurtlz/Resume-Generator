@@ -2,9 +2,8 @@
 from grammar.nonterminal import Nonterminal
 from grammar.terminal import Terminal
 import latex_formats as lf
-from collections import ChainMap
-import random
-from data_factory import NameDataFactory
+
+
 
 class Head(Nonterminal):
     rules = [
@@ -14,6 +13,7 @@ class Head(Nonterminal):
     def __init__(self):
         super().__init__(Head.rules, Head.latex)
         self.ordered = False
+
 
 class Title(Nonterminal):
     rules = [
@@ -85,6 +85,7 @@ class LinkedInField(Nonterminal):
             raise Exception(f"{self} must be expanded first")
 
 
+
 class GitHubField(Nonterminal):
     rules = [
         (("GitHub",), 1.0)
@@ -102,6 +103,8 @@ class GitHubField(Nonterminal):
         else:
             raise Exception(f"{self} must be expanded first")
 
+
+
 class GeographicalInfoField(Nonterminal):
     rules = [
         (("GeographicalInfo",), 1.0)
@@ -114,16 +117,14 @@ class GeographicalInfoField(Nonterminal):
     
 
 class FullName(Terminal):
-    #TODO: move the data factory up to object in main
-    data_factory = NameDataFactory()
     def __init__(self):
         self.value = None
         self.ordered = False
 
-    def expand(self):
-        super().expand()
-        self.value = FullName.data_factory.generate(None)
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.value = FullName.data_factory.generate(None)
+    #     return self
 
     # def expand(self):
     #     """TODO: Replace with name generator module"""
@@ -141,15 +142,15 @@ class GitHub(Terminal):
     def __init__(self):
         self.value = None
 
-    def expand(self):
-        """TODO: 2 options
-        1. replace each field with a call to an info generator
-        2. register the class in a central DataFactory that generates the fields once it has ALL instances
-        Option 2 is better for interdependent fields.
-        """
-        super().expand()
-        self.value = "sweetDude"
-        return self
+    # def expand(self):
+    #     """TODO: 2 options
+    #     1. replace each field with a call to an info generator
+    #     2. register the class in a central DataFactory that generates the fields once it has ALL instances
+    #     Option 2 is better for interdependent fields.
+    #     """
+    #     super().expand()
+    #     self.value = "sweetDude"
+    #     return self
         
 
 
@@ -158,10 +159,10 @@ class LinkedIn(Terminal):
     def __init__(self):
         self.value = None
     
-    def expand(self):
-        super().expand()
-        self.value = "anastasia-beaverhousen-a4a06969"
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.value = "anastasia-beaverhousen-a4a06969"
+    #     return self
          
          
 
@@ -170,26 +171,16 @@ class Phone(Terminal):
     def __init__(self):
         self.value = None
 
-    def expand(self):
-        super().expand()
-        #TODO: make area code statistically representative, NOT all Bay Area
-        area_code = [4,1,5]
-        last_four = [random.randint(0,9) for _ in range(4)]
-        formats = ["({}) 555-{}", "{}-555-{}", "+1 {}-555-{}", "1-{}-555-{}"]
-        #TODO: add format weights
-        number = random.choice(formats).format("".join(str(num) for num in area_code), "".join(str(num) for num in last_four))
-        self.value = number
-        return self
 
 
 class Email(Terminal):
     def __init__(self):
         self.value = None
 
-    def expand(self):
-        super().expand()
-        self.value = "sweetDude@calpoly.edu"
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.value = "sweetDude@calpoly.edu"
+    #     return self
     
 
 
@@ -197,8 +188,8 @@ class GeographicalInfo(Terminal):
     def __init__(self):
         self.value = None
 
-    def expand(self):
-        super().expand()
-        """TODO: vary the info string formats"""
-        self.value = "San Luis Obispo, CA"
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     """TODO: vary the info string formats"""
+    #     self.value = "San Luis Obispo, CA"
+    #     return self

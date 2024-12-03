@@ -6,7 +6,7 @@ import latex_formats as lf
 class Body(Nonterminal):
     rules = [
         #(("Education", "ExperienceSection"), 1.0)
-        (("EducationSection", "ExperienceSection", "ProjectSection"), 1.0)
+        (("EducationSection", "ExperienceSection", "ProjectSection", "SkillsSection"), 1.0)
         # (("EducationSection",), 1.0)
     ]
     latex = lf.latex["Body"]

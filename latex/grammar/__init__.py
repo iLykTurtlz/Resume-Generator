@@ -6,3 +6,4 @@ from .body import *
 from .education import *
 from .experience import *
 from .project import *
+from .skills import *
