@@ -247,9 +247,6 @@ class BodyDataGenerator(DataGenerator):
 
 
 
-
-
-    
     
 class ResumeDataGenerator(DataGenerator):
     def generate(self, context):
