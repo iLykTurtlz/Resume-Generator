@@ -1,4 +1,4 @@
-Cal Poly's graduate outcomes Tableau stores all of the data as images... So we have to get all the images and extract info via OCR.
+Cal Poly's graduate outcomes Tableau stores all of the data as images... So we have to get all the images and extract info via OCR. Data cleaning on the companies is done later (with job scraping) - effectively, we google search and correct the name so that we can get actual job postings.
 
 Get image sources code (JS):
 
