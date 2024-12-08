@@ -1,12 +1,10 @@
 from grammar.nonterminal import Nonterminal
 from grammar.terminal import Terminal
 import latex_formats as lf
-from roman import toRoman, fromRoman
-from data_factory import ProjectDataFactory
+
 
 
 class ProjectSection(Nonterminal):
-    data_factory = ProjectDataFactory()
     rules = [
         (("Project",), 0.1),
         (("Project", "Project"), 0.2),
@@ -16,40 +14,48 @@ class ProjectSection(Nonterminal):
     latex = lf.latex["ProjectSection"]
     def __init__(self):
         super().__init__(ProjectSection.rules, ProjectSection.latex)
-        self.context = {}
+        self.ordered = True
         # self.context[str(self)] = {}
         
+    # def expand(self):
+    #     super().expand()
+    #     ProjectSection.data_factory.generate(self.context)
+    #     return self
 
-    def expand(self):
-        super().expand()
-        self.context["number_of_projects"] = len(self.children)
-        for child in self.children:
-            if isinstance(child, Nonterminal):
-                self.context[child.id] = child.context
-            else:
-                self.context[child.id] = child
-            # ctx = {}
-            # self.context[child.id] = child.context
-            # child.context = ctx
-        ProjectSection.data_factory.generate(self.context)
-        # print(self.context)
-        # self.debug()
-        return self
+
+    # def expand(self):
+    #     super().expand()
+    #     self.context = [child.context for child in self.children]
+    #     # for child in self.children:
+    #     #     if isinstance(child, Nonterminal):
+    #     #         self.context[child.id] = child.context
+    #     #     else:
+    #     #         self.context[child.id] = child
+    #         # ctx = {}
+    #         # self.context[child.id] = child.context
+    #         # child.context = ctx
+    #     ProjectSection.data_factory.generate(self.context)
+    #     # print(self.context)
+    #     # self.debug()
+    #     return self
     
     
-    def debug(self):
-        def dfs(d):
-            if isinstance(d, Terminal):
-                print(f"{d}: {d.value}")
-            elif isinstance(d, dict):
-                for e in d.values():
-                    dfs(e)
+    # def debug(self):
+    #     def dfs(d):
+    #         if isinstance(d, Terminal):
+    #             print(f"{d}: {d.value}")
+    #         elif isinstance(d, dict):
+    #             for e in d.values():
+    #                 dfs(e)
+    #         elif isinstance(d, list):
+    #             for e in d:
+    #                 dfs(e)
 
-        dfs(self.context)
+    #     dfs(self.context)
 
 
 class Project(Nonterminal):
-    count = 0
+    # count = 0
     rules = [
         (("ProjectDescription", "ProjectTools", "ProjectDate", "ProjectAchievements"), 0.5),
         
@@ -57,19 +63,20 @@ class Project(Nonterminal):
     latex = lf.latex["Project"]
     def __init__(self):
         super().__init__(Project.rules, Project.latex)
-        Project.count += 1
-        self.id = f"{self}_{Project.count}"
+        self.ordered = False
+        # Project.count += 1
+        # self.id = f"{self}_{Project.count}"
 
 
-    def expand(self):
-        super().expand()
-        self.context = {}
-        for child in self.children:
-            if isinstance(child, Nonterminal):
-                self.context[str(child)] = child.context
-            else:
-                self.context[str(child)] = child
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.context = {}
+    #     for child in self.children:
+    #         if isinstance(child, Nonterminal):
+    #             self.context[str(child)] = child.context
+    #         else:
+    #             self.context[str(child)] = child
+    #     return self
     
     def to_latex(self):
         # print(tuple(child.to_latex() for child in self.children))
@@ -114,8 +121,8 @@ class ProjectDescription(Terminal):
     #     self.parent_id = parent_id
     #     self.context[self.parent_id][str(self)] = self #adding self allows self.value to be updated by the DataFactory
 
-    def expand(self):
-        return self
+    # def expand(self):
+    #     return self
     
 class ProjectTools(Terminal):
     def __init__(self):
@@ -126,8 +133,8 @@ class ProjectTools(Terminal):
     #     self.parent_id = parent_id
     #     self.context[self.parent_id][str(self)] = self
 
-    def expand(self):
-        return self
+    # def expand(self):
+    #     return self
 
 class ProjectDate(Terminal):
     def __init__(self):
@@ -138,8 +145,8 @@ class ProjectDate(Terminal):
     #     self.parent_id = parent_id
     #     self.context[self.parent_id][str(self)] = self
 
-    def expand(self):
-        return self
+    # def expand(self):
+    #     return self
     
 
     
@@ -152,11 +159,12 @@ class ProjectAchievements(Nonterminal):
     latex = lf.latex["ProjectAchievements"]
     def __init__(self):
         self.value = None
+        self.ordered = True
     
-    def expand(self):
-        super().expand()
-        self.context = [child for child in self.children]
-        return self
+    # def expand(self):
+    #     super().expand()
+    #     self.context = [child for child in self.children]
+    #     return self
         
     # def to_latex(self):
     #     if self.has_expanded():
@@ -171,8 +179,8 @@ class ProjectAchievementItem(Terminal):
     def __init__(self):
         self.value = None
     
-    def expand(self):
-        return self
+    # def expand(self):
+    #     return self
     
     def to_latex(self):
         return r"\item "+super().to_latex()

@@ -225,13 +225,13 @@ latex = {
 
 #href, visible_label
 "LinkedInField": r'''
-\socialicon{\faLinkedin} \href{%s}{%s}
+\socialicon{\faLinkedin} {%s}
 ''',
 
 
 #href, visible_label
 "GitHubField": r'''
-\socialicon{\faGithub} \href{%s}{%s}
+\socialicon{\faGithub} {%s}
 ''',
 
 
@@ -287,7 +287,7 @@ latex = {
     {%s}{%s}
     {%s}{%s}
 \resumeItemListStart
-\item GPA: {%s}
+\item GPA: %s
 \resumeItemListEnd
 ''',
 
@@ -306,11 +306,14 @@ latex = {
 \resumeSubheading
     {{%s}}{%s}
     {%s}{%s}
-    \resumeItemListStart
-        %s
-    \resumeItemListEnd 
+    %s
 ''',
 
+"ExperienceTasks": r'''
+\resumeItemListStart
+    %s
+\resumeItemListEnd 
+''',
 
 
 "Skills" : r'''
@@ -361,10 +364,17 @@ latex = {
 "OtherSkills" : r'''
   \resumeSubItem{%s}
     {%s}
-'''
+''',
 
 
-
+"SelfSummarySection": r'''
+\section{\textbf{Objective}}
+\vspace{1mm}
+\small{
+%s
+}
+\vspace{-2mm}
+''',
 
 
 
@@ -372,5 +382,3 @@ latex = {
 
 
 }
-
-

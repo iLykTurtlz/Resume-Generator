@@ -1,17 +1,28 @@
 # from roman import toRoman, fromRoman
 from grammar.symbol import Symbol, SymbolFactory
-from abc import ABC, abstractmethod
+from abc import ABC
 
 class Terminal(Symbol, ABC):
-    @abstractmethod
     def expand(self):
-        raise NotImplementedError("You must implement this method.")
+        self.context = self
+        return self
     
     def has_expanded(self):
-        return self.value is not None
+        return True #the Terminal should be expanded at time of creation
     
     def to_latex(self):
-        return self.value
+        if self.value is not None:
+            return self.value
+        else:
+            raise Exception(f"{self} needs to be assigned a value.")
+        
+    # def get(self):
+    #     if self.has_expanded():
+    #         return self.value
+    #     else:
+    #         raise Exception(f"{self} must be expanded first")
+
+
 
 
 

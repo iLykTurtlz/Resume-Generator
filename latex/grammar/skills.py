@@ -3,10 +3,13 @@ from grammar.terminal import Terminal
 import latex_formats as lf
 
 class SkillsSection(Nonterminal):
-    rules = ()
+    rules = [
+        (("ProgrammingLanguageSkills", "WebTechnologySkills", "DatabaseSystemSkills", "DataScienceMLSkills", "CloudSkills", "DevOpsSkills"), 1.0)
+    ]
     latex = lf.latex['Skills']
     def __init__(self):
         super().__init__(SkillsSection.rules, SkillsSection.latex)
+        self.ordered = False
     #default expand, to_latex
         
         
@@ -20,6 +23,7 @@ class ProgrammingLanguageSkills(Nonterminal):
     latex = lf.latex['ProgrammingLanguageSkills']
     def __init__(self):
         super().__init__(ProgrammingLanguageSkills.rules, ProgrammingLanguageSkills.latex)
+        self.ordered = True
     
     def to_latex(self):
         return self.latex % (", ".join(child.to_latex() for child in self.children),)
@@ -35,6 +39,7 @@ class WebTechnologySkills(Nonterminal):
     latex = lf.latex['WebTechnologySkills']
     def __init__(self):
         super().__init__(WebTechnologySkills.rules, WebTechnologySkills.latex)
+        self.ordered = True
     
     def to_latex(self):
         return self.latex % (", ".join(child.to_latex() for child in self.children),)
@@ -50,6 +55,7 @@ class DatabaseSystemSkills(Nonterminal):
     latex = lf.latex['DatabaseSystemSkills']
     def __init__(self):
         super().__init__(DatabaseSystemSkills.rules, DatabaseSystemSkills.latex)
+        self.ordered = True
     
     def to_latex(self):
         return self.latex % (", ".join(child.to_latex() for child in self.children),)
@@ -65,6 +71,7 @@ class DataScienceMLSkills(Nonterminal):
     latex = lf.latex['DataScienceMLSkills']
     def __init__(self):
         super().__init__(DataScienceMLSkills.rules, DataScienceMLSkills.latex)
+        self.ordered = True
     
     def to_latex(self):
         return self.latex % (", ".join(child.to_latex() for child in self.children),)
@@ -72,14 +79,14 @@ class DataScienceMLSkills(Nonterminal):
 
 class CloudSkills(Nonterminal):
     rules = [
-        (("Cloud",), 0.1),
-        (("Cloud", "Cloud"), 0.2),
-        (("Cloud", "Cloud", "Cloud"), 0.3),
-        (("Cloud", "Cloud", "Cloud", "Cloud"), 0.4)
+        (("Cloud",), 0.8),
+        (("Cloud", "Cloud"), 0.15),
+        (("Cloud", "Cloud", "Cloud"), 0.05), #this person is dead inside
     ]
     latex = lf.latex['CloudSkills']
     def __init__(self):
         super().__init__(CloudSkills.rules, CloudSkills.latex)
+        self.ordered = True
     
     def to_latex(self):
         return self.latex % (", ".join(child.to_latex() for child in self.children),)
@@ -95,53 +102,58 @@ class DevOpsSkills(Nonterminal):
     latex = lf.latex['DevOpsSkills']
     def __init__(self):
         super().__init__(DevOpsSkills.rules, DevOpsSkills.latex)
+        self.ordered = True
     
     def to_latex(self):
         return self.latex % (", ".join(child.to_latex() for child in self.children),)
     
 
-class OtherSkills(Nonterminal):
-    rules = [
-        (("Other",), 0.1),
-        (("Other", "Other"), 0.2),
-        (("Other", "Other", "Other"), 0.3),
-        (("Other", "Other", "Other", "Other"), 0.4)
-    ]
-    latex = lf.latex['OtherSkills']
-    def __init__(self):
-        super().__init__(OtherSkills.rules, OtherSkills.latex)
+# NEED A NAME FOR OTHER SKILLS...TODO, maybe...
+# class OtherSkills(Nonterminal):
+#     rules = [
+#         (("Other",), 0.1),
+#         (("Other", "Other"), 0.2),
+#         (("Other", "Other", "Other"), 0.3),
+#         (("Other", "Other", "Other", "Other"), 0.4)
+#     ]
+#     latex = lf.latex['OtherSkills']
+#     def __init__(self):
+#         super().__init__(OtherSkills.rules, OtherSkills.latex)
+#         self.ordered = True
     
-    def to_latex(self):
-        return self.latex % (", ".join(child.to_latex() for child in self.children),)
+#     def to_latex(self):
+#         print("LATEX: \n"+self.latex)
+#         return self.latex % (", ".join(child.to_latex() for child in self.children),)
     
 
 class ProgrammingLanguage(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
+
     
 class WebTechnology(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
     
 class DatabaseSystem(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
     
 class DataScienceML(Terminal):
-    def expand(self):
-        return self
-    
+    def __init__(self):
+        self.value = None
+
 class Cloud(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
 
 class DevOps(Terminal):
-    def expand(self):
-        return self   
+    def __init__(self):
+        self.value = None
 
 class Other(Terminal):
-    def expand(self):
-        return self
+    def __init__(self):
+        self.value = None
     
 
 
