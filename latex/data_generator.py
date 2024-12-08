@@ -3,13 +3,12 @@ import random
 import pandas as pd
 import numpy as np
 
+
 class DataGenerator(ABC):
     # fill in the .value attribute of each Terminal within the context
     @abstractmethod
     def generate(self, context):
         raise NotImplementedError("You must implement this method.")
-    
-
 
 
 class NameDataGenerator(DataGenerator):
@@ -32,8 +31,8 @@ class NameDataGenerator(DataGenerator):
             return np.random.choice(fn_f["Child's First Name"], p=fn_f['P'] / fn_f['P'].sum()).title()
         else:
             raise Exception("sex in {'m','f'}")
-        
-    def sample_ln(self, r : str) -> str:
+
+    def sample_ln(self, r: str) -> str:
         return np.random.choice(self.l['name'], p=self.l[r]).title()
 
     def sample_full_name(self, r: str, sex: str) -> str:
@@ -47,35 +46,32 @@ class NameDataGenerator(DataGenerator):
         full_name = self.sample_full_name(r, s)
         context["FullName"].value = full_name
         return full_name
-    
 
 
 # Question: COULD THINGS LIKE THIS BE USEFUL???
 class SampledHometown:
     #TODO: generate this based on real CalPoly data, then use it in HeadDataGenerator
     def __init__(self):
-        self.zip_code = None #random.choice
-        self.area_code = None #lookup
-
-
+        self.zip_code = None  #random.choice
+        self.area_code = None  #lookup
 
 
 class HeadDataGenerator(DataGenerator):
     def generate(self, context):
         #Title - FullName
-        full_name = NameDataGenerator().generate(context["Title"]) #already filled in!
+        full_name = NameDataGenerator().generate(context["Title"])  #already filled in!
         names = full_name.split()
 
         #PhoneEmail
         email = names[0][0].lower() + names[1].lower() + "@calpoly.edu"
-    
+
         #TODO: make area code statistically representative, NOT all Bay Area
-        area_code = [4,1,5]
-        last_four = [random.randint(0,9) for _ in range(4)]
+        area_code = [4, 1, 5]
+        last_four = [random.randint(0, 9) for _ in range(4)]
         formats = ["({}) 555-{}", "{}-555-{}", "+1 {}-555-{}", "1-{}-555-{}"]
         #TODO: add format weights
         phone_number = random.choice(formats).format("".join(str(num) for num in area_code), "".join(str(num) for num in last_four))
-        
+
         # Remaining fields
         context["PhoneEmail"]["Phone"].value = phone_number
         context["PhoneEmail"]["Email"].value = email
@@ -86,7 +82,6 @@ class HeadDataGenerator(DataGenerator):
         context["GeographicalInfoField"]["GeographicalInfo"].value = "San Luis Obispo, CA"
 
 
-
 class EducationDataGenerator(DataGenerator):
     #Note: this context is ORDERED, i.e. a list
     def generate(self, context):
@@ -94,7 +89,7 @@ class EducationDataGenerator(DataGenerator):
         context[0]["EduGeographicalInfo"].value = "San Luis Obispo, CA"
         context[0]["EduDegreeName"].value = "B.S. Computer Science"
         context[0]["EduDate"].value = "December 2020"
-        
+
         #GPA
         fourscale = 4.0
         gpa = random.normalvariate(3.0, 0.5)
@@ -102,7 +97,6 @@ class EducationDataGenerator(DataGenerator):
         number = formats.format(str(round(gpa, 1)), str(fourscale))
         #We can insert GPA after the courses are stuck to it (see below)
 
-       
         # FOR COURSES: These need to be tacked on to GPA (see below)
         # TODO: Use the data from Dr. Clements instead
         courses = [
@@ -122,16 +116,13 @@ class EducationDataGenerator(DataGenerator):
             "Advanced Artificial Intelligence",
             "Advanced Deep Learning",
         ]
-        nb_courses = random.randint(2,6)
+        nb_courses = random.randint(2, 6)
         assert len(courses) >= nb_courses, "Population size is smaller than sample size!"
-        
 
-        
-        selected_courses = np.random.choice(courses, size=nb_courses, replace=False) #kwarg p for a proba distribution
+        selected_courses = np.random.choice(courses, size=nb_courses, replace=False)  #kwarg p for a proba distribution
 
         courses_str = "\n\\item Relevant Coursework: \\footnotesize{%s}" % (', '.join(selected_courses),)
         context[0]["EduGPA"].value = number + courses_str
-
 
         # TODO support more than two institutions?  Or different kinds, like HS?
         if len(context) > 1:
@@ -139,14 +130,12 @@ class EducationDataGenerator(DataGenerator):
             context[1]["EduGeographicalInfo"].value = "San Luis Obispo, CA"
             context[1]["EduDegreeName"].value = "N/A"
             context[1]["EduDate"].value = "June 2018"
-             #GPA
+            #GPA
             fourscale = 4.0
             gpa = random.normalvariate(3.0, 0.5)
             formats = "{}/{}"
             number = formats.format(str(round(gpa, 1)), str(fourscale))
             context[1]["EduGPA"].value = number
-
-            
 
 
 class ExperienceDataGenerator(DataGenerator):
@@ -167,37 +156,114 @@ class ExperienceDataGenerator(DataGenerator):
                 task.value = "Did a thing"
 
 
-        
 class ProjectDataGenerator(DataGenerator):
+    title = ["TCP/IP Server",
+             "Memory Allocator in C",
+             "Tic Tac Toe Game using JavaScript",
+             "Weather App",
+             "ToDo App",
+             "Full-Stack Chore App",
+             "Twitter Data Mining",
+             "Movie Picker",
+             "Gaming App",
+             "Blog Web App",
+             "Linear Regression App",
+             "Sentiment Analysis Detector",
+             "Housing Pricing Analysis in NYC",
+             "Facial Recognition",
+             "Average Face Generator",
+             "Hackathon"
+             ]
     verb_phrases = [
-        "Hopped on top of pop",
-        "Cooked green eggs and ham",
-        "Juggled on the ball",
-        "Ran through the house",
-        "Balanced fish on a dish",
-        "Jumped on the bed with a hat",
-        "Spoke to a Who in the snow",
-        "Rode a bike with no wheels",
-        "Climbed a tree with Thing One",
-        "Played a tune with a spoon",
-        "Ran a race with a fox",
-        "Painted spots on a box",
-        "Sailed a boat with a goat",
-        "Sneezed bees into the breeze",
-        "Sang a song to the moon",
-        "Fed a mouse a house of cheese",
-        "Danced with cats in striped hats",
-        "Swam with a Zinn in a zinny pool",
-        "Shook hands with a Wocket in a pocket",
-        "Spoke for the trees",
+        ["Used Socket API to send a simple HTTP request to a website.",
+         "Implemented a TCP with simple data management and provided an interface application."],
+
+        ["Wrote a simple memory allocator in C, and adjusted allocated memory to align to a page boundary.",
+         "Wrote a simplistic Unix shell in C."],
+
+        ["Used query selectors functions to perform transitions in between states.",
+         "Implemented backtracking search with look-ahead prediction.",
+         "Presented the validated game states in a UI for strategy analysis."],
+
+        ["Used open API OpenWeatherMap to gather forecasted data on weather patterns based on users' geographic location.",
+         "Implemented UI app to serve the forecasted weather data, with visualizations on compatible web hosted app."],
+
+        ["Built a Full-Stack React Native to-do app with Apollo’s new Query and Mutation components.",
+         "App has functionality to add tasks, view them, mark/unmark them as complete and delete them.",
+         "Utilized GraphQL backend to store the state of the app."],
+
+        ["Used Python and SQL to build a web app for tracking chores within households.",
+         "Created multiple views within a screen to serve all steps of chore tracking, with a point incentivization system.",
+         "Provided users with challenge analysis breakdown with a regression of responsibility by commitment."],
+
+        ["Created an app that interacts with the Twitter API.",
+         "Connected with Twitter REST APIs with TweePy to provie authorization and provide interacing with explore feed.",
+         "Application returns a JSON file with the 50 top trending topics of the last day."],
+
+        ["Scraped a list of top 50 popular movies for each year from 1898–present as listed on IMDb",
+         "Used BeautifulSoup to serve and get data from IMDb site."],
+
+        ["Incorporated algorithm and data structures into a game for mobile apps.",
+         "Added customization features for the users' characters using random generation."],
+
+        ["Implemented a live blog web app that supports social media feeds, videos, and calendars.",
+         "Programmed widgets for readers to share blog posts or leave comments."],
+
+        ["Wrote an app that takes in 2 CSVs to perform linear regression and generate analytical insights based on user-selected variables.",
+         "Insights are accompanied by optional confidence tests and variable interaction visualizations."],
+
+        ["Tuned a BERT model to take in 2 phrases as input and output a detected relation between the statements.",
+         "Statements could be Complimentary, Opposition, Neutral.",
+         "Model tested against Twitter scraped statements reported a 93% accuracy."],
+
+        ["Created a program to predict housing prices based on aggregate data against multiple features of a home.",
+         "Took multiple variables into account, including: boroughs, districts, housing type, school districts.",
+         "Explored the use of KNN, Random Forests, Regression"],
+
+        ["Created a Facial recognition app using OpenCV and a pre-trained Deep Learning face detector.",
+         "Used Haar cascades for face detection in videos, using frame-by-frame movement vector sampling."],
+
+        ["Create an average face using OpenCV",
+         "Used Facial feature detection with OpenCV to transform coordinates across image, calculating facial alighnment.",
+         "Performed face averaging across all samples from images returned from query."],
+
+        ["Worked under a mentor during a 72 hour period to develop a password wallet.",
+         "Retrieved encrypted password from Cloud database and hashed against a personal key.",
+         "Wallet is kept personal as an automated decrypter on mobile devices."]
+
     ]
-    dates = ["May 2016", "September 2017", "May 2018", "October 2019", "Febuary 2021"]
+    tools = ["C, C++",
+             "C, C++",
+             "JavaScript, HTML, CSS",
+             "JavaScript, HTML, CSS, AJAX",
+             "Javascript, React Native, Apollo, GraphQL",
+             "Python, MySQL, HTML, CSS, Vite, Lit",
+             "Python, TweePy",
+             "HTML, Python, BeautifulSoup",
+             "Python, React, Heroku",
+             "Javascript, Typescript, HMTL, CSS",
+             "Python, R",
+             "Python, Tensorflow",
+             "Python, Pandas, Tensorflow",
+             "Python, Haar",
+             "C++, Python",
+             "C, C++, GoLang"
+
+             ]
+    dates = ["May 2016", "September 2017", "May 2018", "October 2019", "April 2020", "February 2021", "December 2021"]
+    unique_titles = set()
+
     def generate(self, context):
         for i, proj in enumerate(context[::-1]):
-            proj["ProjectDescription"].value = "This is the description of a project lorem ipsum lorem ipsum."
-            proj["ProjectTools"].value = "PyTorch, NLTK, SpaCy"
+            description = random.choice(ProjectDataGenerator.title)
+            while description in ProjectDataGenerator.unique_titles:
+                description = random.choice(ProjectDataGenerator.title)
+            ProjectDataGenerator.unique_titles.add(description)
+            index = ProjectDataGenerator.title.index(description)
+            proj["ProjectDescription"].value = description
+            proj["ProjectTools"].value = ProjectDataGenerator.tools[index]
             proj["ProjectDate"].value = ProjectDataGenerator.dates[i]
-            achievements = random.choices(ProjectDataGenerator.verb_phrases, k=len(proj["ProjectAchievements"]))
+            achievements = ProjectDataGenerator.verb_phrases[index]
             for pa, achievement in zip(proj["ProjectAchievements"], achievements):
                 pa.value = achievement
 
@@ -217,7 +283,7 @@ class SkillsDataGenerator(DataGenerator):
             skill_terminals = context.get(skill_type)
             if skill_terminals:
                 k = len(skill_terminals)
-                skillz = np.random.choice(skill_list, size=k, replace=False) #p for a proba dist.
+                skillz = np.random.choice(skill_list, size=k, replace=False)  #p for a proba dist.
                 for term, skill in zip(skill_terminals, skillz):
                     term.value = skill
 
@@ -226,10 +292,6 @@ class SelfSummaryDataGenerator(DataGenerator):
     def generate(self, context):
         # TODO LLM magic
         context["SelfSummary"].value = "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
-        
-        
-
-
 
 
 class BodyDataGenerator(DataGenerator):
@@ -246,12 +308,10 @@ class BodyDataGenerator(DataGenerator):
             SelfSummaryDataGenerator().generate(context["SelfSummarySection"])
 
 
-
-    
 class ResumeDataGenerator(DataGenerator):
     def generate(self, context):
         # We might need some global states like this.
-        year_in_school = random.choice([1,2,3,4,5,6])
+        year_in_school = random.choice([1, 2, 3, 4, 5, 6])
 
         # might be better to sample wherever they previously went to school
         # then this becomes hometown = SampledLocation()
@@ -259,4 +319,3 @@ class ResumeDataGenerator(DataGenerator):
 
         HeadDataGenerator().generate(context["Head"])
         BodyDataGenerator().generate(context["Body"])
-        
