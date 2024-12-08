@@ -1,0 +1,1 @@
+Run the included script to download the jobs data. `filter_postings.py` is used for filtering relevant jobs obtained from the tableau script (the JSONs provided). `find_company_pages.py` then builds a JSON table containing a map from company names to their company webpages.
