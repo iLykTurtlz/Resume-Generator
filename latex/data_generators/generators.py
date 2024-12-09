@@ -1,11 +1,9 @@
-from abc import ABC, abstractmethod
+import random
+import pandas as pd
+import numpy as np
 
-
-class DataGenerator(ABC):
-    # fill in the .value attribute of each Terminal within the context
-    @abstractmethod
-    def generate(self, context):
-        raise NotImplementedError("You must implement this method.")
+from .data_generator import DataGenerator
+from .experience_data_generator import ExperienceDataGenerator
 
 
 class NameDataGenerator(DataGenerator):
@@ -130,28 +128,9 @@ class EducationDataGenerator(DataGenerator):
             #GPA
             fourscale = 4.0
             gpa = random.normalvariate(3.0, 0.5)
-
             formats = "{}/{}"
             number = formats.format(str(round(gpa, 1)), str(fourscale))
             context[1]["EduGPA"].value = number
-
-
-class ExperienceDataGenerator(DataGenerator):
-    # Note: this context is ORDERED, i.e. a list
-    def generate(self, context):
-        COMPANY_MAP = {
-            "Google": "https://www.google.com",
-            "Apple, Inc.": "https://www.apple.com"
-        }
-        for experience in context:
-            company = random.choice(list(COMPANY_MAP.keys()))
-            value = r'''%s [\href{%s}{\faIcon{globe}}]''' % (company, COMPANY_MAP[company])
-            experience["CompanyName"].value = value
-            experience["JobTitle"].value = "Software Engineer"
-            experience["DateRange"].value = "June 2022 - Present"
-            experience["GeographicalInfo"].value = "San Luis Obispo, CA"
-            for task in experience["ExperienceTasks"]:
-                task.value = "Did a thing"
 
 
 class ProjectDataGenerator(DataGenerator):
@@ -243,36 +222,30 @@ class ProjectDataGenerator(DataGenerator):
          "Users can trade garment cards through a central admin database."]
 
     ]
-    tools = [["C, C++", "C, C++", "", "", "", "", ""],
-             ["C, C++", "C, C++", "", "", "", "", ""],
-             ["JavaScript, HTML, CSS", "JavaScript", "HTML, CSS", "", "", "", ""],
-             ["JavaScript, HTML, CSS, AJAX", "JavaScript", "HTML, CSS, AJAX", "", "", "", ""],
-             ["Javascript, React Native, Apollo, GraphQL", "", "Javascript, React Native", "", "Apollo, GraphQL", "", ""],
-             ["Python, MySQL, HTML, CSS, Vite, Lit", "Python", "HTML, CSS, Vite, Lit", "MySQL", "", "", ""],
-             ["Python, TweePy", "Python, TweePy", "", "", "", "", ""],
-             ["HTML, Python, BeautifulSoup", "Python, BeautifulSoup", "HTML", "", "", "", ""],
-             ["Python, React, Heroku", "Python", "React", "Heroku", "", "", ""],
-             ["Javascript, Typescript, HMTL, CSS", "Javascript", "Typescript, HMTL, CSS", "", "", "", ""],
-             ["Python, R", "Python", "", "", "R", "", ""],
-             ["Python, Tensorflow", "Python, Tensorflow", "", "", "", "", ""],
-             ["Python, Pandas, Tensorflow", "Python, Pandas, Tensorflow", "", "", "", "", ""],
-             ["Python, Haar", "Python", "", "", "Haar", "", ""],
-             ["C++, Python", "C++, Python", "", "", "", "", ""],
-             ["C, C++, GoLang", "C, C++, GoLang", "", "", "", "", ""],
-             ["CSS, HTML, Typescript", "", "CSS, HTML, Typescript", "", "", "", ""]
+    tools = ["C, C++",
+             "C, C++",
+             "JavaScript, HTML, CSS",
+             "JavaScript, HTML, CSS, AJAX",
+             "Javascript, React Native, Apollo, GraphQL",
+             "Python, MySQL, HTML, CSS, Vite, Lit",
+             "Python, TweePy",
+             "HTML, Python, BeautifulSoup",
+             "Python, React, Heroku",
+             "Javascript, Typescript, HMTL, CSS",
+             "Python, R",
+             "Python, Tensorflow",
+             "Python, Pandas, Tensorflow",
+             "Python, Haar",
+             "C++, Python",
+             "C, C++, GoLang",
+             "CSS, HTML, Typescript"
+
              ]
     dates = ["December 2021", "August 2022", "November 2023", "March 2024", "October 2024"]
-
     unique_titles = set()
 
-    unique_programmingLang = set()
-    unique_webTech = set()
-    unique_db = set()
-    unique_DSML = set()
-    unique_Cloud = set()
-    unique_devOps = set()
-
     def generate(self, context):
+        # print(f"context is here: {context[::-1]}")
         for i, proj in enumerate(context[::-1]):
             description = random.choice(ProjectDataGenerator.title)
             while description in ProjectDataGenerator.unique_titles:
@@ -280,14 +253,7 @@ class ProjectDataGenerator(DataGenerator):
             ProjectDataGenerator.unique_titles.add(description)
             index = ProjectDataGenerator.title.index(description)
             proj["ProjectDescription"].value = description
-            proj["ProjectTools"].value = ProjectDataGenerator.tools[index][0]
-            # add tools to sets of skills
-            ProjectDataGenerator.unique_programmingLang.update(ProjectDataGenerator.tools[index][1].split(", "))
-            ProjectDataGenerator.unique_webTech.update(ProjectDataGenerator.tools[index][2].split(", "))
-            ProjectDataGenerator.unique_db.update(ProjectDataGenerator.tools[index][3].split(", "))
-            ProjectDataGenerator.unique_DSML.update(ProjectDataGenerator.tools[index][4].split(", "))
-            ProjectDataGenerator.unique_Cloud.update(ProjectDataGenerator.tools[index][5].split(", "))
-            ProjectDataGenerator.unique_devOps.update(ProjectDataGenerator.tools[index][6].split(", "))
+            proj["ProjectTools"].value = ProjectDataGenerator.tools[index]
             proj["ProjectDate"].value = ProjectDataGenerator.dates[i]
             achievements = ProjectDataGenerator.verb_phrases[index]
             for pa, achievement in zip(proj["ProjectAchievements"], achievements):
@@ -345,4 +311,3 @@ class ResumeDataGenerator(DataGenerator):
 
         HeadDataGenerator().generate(context["Head"])
         BodyDataGenerator().generate(context["Body"])
-

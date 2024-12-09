@@ -1,0 +1,1 @@
+This is data that's specifically relevant to the final resume generation task, as opposed to the parent data/ that contains lots of garbage.

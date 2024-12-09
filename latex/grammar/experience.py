@@ -30,10 +30,9 @@ class Experience(Nonterminal):
         
 class ExperienceTasks(Nonterminal):
     rules = [
-        (("ExperienceTask",), 0.4),
-        (("ExperienceTask", "ExperienceTask"), 0.3),
-        (("ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.2),
-        (("ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.1),
+        (("ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.4),
+        (("ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.5),
+        (("ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.1),
     ]
     latex = lf.latex["ExperienceTasks"]
     def __init__(self):
