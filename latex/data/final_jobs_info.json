@@ -1,0 +1,2308 @@
+{
+    "3884842905": {
+        "company_name": "IBM",
+        "job_title": "Product Manager",
+        "achievements": [
+            "Conducted market research across multiple industries to gather customer feedback and identify market trends.",
+            "Developed an understanding of AI, foundation models, and related technologies through self-study and online courses.",
+            "Collaborated with cross-functional teams to gather feedback and iterate on product development.",
+            "Created product descriptions and marketing materials for internal stakeholders and customers.",
+            "Conducted competitor analysis to identify gaps in the market and areas for innovation.",
+            "Developed and executed a product launch plan for a new AI-powered tool.",
+            "Refined product features and user experience through customer testing and feedback.",
+            "Designed and presented product roadmaps to engineering and development teams.",
+            "Managed and analyzed product performance metrics using tools like Google Analytics.",
+            "Developed a deep understanding of data and AI strategy concepts and key trends.",
+            "Created and maintained product dashboards to track key performance indicators.",
+            "Authored and submitted a product proposal to a team of engineers and stakeholders.",
+            "Designed and implemented an A/B testing plan to measure product effectiveness."
+        ],
+        "location": "San Jose, CA",
+        "site": "https://www.ibm.com/"
+    },
+    "3884856372": {
+        "company_name": "Arista Networks",
+        "job_title": "Network Advanced Services Engineer (Wireless or Security)",
+        "achievements": [
+            "Assisted in designing and implementing a proof of concept for a data center network upgrade using Arista's EOS and VxLAN technologies.",
+            "Translated complex business requirements into technical designs for campus network deployments, resulting in a 20% reduction in network downtime.",
+            "configured and tested Arista's AOS and VRRP protocols for a large-scale campus network migration project.",
+            "Presented technical solutions to customers and partners, enhancing customer satisfaction by 15%.",
+            "Participated in training sessions and workshops for customers and internal teams, improving knowledge sharing and adoption of new technologies.",
+            "Worked closely with internal development teams to provide bug scrubs and code recommendations, improving product quality by 10%.",
+            "Assisted in creating network DevOps frameworks for customers, streamlining network deployment and operation processes.",
+            "Conducted in-depth testing and troubleshooting for network deployments, resolving 80% of customer issues on first contact.",
+            "Built and maintained relationships with key partners, increasing sales revenue by 12%.",
+            "Developed and maintained technical documentation and knowledge base articles for networking products and solutions.",
+            "Assisted in planning and executing large-scale network migrations, ensuring minimal disruptions to business operations.",
+            "Participated in technical discussions and debate with customers and partners, honing technical skills and expertise."
+        ],
+        "location": "Los Angeles, CA",
+        "site": "https://www.arista.com/en/"
+    },
+    "3884915148": {
+        "company_name": "Infosys",
+        "job_title": "Design Engineer",
+        "achievements": [
+            "Designed a 3D model of an aircraft interior cabin layout using CATIA V5, incorporating specifications from engineering drawings.",
+            "Collaborated with multidisciplinary team to modify an existing aircraft design, ensuring compliance with industry standards and design guidelines.",
+            "Created detailed drawings and models of aircraft interior components, including seats and galleys, using SmarTeam.",
+            "Developed and presented 3D models of aircraft interior designs at design reviews, effectively communicating design decisions to stakeholders.",
+            "Enhanced design standards and documentation processes, resulting in improved design consistency and reduced errors.",
+            "Created and updated component templates in CATIA V5, streamlining design work and improving team efficiency.",
+            "Worked closely with cross-functional teams to resolve design-related issues, leveraging strong communication and problem-solving skills.",
+            "Assisted in the creation of technical drawings and documentation for aircraft interior components, ensuring accuracy and attention to detail.",
+            "Provided constructive feedback on design proposals, contributing to the development of innovative and practical design solutions."
+        ],
+        "location": "Appleton, WI",
+        "site": "https://www.infosys.com/"
+    },
+    "3884915969": {
+        "company_name": "Honeywell",
+        "job_title": "Research Engineer",
+        "achievements": [
+            "Assisted in designing and setting up experiments in the laboratory.",
+            "Conducted research and collected data for project reports.",
+            "Developed and executed test plans for equipment testing.",
+            "Collaborated with team members to develop and implement new cryogenic systems.",
+            "Created technical documentation for equipment and experiments.",
+            "Implemented quality control measures for laboratory testing.",
+            "Participated in brainstorming sessions to develop innovative solutions.",
+            "Contributed to the development of research papers and presentations.",
+            "Supported the team in conducting routine maintenance and troubleshooting.",
+            "Developed and maintained accurate record-keeping systems for laboratory equipment and experiments."
+        ],
+        "location": "Golden Valley, MN",
+        "site": "https://www.honeywell.com/us/en"
+    },
+    "3884996001": {
+        "company_name": "Amazon",
+        "job_title": "Data Scientist, PeopleInsight",
+        "achievements": [
+            "Improved data quality by 20% through data cleaning and preprocessing, resulting in more accurate insights and recommendations for product development.",
+            "Developed and deployed a predictive model using Python and scikit-learn that improved customer segmentation accuracy by 15%.",
+            "Collaborated with cross-functional teams to design and develop a novel employee engagement initiative, resulting in a 12% increase in employee satisfaction.",
+            "Analyzed and visualized dataset trends to identify correlations between employee retention and satisfaction, presenting findings to stakeholders and informing business decisions.",
+            "Enhanced data visualization capabilities using Tableau, resulting in more effective communication of insights to non-technical stakeholders.",
+            "Reduced model deployment time by 30% through automation of the deployment process using AWS and Docker.",
+            "Conducted exploratory data analysis on large datasets to identify key drivers of customer behavior and preferences.",
+            "Improved data storytelling by 25% through the creation of interactive dashboards and reports.",
+            "Generated meaningful insights from unstructured data using natural language processing and machine learning techniques."
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.amazon.com/"
+    },
+    "3885805686": {
+        "company_name": "Capital One",
+        "job_title": "Data Engineer",
+        "achievements": [
+            "Developed and deployed a data pipeline using Scala and Apache Beam for data warehousing",
+            "Built and maintained a cloud-based data lake using AWS S3 and Apache Hadoop",
+            "Enhanced data quality by implementing data validation and data cleansing using SQL and Python",
+            "Collaborated with Agile teams to design and develop real-time data streaming applications using Apache Kafka",
+            "Created and optimized SQL queries for improving data retrieval efficiency in a large-scale database",
+            "Designed and implemented a data visualization dashboard using D3.js and Tableau",
+            "Worked on a team to develop a microservice architecture for a machine learning model using Java and Spring Boot",
+            "Built and trained a predictive model using scikit-learn and trained it on a dataset of financial transactions",
+            "Implemented data encryption using AES-256 and secure data transmission using HTTPS",
+            "Created a data glossary and data dictionary to standardize data terminology and definitions"
+        ],
+        "location": "Richmond, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3885806687": {
+        "company_name": "Capital One",
+        "job_title": "Data Engineer",
+        "achievements": [
+            "Developed and deployed a data pipeline using Python and Redshift to generate monthly reports for management.",
+            "Built a scalable data warehousing solution using Snowflake and AWS Glue.",
+            "Improved data quality by implementing data validation and cleansing procedures within a Java-based data processing application.",
+            "Created a real-time data dashboard using D3.js and React to visualize customer behavior and transaction data.",
+            "Designed and implemented a Machine Learning model using scikit-learn to predict customer churn.",
+            "Participated in a agile development team to design and develop a cloud-based solution using AWS and Python.",
+            "Automated data processing and ETL workflows using Apache Airflow and Bash scripting.",
+            "Collaborated with cross-functional teams to deliver a data-driven project using Jupyter Notebook and SQL.",
+            "Integrated Apache Spark with Redshift to create a scalable data processing solution.",
+            "Helped to debug and optimize a large-scale data processing application using Log4j and Java."
+        ],
+        "location": "McLean, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3885806695": {
+        "company_name": "Capital One",
+        "job_title": "Software Engineer, Full Stack",
+        "achievements": [
+            "Improved code quality by 25% through refactoring and bug fixes on multiple projects",
+            "Developed and deployed a cloud-based RESTful API using AWS services",
+            "Enhanced team collaboration by designing and implementing a centralized issue tracking system",
+            "Designed and prototyped a web-based dashboard using HTML, CSS, and JavaScript",
+            "Troubleshot and resolved complex technical issues in a timely and efficient manner",
+            "Contributed to the development of a proof-of-concept project using emerging technologies such as Node.js and React",
+            "Collaborated with the QA team to identify and fix defects in multiple applications",
+            "Improved project deliverables by adhering to Agile development methodologies and iterative development cycles",
+            "Optimized database performance by implementing efficient query optimization techniques and indexing strategies"
+        ],
+        "location": "McLean, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3885808491": {
+        "company_name": "Capital One",
+        "job_title": "Data Engineer",
+        "achievements": [
+            "Improved data pipeline efficiency by 30% through optimized query processing and caching.",
+            "Designed and implemented a scalable data storage solution using Amazon S3 and AWS Glue.",
+            "Collaborated with cross-functional teams to develop a data-driven dashboard for business stakeholders.",
+            "Developed and deployed a data quality checking script using Python and Apache Spark.",
+            "Implemented data transformation logic using Apache Beam and BigQuery.",
+            "Built and tested a data ingestion pipeline for processing large datasets.",
+            "Enhanced data visualization capabilities using Tableau and Power BI.",
+            "Improved data accuracy by 25% through the implementation of data validation rules.",
+            "Created and maintained data documentation and knowledge base for the team.",
+            "Developed and presented data insights to business stakeholders on data trends and patterns.",
+            "Built and integrated a data validation layer using AWS Lambda and API Gateway.",
+            "Improved data processing speed by 40% through parallel processing and GPU acceleration."
+        ],
+        "location": "Richmond, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3885810350": {
+        "company_name": "Capital One",
+        "job_title": "Data Engineer",
+        "achievements": [
+            "Contributed to the development of a cloud-based financial analytics platform using Python and AWS",
+            "Performed data quality checks using SQL on a large-scale financial dataset",
+            "Successfully implemented a data warehousing solution using Redshift and Snowflake",
+            "Participated in Agile development using Scrum framework and Jira tool",
+            "Wrote unit tests for a machine learning model using PyTest and Python",
+            "Collaborated with cross-functional teams to deliver a real-time data streaming application using Kafka and Spark",
+            "Improved data query performance by 30% using optimization techniques in SQLAlchemy and Pandas",
+            "Researched and implemented new data visualization tools using D3.js and Tableau",
+            "Developed a data migration script using Python and Pandas to migrate data from MySQL to PostgreSQL"
+        ],
+        "location": "Plano, TX",
+        "site": "https://www.capitalone.com/"
+    },
+    "3885810353": {
+        "company_name": "Capital One",
+        "job_title": "Data Engineer",
+        "achievements": [
+            "Designed and developed a data pipeline to ingest customer data from various sources, improving data quality and reducing processing time by 30%.",
+            "Collaborated with Data Scientists to build a machine learning model using Spark and Python, achieving a 20% increase in model accuracy.",
+            "Implemented data validation and testing for a data stream system using Kafka, ensuring data consistency and reducing errors by 15%.",
+            "Worked with Business Analysts to optimize data warehouses, reducing query processing time by 40% and improving data retrieval efficiency.",
+            "Built a data visualization dashboard using Tableau, providing real-time insights to stakeholders and improving decision-making by 25%.",
+            "Designed and implemented a data architecture to support a cloud-based data platform, achieving a 50% reduction in data storage costs.",
+            "Improved data ingestion and transformation efficiency by 20% by optimizing data pipeline workflows and utilizing parallel processing techniques.",
+            "Collaborated with Product Owners to develop a data-driven product feature, resulting in a 15% increase in customer engagement."
+        ],
+        "location": "McLean, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3885813358": {
+        "company_name": "Honeywell",
+        "job_title": "Advanced Software Engineer",
+        "achievements": [
+            "Improved issue identification and analysis through structured troubleshooting approach, reducing average issue resolution time by 30%.",
+            "Developed and maintained detailed customer knowledge profiles to enhance personalized support.",
+            "Collaborated with colleagues to resolve complex technical issues, achieving a 25% decrease in escalations.",
+            "Assisted in creating and updating technical documentation, resulting in a 40% increase in knowledge base usage.",
+            "Participated in training sessions for new teammates, ensuring seamless onboarding and reducing average training time by 20%.",
+            "Provided premium customer service, achieving a 95% customer satisfaction rating.",
+            "Built relationships with internal stakeholders, resulting in improved communication and collaboration.",
+            "Contributed to process improvements, streamlining issue tracking and resolution by 35%.",
+            "Generated and distributed monthly technical support metrics reports, enhancing visibility and accountability.",
+            "Adapted to changing technical requirements, demonstrating flexibility and willingness to learn.",
+            "Demonstrated strong technical knowledge, providing accurate and timely support to customers."
+        ],
+        "location": "Greater Phoenix Area",
+        "site": "https://www.honeywell.com/us/en"
+    },
+    "3885829860": {
+        "company_name": "ServiceNow",
+        "job_title": "Software Engineer",
+        "achievements": [
+            "Contributed to the development of a web-based application using Java and JavaScript",
+            "Implemented unit testing for a software component using JUnit",
+            "Designed and developed a reusable UI component using Angular",
+            "Collaborated with a product owner to understand requirements and developed a technical design document",
+            "Enhanced scalability of a software component by refactoring code to reduce memory usage",
+            "Developed and maintained automated tests using Selenium",
+            "Improved code quality by implementing code reviews and implementing best practices",
+            "Participated in a codeathon event and developed a prototype for a new product feature"
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.servicenow.com/"
+    },
+    "3887574493": {
+        "company_name": "Adobe",
+        "job_title": "2024 Intern - Software Development Engineer",
+        "achievements": [
+            "Contributed to a team effort in the development of a new features for Adobe's Creative Cloud application",
+            "Improved code coverage by 15% through rigorous testing and debugging",
+            "Collaborated with engineers to resolve bugs and issues in the web application",
+            "Developed and implemented unit tests for an existing module of the software",
+            "Enhanced the user interface by refactoring and optimizing code",
+            "Worked with the QA team to identify and fix defects in the software",
+            "Improved code quality by following best practices and coding standards",
+            "Designed and implemented a new API endpoint for data retrieval",
+            "Participated in pair programming with senior engineers to learn and improve coding skills"
+        ],
+        "location": "San Jose, CA",
+        "site": "https://www.adobe.com/"
+    },
+    "3887708351": {
+        "company_name": "Mozilla",
+        "job_title": "Strategic Finance Analyst",
+        "achievements": [
+            "Developed financial models using Excel to forecast ARR and Revenue for multiple products",
+            "Prepared and presented financial reports to cross-functional teams, including Sales, Product Marketing, and Revenue",
+            "Conducted data analysis using Google Sheets and Slides to identify trends and insights",
+            "Partnered with Revenue and Marketing teams to develop and refine pricing and promotional initiatives",
+            "Created dashboards and reports using Google Looker/BigQuery to track key performance indicators",
+            "Assisted in the development of deal metrics to track customer lifecycle and commission targets",
+            "Worked on consolidating and analyzing revenue data for multiple products and pricing structures",
+            "Assisted in the preparation of monthly and quarterly financial statements for senior management",
+            "Collaborated with cross-functional teams to drive accurate ARR forecasts and monitor overall business performance",
+            "Developed and maintained complex spreadsheet models using VBA and array functions"
+        ],
+        "location": "United States",
+        "site": "https://www.mozilla.org/en-US/"
+    },
+    "3887719210": {
+        "company_name": "AMETEK",
+        "job_title": "Industrial Engineering Intern",
+        "achievements": [
+            "Assisted in designing and implementing a more efficient production line layout, resulting in a 10% reduction in cycle time.",
+            "Created a value stream map for the motor production process, identifying areas for improvement and implementing changes to reduce waste.",
+            "Developed Work Instructions for the assembly of a new motor model, ensuring consistency and quality among production lines.",
+            "Collaborated with the manufacturing team to implement standard work practices, achieving a 15% reduction in defect rate.",
+            "Identified and implemented a routing solution for a new product, reducing production lead time by 12%.",
+            "Used problem-solving skills to analyze and resolve production line issues, increasing overall production efficiency by 8%.",
+            "Worked with the manufacturing manager to develop and track key performance indicators (KPIs) to measure production performance.",
+            "Conducted training sessions for production line workers on new assembly procedures, ensuring a smooth transition to new processes."
+        ],
+        "location": "Whitsett, NC",
+        "site": "https://www.ametek.com/"
+    },
+    "3887719350": {
+        "company_name": "Boeing",
+        "job_title": "Project Engineer (Subject Matter Expert)",
+        "achievements": [
+            "Coordinated and facilitated process improvement initiatives, resulting in 15% reduction in supply chain lead times.",
+            "Developed and implemented standard reporting templates for integration from supply chain to engineering to customer, reducing data analysis time by 30%.",
+            "Conducted supplier evaluation and identification of cost avoidance opportunities, resulting in $50,000 in annual savings.",
+            "Collaborated with fleet team to understand top issues, providing regular updates and insights to drive informed decision-making.",
+            "Improved communication and alignment between Supply Chain and Engineering teams, leading to increased collaboration and efficiency.",
+            "Developed and maintained project plans, schedules, and budgets, ensuring timely and cost-effective project execution.",
+            "Identified and addressed emerging supplier/supply chain issues, resolving 90% of issues within 24 hours.",
+            "Created and presented project status updates and metrics to stakeholders, ensuring transparency and visibility.",
+            "Established relationships with cross-functional teams, building trust and driving successful project outcomes.",
+            "Streamlined project workflows and processes, reducing manual interventions by 25%.",
+            "Developed and published project metrics and KPIs, providing actionable insights for continuous improvement.",
+            "Improved supply chain health by resolving 50% more supplier concerns within a 3-month period."
+        ],
+        "location": "Dallas, TX",
+        "site": "https://www.boeing.com/"
+    },
+    "3887720337": {
+        "company_name": "Boeing",
+        "job_title": "Systems Engineering Support Analyst",
+        "achievements": [
+            "Researched and analyzed technical data for a company product, summarizing findings in a presentation for the engineering team.",
+            "Developed a data visualization report using Excel, PowerPoint, and Microsoft Office tools.",
+            "Conducted interviews with mechanical engineers to gather information for a system-level concept report.",
+            "Assisted in the creation of functional requirements documentation for a new product development project.",
+            "Used systems engineering processes and tools to design a system of systems, presenting findings to the project team.",
+            "Compiled technical data for a product, ensuring accuracy and attention to detail.",
+            "Worked with a cross-functional team to develop a functional architecture for a new system.",
+            "Presented technical data to a senior engineer, receiving feedback on presentation skills.",
+            "Maintained and improved process documentation for engineering tasks.",
+            "Drafted a technical summary report for a company product, incorporating feedback from engineering team members."
+        ],
+        "location": "Berkeley, MO",
+        "site": "https://www.boeing.com/"
+    },
+    "3887721206": {
+        "company_name": "Boeing",
+        "job_title": "Associate Product Security Engineer",
+        "achievements": [
+            "Conducted security vulnerability scans on Microsoft Windows 7 and Linux distributions using Nmap and OpenVAS.",
+            "Implemented mitigations for identified vulnerabilities on Microsoft Windows XP and Oracle Solaris using Nessus.",
+            "Configured and ensured security of experimental setup of a Linux-based network with NFS and CIFS data sharing.",
+            "Collaborated with colleagues to troubleshoot and debug network issues using SSH, SFTP, and VPNs.",
+            "Assisted in the development of a proof-of-concept network architecture using HTTP/HTTPS protocols and Apache and IIS web servers.",
+            "Provided technical support and debugging assistance for colleagues working on a project involving Active Directory and LDAP.",
+            "Successfully completed a project to implement backup methodologies and disaster recovery plans for a test environment using RAID storage and SQL Server.",
+            "Implemented and administered a simple Python script to automate mundane tasks on a Linux system.",
+            "Authored and presented a report on a vulnerability scanning tool's effectiveness in identifying security weaknesses in a Windows environment."
+        ],
+        "location": "Hazelwood, MO",
+        "site": "https://www.boeing.com/"
+    },
+    "3887721249": {
+        "company_name": "Boeing",
+        "job_title": "Entry-Level Product Security Engineer",
+        "achievements": [
+            "Assisted in the design and implementation of a product security testing framework.",
+            "Conducted vulnerability scanning and penetration testing on Windows, Linux, and Oracle Solaris operating systems.",
+            "Developed and executed test cases for product security testing using Python scripting.",
+            "Analyzed and reported security findings to the team, providing recommendations for mitigation.",
+            "Participated in code reviews to ensure secure coding practices were followed.",
+            "Worked with the development team to implement security patches and fixes.",
+            "Collaborated with the network team to configure and troubleshoot network devices and protocols (DNS, NTP, SMTP, SNMP, SSH, SFTP, VPN's).",
+            "Assisted in the implementation of access controls and permissions for sensitive data and systems.",
+            "Conducted security awareness training sessions for team members.",
+            "Developed a document that outlines the product security testing process and procedures.",
+            "Worked with the quality assurance team to integrate security testing into the product development lifecycle."
+        ],
+        "location": "Hazelwood, MO",
+        "site": "https://www.boeing.com/"
+    },
+    "3887722181": {
+        "company_name": "Boeing",
+        "job_title": "Software Quality Engineer (Associate or Mid-Level)",
+        "achievements": [
+            "Participated in software development lifecycle activities, including requirements analysis and testing",
+            "Successful verification of software products against approved processes and plans",
+            "Identified and documented non-compliances, supporting root cause analysis and implementation of corrective actions",
+            "Assisted in the creation of software quality metrics and dashboards",
+            "Translated technical software documentation for non-technical stakeholders",
+            "Conducted research on emerging industry trends and best practices in software quality engineering",
+            "Provided support for software configuration management and version control systems",
+            "Developed and maintained software test plans and test cases",
+            "Improved software testing efficiency by 20% through process enhancements",
+            "Assisted in the development of software quality standards and procedures",
+            "Collaborated with cross-functional teams to resolve software quality issues",
+            "Documented and tracked software defects and issues"
+        ],
+        "location": "Everett, WA",
+        "site": "https://www.boeing.com/"
+    },
+    "3887886990": {
+        "company_name": "Veeva Systems",
+        "job_title": "QA Operations Specialist",
+        "achievements": [
+            "Helped streamline training curriculum management for 20% reduction in training documentation errors.",
+            "Coordinated training events for international employees, ensuring successful onboarding and improved team performance.",
+            "Conducted quality reviews of process documents, resulting in 15% reduction in errors and improved compliance.",
+            "Developed and presented training materials to enhance employee knowledge and skills.",
+            "Assisted in creating and modifying LMS reports to improve data analysis and decision-making.",
+            "Collaborated with QA operations team to develop and implement process improvements."
+        ],
+        "location": "United States",
+        "site": "https://www.veeva.com/"
+    },
+    "3887904814": {
+        "company_name": "ASML",
+        "job_title": "Mechanical Engineer",
+        "achievements": [
+            "Designed and created 3D models of mechanical parts using Creo software.",
+            "Completed 10 detail drawings with precision and accuracy, ensuring compliance with company standards.",
+            "Collaborated with vendors to source and procure materials for fabrication, resulting in cost savings of 15%.",
+            "Developed and implemented a documentation control system using Windchill, reducing errors by 20%.",
+            "Designed and simulated production fixtures for assembly and alignment, increasing production efficiency by 12%.",
+            "Recommended and implemented a change to the design process, reducing production lead time by 8%.",
+            "Assisted in the creation of a formal drawing update process, ensuring compliance with Agile best practices.",
+            "Analyzed and resolved mechanical fit and performance issues, reducing rework by 18%.",
+            "Generated technical specifications and bills of materials for mechanical components, ensuring accuracy and completeness.",
+            "Participated in a project team to develop a new product design, contributing to a 10% reduction in development time."
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.asml.com/"
+    },
+    "3888979085": {
+        "company_name": "Benchling",
+        "job_title": "Software Engineer, Infrastructure (Release Engineering)",
+        "achievements": [
+            "Assisted in implementing automated deployment scripts using Terraform for quarterly releases.",
+            "Developed and maintained CI/CD pipelines for multiple microservices using BuildKite.",
+            "Created containers using Kubernetes to improve infrastructure scalability and reliability.",
+            "Improved error detection and reporting in CI/CD pipelines by 25% through implementation of automated testing and debugging tools.",
+            "Reduced median deployment time by 30% through optimization of pipeline configuration and containerization.",
+            "Collaborated with cross-functional teams to design and implement a scalable infrastructure solution for Validated Cloud releases.",
+            "Developed and maintained a suite of internal tools for configuring and managing infrastructure using Python and AWS SDK.",
+            "Implemented a logging and monitoring system using ELK Stack to improve infrastructure visibility and debugging capabilities.",
+            "Assisted in migrating infrastructure to a cloud-agnostic architecture, reducing vendor lock-in and improving scalability.",
+            "Improved team communication and collaboration through development and implementation of a transparent project tracking system.",
+            "Participated in code reviews and contributed to the development of more resilient and efficient infrastructure code.",
+            "Collaborated with other engineers to design and implement a scalable and secure release management process for Validated Cloud."
+        ],
+        "location": "San Francisco, CA",
+        "site": "https://www.benchling.com/"
+    },
+    "3889124559": {
+        "company_name": "Workday",
+        "job_title": "Product Manager",
+        "achievements": [
+            "Collaborated with cross-functional teams to define product backlog for new payroll features.",
+            "Designed and led customer research sessions to understand market trends and competitive gaps.",
+            "Integrated customer feedback from research sessions into product roadmap and prioritized features.",
+            "Developed and presented product demonstrations to internal stakeholders to gather feedback on new features.",
+            "Created and maintained product documentation for new payroll features, including user stories and acceptance criteria.",
+            "Worked with software engineering team to ensure seamless integration of new payroll features with existing products.",
+            "Conducted market research and analyzed competitive data to inform product development decisions.",
+            "Developed and tracked key performance indicators to measure efficiency of new payroll features.",
+            "Participated in agile development ceremonies, including daily stand-ups and sprint planning.",
+            "Coordinated release planning and deployment of new payroll features to ensure timely and successful delivery."
+        ],
+        "location": "Atlanta, GA",
+        "site": "https://www.workday.com/"
+    },
+    "3889715926": {
+        "company_name": "Qualcomm",
+        "job_title": "Financial Analyst, Staff",
+        "achievements": [
+            "Collaborated with cross-functional teams to develop and maintain financial models and dashboards.",
+            "Developed and presented financial reports to senior leadership team.",
+            "Improved financial forecasting accuracy by 15% through variance analysis and identified trends.",
+            "Built and maintained Tableau dashboards, including creating interactive filters and calculated fields.",
+            "Assisted in the development of the marketing contra-revenue budget, including review of programs and approved marketing development funds.",
+            "Provided ad-hoc data analysis and pricing support to senior management for key business initiatives.",
+            "Created and maintained Excel spreadsheets for financial data tracking and analysis.",
+            "Gathered and analyzed financial data from various sources for report creation.",
+            "Helpered with reviewing and reconciling financial statements and reports.",
+            "Presented financial results to Mobile BU senior leadership team.",
+            "Generated and shared financial reports with various stakeholders via email or scheduled meetings.",
+            "Studied and applied advanced financial concepts, such as budgeting and forecasting, in a real-world setting."
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.qualcomm.com/"
+    },
+    "3889717589": {
+        "company_name": "Qualcomm",
+        "job_title": "Program Manager",
+        "achievements": [
+            "Successfully managed multiple small programs with minimal complexity, meeting deadlines and staying within budget.",
+            "Coordinated project schedules and resources, ensuring timely delivery and communication with stakeholders.",
+            "Developed and maintained program schedules, identifying and mitigating risks to ensure successful program execution.",
+            "Created and tracked program dashboards to monitor key metrics and identify potential deviations from plan.",
+            "Collaborated with cross-functional teams to identify and address issues, improving program outcomes.",
+            "Updated and maintained program documentation, ensuring compliance with company procedures and standards.",
+            "Provided program updates and reports to stakeholders, summarizing progress and highlighting key achievements.",
+            "Assisted in creating and managing program budgets, tracking expenses and identifying areas for cost optimization.",
+            "Coordinated with program teams to identify and develop program requirements, ensuring alignment with company objectives.",
+            "Developed and maintained program communication plans, ensuring effective stakeholder engagement and managed expectations."
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.qualcomm.com/"
+    },
+    "3891083648": {
+        "company_name": "Palo Alto Networks",
+        "job_title": "Systems Engineer, Majors - Northeast",
+        "achievements": [
+            "Assisted in delivering a customized Next-Generation Security Platform proposal to a Fortune 500 company",
+            "Developed and presented technical demos for a major financial institution",
+            "Worked closely with the sales team to design a comprehensive security solution for a major healthcare organization",
+            "Conducted thorough network assessments for multiple clients, identifying and prioritizing security vulnerabilities",
+            "Collaborated with a senior engineer to develop and deliver a technical training session for a local partner",
+            "Generated and edited technical documents, including RFP responses and proof-of-concept statements",
+            "Assisted in coordinating and participating in a multi-partner solution showcase for a major enterprise client",
+            "Completed a comprehensive security assessment for a small to medium-sized business, providing actionable recommendations",
+            "Tested and validated solutions for a series of proof-of-concept projects, ensuring seamless integration and operation"
+        ],
+        "location": "Hartford, CT",
+        "site": "https://www.paloaltonetworks.com/"
+    },
+    "3894286620": {
+        "company_name": "Capital One",
+        "job_title": "Associate, RM Risk Office, Advisory Support",
+        "achievements": [
+            "Coordinated with C&E team to develop a report on regulatory exam findings for senior management review",
+            "Assisted in scheduling and tracking Risk Assessment activities, ensuring timely completion of tasks",
+            "Provided administrative support during audit preparation, including data collection and document review",
+            "Developed and maintained a risk trends dashboard using Excel, presenting findings to team members",
+            "Assisted in researching and summarizing regulatory updates, contributing to risk management framework",
+            "Coordinated meetings and calls between stakeholders, ensuring effective communication and follow-up",
+            "Created and managed a centralized repository of risk management reports and documents",
+            "Supported Risk Reporting team in preparing reports for senior management, including data analysis and visualization",
+            "Assisted in developing a process for tracking and addressing audit findings and recommendations"
+        ],
+        "location": "Richmond, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3894290307": {
+        "company_name": "Capital One",
+        "job_title": "Associate, RM Risk Office, Advisory Support",
+        "achievements": [
+            "Coordinated the preparation of audit deliverables for multiple projects, ensuring timely completion and quality results.",
+            "Assisted in the development of process documentation and procedural guides for risk management activities.",
+            "Provided research support for risk assessments, analyzing regulatory changes and their potential impacts on business operations.",
+            "Contributed to the creation of risk reports, summarizing key findings and recommendations for management review.",
+            "Participated in project meetings and phone calls, taking minutes and ensuring accurate documentation of discussions and decisions.",
+            "Assisted in the maintenance of risk management databases and systems, ensuring data integrity and accuracy.",
+            "Supported the Risk Office team in the development of risk-related training materials and presentations.",
+            "Developed and distributed reports to stakeholders on risk-related topics, including identified risks and mitigation strategies.",
+            "Provided process support and coordination for multiple projects, ensuring efficient workflows and optimal resource allocation.",
+            "Collaborated with team members to identify and prioritize tasks, ensuring effective time management and project delivery.",
+            "Note: I have generated achievements that are specific to the role and are realistic for a college student or recent graduate with limited professional experience."
+        ],
+        "location": "McLean, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3894543925": {
+        "company_name": "Capital One",
+        "job_title": "Manager, Software Engineer",
+        "achievements": [
+            "Collaborated with cross-functional teams to design and develop a cloud-based payment processing system using AWS services.",
+            "Improved code quality and reduced bugs by 20% through implementation of automated testing and code review processes.",
+            "Developed and maintained multiple RESTful APIs using Java and Spring Boot, integrating with multiple microservices.",
+            "Troubleshot and resolved complex issues with the team's CI/CD pipeline, improving deployment frequency by 30%.",
+            "Created and delivered a technical training session for junior team members on container orchestration with Docker and Kubernetes.",
+            "Designed and implemented a scalable data storage solution using NoSQL databases, resulting in a 40% reduction in storage costs.",
+            "Improved team velocity by 25% through effective Agile project management and prioritization.",
+            "Worked closely with digital product managers to gather and prioritize product requirements, ensuring timely delivery of features.",
+            "Developed and maintained a reusable code library for common functionality, reducing duplication by 50%."
+        ],
+        "location": "Richmond, VA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3894549561": {
+        "company_name": "Honeywell",
+        "job_title": "Data Engineer II",
+        "achievements": [
+            "Implemented ETL process for extracting and loading data from JSON files to a Snowflake database for data analysis.",
+            "Developed and optimized Python scripts for data preprocessing and transformation using Pandas and NumPy.",
+            "Designed and implemented a data warehouse schema for storing and querying large-scale datasets using PostgreSQL.",
+            "Collaborated with a team to develop a data visualization dashboard for monitoring analytics using Tableau.",
+            "Created and scheduled data pipelines using Apache Airflow for automated data processing and monitoring.",
+            "Trained and deployed a machine learning model using TensorFlow for predicting customer behavior.",
+            "Implemented data quality checks and data validation using Python and SQL for ensuring data accuracy.",
+            "Developed a data governance framework for ensuring data security and compliance using AWS IAM.",
+            "Created and maintained comprehensive documentation for data architecture, processes, and systems using GitBook.",
+            "Researched and implemented a NoSQL database solution using MongoDB for storing and processing large-scale data.",
+            "Optimized query performance for a large-scale data set by indexing and denormalizing data using PostgreSQL.",
+            "Debugged and resolved data processing issues using log files and debugging tools.",
+            "Developed and presented a technical presentation on data engineering best practices to a team of peers."
+        ],
+        "location": "Charlotte, NC",
+        "site": "https://www.honeywell.com/us/en"
+    },
+    "3895271680": {
+        "company_name": "Boeing",
+        "job_title": "Associate Electronic Systems Design and Analysis Engineer",
+        "achievements": [
+            "Implemented a design management tool to track and organize project files, leading to a 30% reduction in project delays.",
+            "Collaborated with junior engineers to develop a comprehensive guide for new hires, resulting in a 25% increase in new hire productivity.",
+            "Created a training program for peers, covering advanced CAD software, with a 90% retention rate for trainees.",
+            "Developed a process for conducting quality checks on design deliverables, resulting in a 99% accuracy rate.",
+            "Assisted in conducting a root cause analysis of a production issue, identifying and implementing a corrective action that reduced troubleshooting time by 40%.",
+            "Designed and implemented a custom dashboard in ENOVIA to track product development metrics, improving data visualization and analysis efficiency.",
+            "Provided technical support to internal stakeholders, resolving 85% of queries and requests within 24 hours.",
+            "Developed a set of reusable design components, reducing design development time by 15%."
+        ],
+        "location": "North Charleston, SC",
+        "site": "https://www.boeing.com/"
+    },
+    "3895271682": {
+        "company_name": "Boeing",
+        "job_title": "Manufacturing Operations Analyst",
+        "achievements": [
+            "Conducted waste walkthroughs and identified opportunities for reduction and recycling at the Mascoutah facility",
+            "Developed and presented a training module on Boeing's quality compliance procedures to new hires",
+            "Assisted in the creation of visual management boards to track production metrics and goals",
+            "Improved data analysis skills by creating dashboards in Excel and Power BI to track production and quality trends",
+            "Coordinated with cross-functional teams to complete a quality initiative project, resulting in a 15% reduction in defects",
+            "Identified and documented non-compliances during audits and inspections, and provided recommendations for corrective action",
+            "Assisted in the development of a Corrective Action Request (CAR) process for reporting and tracking quality issues",
+            "Provided technical support to production teams on quality-related issues, resulting in a 20% reduction in customer complaints",
+            "Developed a quality metrics dashboard to track key performance indicators (KPIs) and maintain a high level of customer satisfaction"
+        ],
+        "location": "Mascoutah, IL",
+        "site": "https://www.boeing.com/"
+    },
+    "3895272601": {
+        "company_name": "Boeing",
+        "job_title": "Mid-Level Software Developer",
+        "achievements": [
+            "Improved code organization and commenting for a complex application, resulting in a 30% reduction in debugging time.",
+            "Developed a custom data visualization dashboard using SQL and Excel to track application performance metrics.",
+            "Enhanced application security by implementing a secure coding practice for authentication and authorization.",
+            "Collaborated with a team to design and implement a new feature for an application, resulting in a 25% increase in user engagement.",
+            "Utilized DevOps practices to streamline deployment and testing processes, reducing deployment time by 40%.",
+            "Created technical documentation for a complex algorithm, resulting in improved knowledge sharing among team members.",
+            "Debugged and resolved a critical issue in a production environment, minimizing downtime and user impact.",
+            "Improved database performance by optimizing queries and implementing indexing, resulting in a 50% reduction in query execution time.",
+            "Developed and maintained a project management dashboard using Kanban, tracking and prioritizing tasks effectively.",
+            "Implemented automated testing using Jest and Enzyme, resulting in a 30% reduction in manual testing time."
+        ],
+        "location": "Everett, WA",
+        "site": "https://www.boeing.com/"
+    },
+    "3895272631": {
+        "company_name": "Boeing",
+        "job_title": "Software Developer - Intern",
+        "achievements": [
+            "Developed and deployed a microservice-based data pipeline using Python and Apache Beam to process and transform large datasets for a real-time analytics dashboard.",
+            "Collaborated with a team to design and implement a scalable cloud-based infrastructure using Amazon Web Services (AWS) and Docker for a web application.",
+            "Contructed and presented a technical report on the implementation of a generative adversarial network (GAN) for image synthesis, utilizing Python and TensorFlow.",
+            "Improved the readability and maintainability of existing code by refactoring and commenting out redundant and duplicated sections, resulting in a 30% reduction in code complexity.",
+            "Assisted in the development of a natural language processing (NLP) chatbot using Node.js and Dialogflow, integrating with a database for user interactions.",
+            "Participated in a hackathon to develop a web-based AI-powered tool for mental health monitoring, leveraging JavaScript, HTML/CSS, and the Microsoft Azure Machine Learning platform.",
+            "Conducted automated testing using Jest and Enzyme for a React-based user interface, identifying and fixing 15 critical issues.",
+            "Implemented data visualization using D3.js and Tableau to display complex data insights, leading to a 25% increase in data understanding and decision-making capabilities.",
+            "Worked on a team to develop a machine learning model using scikit-learn and Python to classify customer behavior, achieving an accuracy of 85%.",
+            "Built and deployed a RESTful API using Flask and PostgreSQL to integrate with a mobile application, handling over 1,000 concurrent requests.",
+            "Collaborated with a mentor to develop a personal project, designing and implementing a web-based platform for language learning, utilizing React, Node.js, and MongoDB."
+        ],
+        "location": "Annapolis Junction, MD",
+        "site": "https://www.boeing.com/"
+    },
+    "3900079723": {
+        "company_name": "Honeywell",
+        "job_title": "Systems Engineer II",
+        "achievements": [
+            "Participated in multiple system safety assessments using ARP4761 and MIL-STD-882E.",
+            "Developed and maintained Reliability Program Plans (RPP) for multiple projects.",
+            "Conducted Failure Mode and Effects Analysis (FMEA) for several complex systems.",
+            "Assisted in creating System Safety Program Plans (SSPP) and Functional Hazard Assessments (FHA).",
+            "Contributed to derivation of safety and reliability design requirements from customer specifications.",
+            "Performed basic Reliability predictions to establish Mean Time Between Failure (MTBF) estimates.",
+            "Sorted and prioritized large datasets for analysis using MS Excel and Access.",
+            "Coordinated with cross-functional teams to meet project deadlines.",
+            "Assisted in creating technical documentation and reports for management and customers.",
+            "Successfully applied knowledge of aircraft and electronic systems in practical applications."
+        ],
+        "location": "Phoenix, AZ",
+        "site": "https://www.honeywell.com/us/en"
+    },
+    "3900954968": {
+        "company_name": "Raytheon",
+        "job_title": "Software Engineer (SecDevOps)",
+        "achievements": [
+            "Improved efficiency by 20% through automation of deployment processes using CloudFormation",
+            "Created and maintained a comprehensive knowledge base of AWS services and their use cases",
+            "Developed a script to automate AWS EC2 instance creation and configuration",
+            "Implemented Docker containers to improve application scalability and reliability",
+            "Created a Jenkins pipeline to automate build, test, and deployment of a web application",
+            "Optimized database performance by 30% through indexing and query optimization",
+            "Conducted independent research on serverless architectures and presented findings to the team",
+            "Worked with the DevOps team to implement continuous integration and continuous deployment (CI/CD) pipelines"
+        ],
+        "location": "Sterling, VA",
+        "site": "https://www.rtx.com/"
+    },
+    "3900957963": {
+        "company_name": "IBM",
+        "job_title": "Data Analyst",
+        "achievements": [
+            "Developed a data pipeline using Power Apps and Power Automate to automate data extraction and processing for a government stakeholder.",
+            "Analyzed historical data using SQL Queries and Python Scripting to identify trends and insights, resulting in improved decision-making for a cross-team project.",
+            "Collaborated with technical team members to design and implement a data visualization dashboard using Tableau, increasing data accessibility by 30%.",
+            "Troubleshot data anomalies and errors using API configuration and visualization tools, reducing data discrepancies by 25%.",
+            "Documented technical requirements for development using Power Apps and Power Automate, ensuring accurate implementation and reducing errors by 20%.",
+            "Contributed to an agile development team, actively participating in planning, refinement, estimation, design, retrospective, and technical demo meetings.",
+            "Developed and presented data-driven insights to internal and external customers, improving communication and understanding by 40%.",
+            "Created and maintained data documentation and technical guides using Power Apps and Power Automate, ensuring knowledge sharing and reducing onboarding time by 30%."
+        ],
+        "location": "Washington, DC",
+        "site": "https://www.ibm.com/"
+    },
+    "3900958956": {
+        "company_name": "IBM",
+        "job_title": "Business Analyst",
+        "achievements": [
+            "Facilitated a requirements-gathering session with stakeholders to elicit business process descriptions and use cases for a new product feature.",
+            "Conducted research to identify and document functional requirements for a government client's application.",
+            "Developed program epics and user stories for a new software development project.",
+            "Presented findings and recommendations to team members in a daily stand-up meeting.",
+            "Collaborated with a Product Owner to create a clear product backlog for a development team.",
+            "Researched and summarized industry trends and best practices in business analysis for a team-focused presentation.",
+            "Facilitated a team retrospective to identify areas for improvement and implement process changes.",
+            "Created and maintained a project documentation repository using a collaboration tool.",
+            "Developed and presented a written summary of key findings and recommendations to a stakeholder group.",
+            "Assisted in the creation of test cases and scenarios for a software development project.",
+            "Participated in a continuous integration process, providing feedback on code quality and functionality."
+        ],
+        "location": "Herndon, VA",
+        "site": "https://www.ibm.com/"
+    },
+    "3900959361": {
+        "company_name": "Raytheon",
+        "job_title": "Systems Engineer II (Onsite)",
+        "achievements": [
+            "Worked on multiple projects to implement daily operations plans using complex software systems",
+            "Improved documentation processes by creating technical instructions and procedure documents",
+            "Developed a keen understanding of technical goals and objectives",
+            "Assisted in training new personnel on the contract team using diverse learning styles",
+            "Collaborated with cross-functional teams to support test activities and resolve technical issues",
+            "Created visual aids, such as diagrams and flowcharts, to aid in understanding complex systems",
+            "Participated in peer review process to ensure high-quality work products",
+            "Demonstrated ability to adapt to changing priorities and schedules",
+            "Utilized troubleshooting skills to resolve technical problems in a fast-paced environment",
+            "Contributed to weekly team meetings to discuss progress, goals, and challenges",
+            "Implemented a tracking system to monitor daily operations and identify areas for improvement",
+            "Worked closely with senior engineers to develop and implement technical solutions",
+            "Developed and presented a technical presentation to the team on a particular system or process",
+            "Created and maintained accurate records of technical tasks and activities",
+            "Provided technical guidance and support to team members as needed",
+            "Developed a strong understanding of security protocols and clearance process",
+            "Improved customer satisfaction through prompt and effective communication"
+        ],
+        "location": "Sterling, VA",
+        "site": "https://www.rtx.com/"
+    },
+    "3900961347": {
+        "company_name": "IBM",
+        "job_title": "QA Test Developer",
+        "achievements": [
+            "Assisted in developing and maintaining automated regression test scripts using Python and Selenium WebDriver.",
+            "Created functional testing scripts for multiple applications using Cucumber and Ruby.",
+            "Improved test execution efficiency by 20% through automated testing of UI components using Cypress.",
+            "Developed and implemented a testing framework using Java and JUnit for a web application.",
+            "Utilized JMeter to create and execute performance testing scenarios for a cloud-based application.",
+            "Created test plans and test cases for multiple features of a software application using Agile methodology.",
+            "Assisted in debugging and resolving technical issues in test automation scripts using debugging tools like Chrome DevTools.",
+            "Collaborated with cross-functional teams, including development, QA, and product teams, to ensure timely and high-quality testing.",
+            "Identified and reported defects in software applications and tracked their resolution to closure.",
+            "Implemented Test-Driven Development (TDD) and Behavior-Driven Development (BDD) principles in testing practices.",
+            "Created detailed test reports and documentation, including test plans, test cases, and test results.",
+            "Participated in code reviews and provided feedback to improve code quality and maintainability.",
+            "Utilized version control systems like Git to manage and track changes to testing scripts and automation frameworks.",
+            "Created and executed manual testing scripts for multiple features of a software application, including UI, data validation, and system testing."
+        ],
+        "location": "Herndon, VA",
+        "site": "https://www.ibm.com/"
+    },
+    "3900961401": {
+        "company_name": "Oracle",
+        "job_title": "Software Developer",
+        "achievements": [
+            "Implemented a RESTful API using NodeJS, Python, and Java for a group project, achieving a 90% completion rate within a 2-week deadline",
+            "Developed a web application using Spring and Docker, successfully deploying it on a containerized environment",
+            "Designed and implemented a test-driven development (TDD) approach for a microservices-based project, achieving 95% unit test coverage",
+            "Improved code quality by implementing code reviews and CI/CD pipelines in an Agile development environment",
+            "Created a containerized development environment using Docker, reducing deployment time by 30%",
+            "Collaborated with a team to design and develop a scalable and maintainable software architecture for a group project",
+            "Developed a custom JavaScript module for a project, utilizing HTML, CSS, and JavaScript skills",
+            "Implemented a caching mechanism using Redis, improving application performance by 25%",
+            "Participated in a Code Review Process, providing constructive feedback to improve team members' code quality",
+            "Successfully debugged and resolved a complex issue in a software application, utilizing problem-solving skills and available resources",
+            "Designed and developed a visualization dashboard using HTML, CSS, and JavaScript, presenting results to the team",
+            "Implemented a continuous integration and deployment (CI/CD) pipeline using Jenkins, improving deployment speed by 50%",
+            "Assisted in implementing quality assurance processes, including unit testing, integration testing, and regression testing"
+        ],
+        "location": "New York, NY",
+        "site": "https://www.oracle.com/"
+    },
+    "3901156966": {
+        "company_name": "Honeywell",
+        "job_title": "Finance Analyst",
+        "achievements": [
+            "Assisted in Month-end close and reporting for Honeywell Connected Cyber business.",
+            "Developed and maintained budget and forecasting models in Excel.",
+            "Conducted variance analysis to identify trends and areas for improvement.",
+            "Built and maintained financial dashboards using Power BI.",
+            "Created and presented STRAP report to cross-functional teams.",
+            "Assisted in the development of the annual operating plan (AOP) for the business.",
+            "Provided financial support for business development initiatives.",
+            "Analyzed financial data to identify opportunities for cost reduction.",
+            "Generated financial reports to meet business stakeholder needs.",
+            "Assisted in the preparation of internal and external financial statements.",
+            "Utilized financial systems, including Oracle and SAP, to complete financial tasks.",
+            "Made recommendations to management based on financial analysis and trends.",
+            "Researched and applied financial regulatory changes to company policies and procedures.",
+            "Collaborated with cross-functional teams to achieve business objectives."
+        ],
+        "location": "Atlanta, GA",
+        "site": "https://www.honeywell.com/us/en"
+    },
+    "3901360076": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer II",
+        "achievements": [
+            "Contributed to the development of a scalable and secure cloud management system, implementing C# and Azure cloud services.",
+            "Participated in a team to design and implement a highly available and reliable backend service, utilizing technologies such as Java and Python.",
+            "Developed and tested a monitoring and alerting system for Azure services, ensuring timely resolution of issues and improving overall service reliability.",
+            "Improved the efficiency of development workflows by proposing and implementing changes to the Continuous Integration and Continuous Deployment (CI/CD) pipeline.",
+            "Collaborated with cross-functional teams to gather requirements and provide updates on development progress, demonstrating effective communication and project management skills.",
+            "Spearheaded the identification and resolution of bugs and performance issues in cloud-based services, utilizing debugging tools and techniques.",
+            "Optimized the performance of a cloud-based application, resulting in a 20% reduction in latency and a 15% increase in throughput.",
+            "Assisted in the implementation of security controls and data privacy measures to ensure compliance with industry regulations.",
+            "Conducted code reviews and provided constructive feedback to team members, promoting a culture of collaboration and continuous improvement.",
+            "Designed and developed a proof-of-concept solution for a complex technical problem, leveraging existing technologies and expertise.",
+            "Provided technical support and guidance to junior team members, mentoring and training them in best practices and software engineering principles.",
+            "Enhanced the maintainability and scalability of cloud-based services by refactoring code, improving modularity and reducing complexity.",
+            "Eliminated bottlenecks and improved the flow of data through a cloud-based application, resulting in a 10% increase in system performance."
+        ],
+        "location": "Redmond, WA",
+        "site": "https://www.microsoft.com/"
+    },
+    "3901375215": {
+        "company_name": "Oracle",
+        "job_title": "Technical Analyst",
+        "achievements": [
+            "Assisted in resolving complex technical issues for 10+ Oracle customers with a first-call resolution rate of 85%.",
+            "Developed and implemented automation scripts using C++ to streamline troubleshooting process, reducing resolution time by 30%.",
+            "Collaborated with senior analysts to resolve critical customer issues, showcasing problem-solving skills and attention to detail.",
+            "Conducted extensive research on ASM architecture and RAC clustering technologies, providing insightful solutions to complex customer problems.",
+            "Utilized debugging tools and scripts to troubleshoot and resolve issues with Oracle database features, resulting in a 25% decrease in customer complaints.",
+            "Drafted technical documentation and knowledge base articles for internal use, utilizing clear and concise language to simplify complex technical concepts.",
+            "Participated in virtual training sessions, providing technical guidance and support to junior analysts and training new hires.",
+            "Served as a technical point of contact for Oracle customers, providing top-notch customer service and ensuring timely issue resolution.",
+            "Worked closely with cross-functional teams to identify and resolve technical issues, demonstrating excellent communication and collaboration skills.",
+            "Successfully migrated a customer's database to a new Oracle database version, ensuring seamless transition and minimal downtime.",
+            "Applied knowledge of Unix and Linux operating systems to troubleshoot and resolve customer issues, increasing problem-solving proficiency."
+        ],
+        "location": "Colorado Springs, CO",
+        "site": "https://www.oracle.com/"
+    },
+    "3901375218": {
+        "company_name": "Oracle",
+        "job_title": "User Experience Developer",
+        "achievements": [
+            "Designed and prototyped 3 user interfaces for a student-led project, utilizing Adobe Creative Suite and HTML/CSS.",
+            "Conducted usability testing with a control group of 10 participants to identify areas for improvement.",
+            "Developed and applied user personas to inform design decisions.",
+            "Investigated and identified common patterns of human error in interacting with a complex software system.",
+            "Created wireframes and low-fidelity prototypes for a company's mobile app redesign.",
+            "Collaborated with a team to plan and execute a design solution, integrating diverse perspectives.",
+            "Researched and implemented data visualization methods to present complex data in an intuitive way.",
+            "Developed a design concept and implementation plan for a UI component in collaboration with a designer.",
+            "Created user journey maps to identify key user pain points and areas for improvement.",
+            "Tested and refined a prototype using HTML/CSS and design tools, incorporating user feedback.",
+            "Designed and refined a visual design concept based on user research and usability testing results.",
+            "Created interactive prototypes to demonstrate user interface concepts and communicate design decisions to stakeholders.",
+            "Analyzed and presented results of user research and usability testing to inform design decisions.",
+            "Worked with cross-functional teams to integrate design solutions with technical requirements and product goals.",
+            "Conducted competitor analysis to identify industry trends and best practices in user experience design."
+        ],
+        "location": "Austin, TX",
+        "site": "https://www.oracle.com/"
+    },
+    "3901984680": {
+        "company_name": "Deloitte",
+        "job_title": "Network Engineer(Mid-Level)",
+        "achievements": [
+            "Successfully designed and implemented a network infrastructure for a small team using Cisco networking equipment and Microsoft Windows Server administration best practices.",
+            "Collaborated with a team to troubleshoot and resolve network connectivity issues, achieving a 90% resolution rate within a 3-hour timeframe.",
+            "Utilized DHCP and DNS to segment a network for a high-security government project, ensuring compliance with security regulations.",
+            "Designed and deployed a scalable, redundant infrastructure for a load balancing solution using NetApp and Palo Alto equipment.",
+            "Provided technical support and trained junior team members on basic network concepts and troubleshooting procedures.",
+            "Implemented Quality of Service (QoS) policies to optimize network resource allocation for a large-scale government project.",
+            "Assisted in conducting vulnerability assessments using industry-standard tools and frameworks.",
+            "Worked closely with the software development team to integrate DevSecOps practices, resulting in a 25% reduction in software release cycle time.",
+            "Developed and presented a technical briefing on network security best practices for a peer group, showcasing knowledge of industry trends and standards.",
+            "Successfully secured Active Top Secret clearance with SCI eligibility, demonstrating ability to meet strict security standards.",
+            "Contributed to the development of a comprehensive network documentation package for a large-scale government project, ensuring all stakeholders had access to accurate information."
+        ],
+        "location": "Colorado Springs, CO",
+        "site": "https://www.deloitte.com/global/en.html"
+    },
+    "3901984728": {
+        "company_name": "Microsoft",
+        "job_title": "Business Program Manager",
+        "achievements": [
+            "Assisted in developing and tracking key performance indicators (KPIs) for monthly sales reports",
+            "Conducted data analysis to identify trends and gaps in sales performance",
+            "Collaborated with cross-functional teams to design and implement sales enablement tools",
+            "Developed and maintained a data dashboard to track sales metrics",
+            "Improved sales forecasting accuracy by 15% through data-driven insights",
+            "Created and presented reports to senior leadership on sales performance and trends",
+            "Helped design and deliver training sessions for sales team on data analysis and interpretation",
+            "Developed and maintained relationships with internal stakeholders to ensure successful project delivery",
+            "Streamlined sales reporting process by automating data pulls and improving data quality",
+            "Provided data-driven feedback to sales team to improve performance and identify areas for growth",
+            "Researched and recommended new sales tools and technologies to improve team efficiency",
+            "Coordinated with customer-facing teams to gather feedback and insights on customer needs and pain points",
+            "Assisted in developing and implementing sales strategies to drive growth and revenue",
+            "Created and maintained sales reports for regional leadership and field teams"
+        ],
+        "location": "United States",
+        "site": "https://www.microsoft.com/"
+    },
+    "3901987509": {
+        "company_name": "Microsoft",
+        "job_title": "Technical Program Manager II",
+        "achievements": [
+            "Developed and presented a technical paper on I/O acceleration to the Azure Host & Innovations team.",
+            "Improved project timelines by 20% by optimizing collaboration with software architects and developers.",
+            "Collaborated with the program management team to develop a data-driven roadmap for the Azure Host Storage team.",
+            "Identified and proposed data-based mitigation strategies for common I/O acceleration challenges.",
+            "Developed a technical specification for integrating new acceleration technologies with the Azure fleet.",
+            "Created and maintained technical documentation for the Azure Host Storage team.",
+            "Participated in cross-functional project meetings and ensured alignment across teams.",
+            "Worked with hardware and software engineering teams to design and implement I/O acceleration solutions.",
+            "Conducted data analysis to evaluating the effectiveness of I/O acceleration initiatives.",
+            "Developed and presented a presentation on I/O acceleration technology trends to the Azure Host & Innovations team."
+        ],
+        "location": "United States",
+        "site": "https://www.microsoft.com/"
+    },
+    "3901988879": {
+        "company_name": "Discover Financial Services",
+        "job_title": "Infrastructure Engineer (Network Operations)",
+        "achievements": [
+            "Responsible for monitoring and analyzing network performance metrics to identify potential issues and optimize network efficiency.",
+            "Completed routine network maintenance tasks, including software updates and system backups.",
+            "Assisted in troubleshooting and resolving network-related issues, including DNS and VPN connectivity problems.",
+            "Configured and tested network equipment, including routers and switches, to ensure proper functionality.",
+            "Developed and maintained documentation for network configuration, troubleshooting, and maintenance procedures.",
+            "Collaborated with senior engineers to develop and implement new network monitoring and reporting tools.",
+            "Participated in regular security audits and compliance checks to ensure network compliance with industry standards.",
+            "Assisted with the deployment and configuration of new network devices and services.",
+            "Contributed to the development and implementation of network automation scripts using Python or other scripting languages.",
+            "Created and maintained network diagrams and architecture documents.",
+            "Assisted with the investigation and resolution of network-related incidents and outages.",
+            "Implemented process improvements to reduce network downtime and increase overall network availability.",
+            "Generated and presented reports on network performance and reliability to senior management.",
+            "Documented and tracked network issues and resolutions in a centralized ticketing system."
+        ],
+        "location": "Riverwoods, IL",
+        "site": "https://www.discover.com/"
+    },
+    "3901989453": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer I/II",
+        "achievements": [
+            "Developed and deployed a new feature using TypeScript, React, and Fluent UI, resulting in improved user experience and bug fixes.",
+            "Collaborated with cross-functional teams to resolve live site issues, achieving a 25% reduction in site downtime.",
+            "Improved application performance by 15% through code optimization and caching.",
+            "Improved code quality by implementing automated testing and code reviews.",
+            "Developed and deployed a new integration with Power Platform, increasing customer engagement by 12%.",
+            "Troubleshot and resolved 50+ reported bugs and issues, improving overall application stability.",
+            "Assisted in the development of a new application capability, enhancing customer service and reducing customer complaints by 10%.",
+            "Contributed to the design and development of a new user interface, improving user satisfaction ratings by 18%.",
+            "Improved application security by implementing measures to prevent common vulnerabilities and attacks.",
+            "Assisted in the development of a new algorithm for predicting application performance and site reliability."
+        ],
+        "location": "Redmond, WA",
+        "site": "https://www.microsoft.com/"
+    },
+    "3901990442": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer",
+        "achievements": [
+            "Collaborated on a team to build a scalable e-commerce platform using C# and Azure.",
+            "Designed and implemented a cloud-based data storage solution using Azure Storage and Blob Storage.",
+            "Developed a real-time analytics dashboard using JavaScript, Angular.js, and Azure Data Lake.",
+            "Participated in code reviews, providing feedback and improving code quality for team members.",
+            "Improved the performance of a legacy codebase by optimizing database queries and implementing caching.",
+            "Created automated testing scripts using Selenium WebDriver and NUnit for a Windows desktop application.",
+            "Worked closely with cross-functional teams to implement design changes and bug fixes.",
+            "Assisted in troubleshooting and resolving technical issues using Azure Diagnostics and Microsoft Support."
+        ],
+        "location": "Charlotte, NC",
+        "site": "https://www.microsoft.com/"
+    },
+    "3901992831": {
+        "company_name": "IBM",
+        "job_title": "Project Manager - Engineer",
+        "achievements": [
+            "Collaborated with design team to create detailed layouts for clean room and wet lab construction projects.",
+            "Communicated effectively with construction trades to ensure seamless project execution.",
+            "Developed and maintained project schedules and budget updates for multiple concurrent projects.",
+            "Coordinated with internal teams, including Global Real Estate, Utility Operations, Deionization, and waste-water plants, to ensure successful project delivery.",
+            "Contributed to the creation of value-added reports and presentations summarizing project progress and results.",
+            "Participated in project meetings and status updates to ensure timely and within-budget project delivery.",
+            "Assisted in the coordination of equipment installation and testing at client sites.",
+            "Worked indirectly with research population personnel to ensure projects aligned with research goals and objectives.",
+            "Developed and implemented effective project management tools and processes to improve project efficiency and productivity.",
+            "Organized and maintained project documentation including plans, specifications, and As-built drawings.",
+            ".Generated project cost estimates and schedules using industry-standard software."
+        ],
+        "location": "Yorktown Heights, NY",
+        "site": "https://www.ibm.com/"
+    },
+    "3901993037": {
+        "company_name": "Discover Financial Services",
+        "job_title": "Infrastructure Engineer (Network Operations)",
+        "achievements": [
+            "Utilized SolarWinds to monitor network performance and identify connectivity issues, resulting in 25% improvement in network availability.",
+            "Troubleshot VPN connection problems using Wireshark, reducing mean time to resolve from 4 hours to 1 hour.",
+            "Implemented Ansible playbooks to automate network configuration changes, increasing efficiency by 30%.",
+            "Developed and implemented a change management process, reducing rogue changes by 75%.",
+            "Collaborated with the NOC team to create a knowledge base, improving documentation by 50% and knowledge retention by 20%.",
+            "Utilized Riverbed to analyze network traffic and identify bottlenecks, optimizing network performance by 15%.",
+            "Participated in an on-call rotation, responding to incidents within a 15-minute SLA and achieving a first-call resolution rate of 80%.",
+            "Updated and maintained a network diagram using Visio, improving documentation accuracy and reducing errors by 40%.",
+            "Worked with the engineering team to design and implement a network architecture for a new business unit, resulting in a 20% increase in network capacity.",
+            "Developed a training program for junior engineers, improving their technical skills and increasing confidence by 50%.",
+            "Completed a proof-of-concept project to implement network automation using Python and Git, demonstrating feasibility and increasing process efficiency by 10%."
+        ],
+        "location": "New Albany, OH",
+        "site": "https://www.discover.com/"
+    },
+    "3901994324": {
+        "company_name": "Raytheon",
+        "job_title": "Manufacturing Technician",
+        "achievements": [
+            "Accomplished 95% of daily production targets within the first month of employment",
+            "Implemented a quality control checklist to reduce defects by 12%",
+            "Participated in a cross-functional team to improve assembly line efficiency by 10%",
+            "Successfully trained a new team member on production procedures",
+            "Improved material handling procedures, resulting in a 20% reduction in waste",
+            "Utilized problem-solving skills to troubleshoot and resolve production issues",
+            "Contributed to a 15% reduction in lead time by streamlining production workflows",
+            "Maintained a clean and organized workspace, earning a 100% score in bi-weekly audits",
+            "Developed and implemented a standardized labeling system for components",
+            "Consistently met deadlines and prioritized tasks to meet production demands"
+        ],
+        "location": "Tucson, AZ",
+        "site": "https://www.rtx.com/"
+    },
+    "3902328366": {
+        "company_name": "Discover Financial Services",
+        "job_title": "Infrastructure Engineer (Network Operations)",
+        "achievements": [
+            "Improved network performance by 20% through optimizing routing protocols and configuring Quality of Service (QoS) policies.",
+            "Collaborated with junior engineers to develop a knowledge base for troubleshooting network issues, resulting in a 30% reduction in Mean Time To Resolve (MTTR).",
+            "Designed and implemented a fault-tolerant network architecture for a new data center, ensuring 99.99% uptime.",
+            "Developed and implemented a network monitoring script using Python and SolarWinds API, allowing for real-time monitoring of network devices.",
+            "Trained a new team member on network operations and procedures, resulting in a 25% improvement in team efficiency.",
+            "Implemented a preventive maintenance schedule for network devices, reducing downtime by 40%.",
+            "Analyzed and resolved a complex network issue involving a cisco router, resulting in a 2-hour reduction in MTTR.",
+            "Created a network architecture document for a major project, ensuring seamless communication between teams.",
+            "Designed and deployed a network automation framework using Ansible and GitHub, streamlining network configuration changes.",
+            "Improved network security by implementing a web application firewall (WAF) and configuring intrusion detection system (IDS) rules."
+        ],
+        "location": "Houston, TX",
+        "site": "https://www.discover.com/"
+    },
+    "3902330315": {
+        "company_name": "Discover Financial Services",
+        "job_title": "Infrastructure Engineer (Network Operations)",
+        "achievements": [
+            "Worked in NOC to monitor and troubleshoot network issues, reducing average resolution time by 30%.",
+            "Implemented a scripted solution to automate network configuration changes, increasing efficiency by 25%.",
+            "Collaborated with junior engineers to mentor and guide them on network fundamentals, fostering team knowledge and skills.",
+            "Assisted in identifying and addressing network vulnerabilities, improving overall security posture.",
+            "Improved ticket management and closure rate by 20% through effective communication with internal and external support groups.",
+            "Developed and implemented a data network configuration change plan, reducing downtime and ensuring minimal impact on critical services.",
+            "Participated in internal speaking events to share knowledge and best practices, promoting a culture of sharing and collaboration.",
+            "Worked closely with the management team to identify and prioritize escalated issues, providing timely updates and resolutions.",
+            "Created and maintained accurate and up-to-date NOC support documentation, ensuring ease of use for future engineers.",
+            "Enhanced network monitoring and alerting processes, improving detection and response to infrastructure issues.",
+            "Helped to drive improvements and efficiencies in internal NOC processes, streamlining ticket management and resolution."
+        ],
+        "location": "Houston, TX",
+        "site": "https://www.discover.com/"
+    },
+    "3902331066": {
+        "company_name": "Discover Financial Services",
+        "job_title": "Infrastructure Engineer (Network Operations)",
+        "achievements": [
+            "Completed a network monitoring and troubleshooting project for a client, identifying and resolving connectivity issues within a 2-day timeframe.",
+            "Successfully implemented a new network device using Ansible automation tools, reducing deployment time by 30%.",
+            "Improved network documentation by 25% through creation of concise and detailed technical documentation for network devices and services.",
+            "Participated in on-call rotations for network support, responding to queries and resolving incidents within a 30-minute SLA.",
+            "Developed and presented a tutorial on network security best practices to junior staff, improving knowledge retention by 15%.",
+            "Contributed to a team effort to migrate a legacy network service to a cloud-based platform, completing the migration 2 weeks ahead of schedule.",
+            "Collaborated with the DNS/DHCP team to develop a proof-of-concept for a new DNSSEC solution, providing technical input and analysis.",
+            "Used Wireshark to analyze and diagnose a network performance issue, identifying the root cause and implementing a fix within a 4-hour timeframe.",
+            "Developed a custom dashboard using Splunk to monitor network device performance and health, reducing mean time to detect issues by 50%."
+        ],
+        "location": "Riverwoods, IL",
+        "site": "https://www.discover.com/"
+    },
+    "3902358993": {
+        "company_name": "Microsoft",
+        "job_title": "Principle Software Engineer",
+        "achievements": [
+            "Designed and implemented a Python script to optimize performance of large-scale deep neural network models on Azure infrastructure.",
+            "Collaborated with research team to evaluate state-of-the-art language models for adaptation to novel hardware architectures.",
+            "Developed and refined software tools for validation and exploration of new technologies, leveraging C++ and CUDA programming languages.",
+            "Assisted in identifying and addressing performance bottlenecks in machine learning model training and inference pipelines.",
+            "Conducted exploratory data analysis and visualization to support ML model development and optimization.",
+            "Participated in code reviews and contributed to updates of existing codebase to improve software maintainability and scalability.",
+            "Worked with cross-functional teams to troubleshoot and resolve software-related issues in model training and deployment processes.",
+            "Assisted in the development of software tools to support model deployment and inference on novel AI hardware platforms.",
+            "Improved software documentation and created clear, concise technical developer guides for internal stakeholders."
+        ],
+        "location": "United States",
+        "site": "https://www.microsoft.com/"
+    },
+    "3902362848": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer II",
+        "achievements": [
+            "Developed an E2E software development life cycle process for a data center planning and execution project",
+            "Collaborated with stakeholders to understand business requirements and developed a solution to resolve complex system integration challenges",
+            "Automated data processing workflows using Python and Azure Functions to improve efficiency by 30%",
+            "Enhanced data visualization capabilities using React and D3.js for easier data analysis and decision-making",
+            "Integrated APIs to enable real-time cost and schedule modeling, supply planning, and execution planning",
+            "Improved code quality and readability by 20% through implementation of automated testing and code review processes",
+            "Developed a recommendation engine using machine learning algorithms to improve cost and schedule accuracy",
+            "Participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives"
+        ],
+        "location": "Atlanta, GA",
+        "site": "https://www.microsoft.com/"
+    },
+    "3902363611": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer II",
+        "achievements": [
+            "Contributed to the development of a cloud-based business intelligence tool using Azure DevOps and Python.",
+            "Designed and implemented a data visualization dashboard using Power BI to improve reporting efficiency.",
+            "Collaborated with cross-functional teams to implement Agile development methodologies and iterative delivery.",
+            "Developed and deployed a scalable data pipeline using Azure Synapse Studio and Python.",
+            "Improved code quality by implementing Code Reviews and testing using JUnit.",
+            "Developed documentation for internal API endpoints using Swagger and Redoc.",
+            "Optimized database queries using SQL Server and Azure Data Studio.",
+            "Implemented authentication and authorization using Azure Active Directory and Azure App Service.",
+            "Implemented continuous integration and continuous deployment (CI/CD) pipeline using GitHub Actions and Azure DevOps."
+        ],
+        "location": "Redmond, WA",
+        "site": "https://www.microsoft.com/"
+    },
+    "3902364162": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer II",
+        "achievements": [
+            "Contributed to the development of a scalable storage system for processing 100,000 requests per second.",
+            "Implemented a load balancer to improve system availability by 20%.",
+            "Debugged and resolved 15 technical issues in a high-availability distributed system.",
+            "Created automated testing scripts using C# and NUnit to reduce manual testing time by 70%.",
+            "Collaborated with a team to develop a cloud storage solution, interacting with developers, designers, and quality assurance engineers.",
+            "Developed a data analysis tool using C# and SQL Server to analyze system performance and identify bottlenecks.",
+            "Improved system reliability by implementing failover and redundancy features.",
+            "Reduced system latency by 30% through optimization of database queries and caching mechanisms.",
+            "Wrote technical documentation for a cloud storage system using Azure's documentation standards.",
+            "Participated in code reviews, improving code quality and efficiency by 15%."
+        ],
+        "location": "Redmond, WA",
+        "site": "https://www.microsoft.com/"
+    },
+    "3902364170": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer II",
+        "achievements": [
+            "Participated in designing and developing new features for the Windows kernel.",
+            "Wrote and tested C++ code for a high-performance synchronization primitive.",
+            "Improved the performance of a critical Windows registry function by 20% through code optimization.",
+            "Collaborated with senior engineers to debug and troubleshoot complex issues in the Windows scheduler.",
+            "Developed and implemented a tool to generate diagnostic logs for Windows driver development.",
+            "Improved code readability and maintainability by 30% through refactoring and coding standards adherence.",
+            "Participated in peer code reviews, providing feedback on code quality and suggesting improvements.",
+            "Developed and presented a technical documentation on Windows timer infrastructure to the team.",
+            "Implemented a security feature to protect control flow in the Windows kernel.",
+            "Worked with cross-functional teams to design and implement new features for Azure and Microsoft Cloud.",
+            "Improved test coverage by 25% through automated testing and code analysis."
+        ],
+        "location": "Redmond, WA",
+        "site": "https://www.microsoft.com/"
+    },
+    "3902750867": {
+        "company_name": "Palo Alto Networks",
+        "job_title": "Systems Engineer, Majors",
+        "achievements": [
+            "Designed and implemented a WAN optimization solution for a small-scale enterprise client, resulting in 30% reduction in network latency.",
+            "Collaborated with a sales team to develop a customized solution for a large-scale retail client, resulting in a 25% increase in sales engagement.",
+            "Worked with a customer to troubleshoot and resolve a software issue, resulting in a 95% uptime rate for their security platform.",
+            "Assisted in conducting product demos and presentations for potential clients, resulting in a 20% increase in leads generated.",
+            "Developed and maintained technical documentation for a major product launch, including user guides, technical specifications, and FAQs.",
+            "Participated in conference calls and meetings with clients to discuss and address technical questions and concerns, resulting in a 25% increase in client satisfaction ratings.",
+            "Contributed to the development of a technical blog post detailing the benefits of next-generation firewalls, resulting in a 50% increase in website traffic.",
+            "Collaborated with a team to design and build a proof-of-concept solution for a major enterprise client, resulting in a 22% increase in potential revenue."
+        ],
+        "location": "New York, NY",
+        "site": "https://www.paloaltonetworks.com/"
+    },
+    "3902754884": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Cybersecurity Test Engineer, Mid",
+        "achievements": [
+            "Completed scripting in Ruby and Python for automating basic tasks in a Linux environment.",
+            "Assisted in conducting risk assessments using NIST 800-53 Risk Management Framework security controls.",
+            "Developed and executed test plans and procedures for a virtualized system.",
+            "Analyzed and documented technical documentation for a cybersecurity system.",
+            "Identified and reported potential vulnerabilities using Kali Linux and Wireshark.",
+            "Participated in daily code reviews and provided feedback on scripting and automation code.",
+            "Worked with a team to design and implement a basic penetration testing plan.",
+            "Used Burp Suite to identify and exploit weaknesses in a web application.",
+            "Constructed and executed test cases for Mandatory Access Controls and Discretionary Access Controls.",
+            "Collaborated with colleagues to develop and maintain technical documentation for a cybersecurity system."
+        ],
+        "location": "Rome, NY",
+        "site": "https://www.boozallen.com/"
+    },
+    "3902754890": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Information Systems Security Engineer",
+        "achievements": [
+            "Implemented endpoint-based detection solution to enhance security capabilities in a large enterprise network.",
+            "Conducted a risk and vulnerability assessment of a network system and provided recommendations for remediation.",
+            "Assisted in the development of a comprehensive network security plan, including multi-factor authentication and improved event correlation.",
+            "Translated technical information into clear language for non-technical stakeholders, improving communication throughout a project.",
+            "Conducted testing and validation of security controls and data-centric architectures to ensure compliance with ODNI standards.",
+            "Collaborated with a team to design and implement a secure network architecture for a DoD client, ensuring alignment with mission needs.",
+            "Simplified security documentation and reporting processes, increasing efficiency by 30%.",
+            "Provided technical guidance and support to junior team members, helping to improve overall project delivery.",
+            "Enhanced threat detection capabilities by integrating big data analytics with traditional security event types.",
+            "Revised and updated the company's security policy to ensure compliance with the latest IATTs and ATOs."
+        ],
+        "location": "Fort Belvoir, VA",
+        "site": "https://www.boozallen.com/"
+    },
+    "3902755168": {
+        "company_name": "SAP",
+        "job_title": "Marketing Data Analyst",
+        "achievements": [
+            "Improved data accuracy by 20% through effective data quality control measures.",
+            "Developed and maintained multiple Excel dashboards to track marketing performance metrics.",
+            "Streamlined data analysis process by creating a reusable SQL query template.",
+            "Generated detailed insights on customer engagement patterns to inform marketing strategy.",
+            "Enhanced data visualization capabilities by applying data visualization best practices.",
+            "Conducted exploratory data analysis to identify trends and correlations in marketing data.",
+            "Created and presented data-driven reports to marketing stakeholders, including senior leadership.",
+            "Integrated data from multiple sources using Adobe Analytics, Marketo, and Excel.",
+            "Utilized MSIGHTS to analyze and optimize marketing campaigns.",
+            "Developed expertise in using SAP Analytics Cloud for data modeling and visualization."
+        ],
+        "location": "Plano, TX",
+        "site": "https://www.sap.com/index.html"
+    },
+    "3902755612": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Technical Project Managment Specialist",
+        "achievements": [
+            "Assisted in planning and coordinating project deliverables using Microsoft Project.",
+            "Developed and maintained project documentation and reports for stakeholder review.",
+            "Participated in regular project meetings and status updates with team members and clients.",
+            "Collaborated with SMEs and vendors to gather project requirements and feedback.",
+            "Conducted research and analysis to identify and mitigate project risks.",
+            "Translated technical project management concepts into clear and concise language for non-technical stakeholders.",
+            "Created and managed project schedules and timelines using Agile framework and scrum approach.",
+            "Developed and led workshops to improve project workflows and efficiency.",
+            "Coordinated and facilitated project meetings with cross-functional teams and stakeholders.",
+            "Assisted with project budgeting and cost accounting during project planning and execution."
+        ],
+        "location": "Huntsville, AL",
+        "site": "https://www.boozallen.com/"
+    },
+    "3902757076": {
+        "company_name": "Palo Alto Networks",
+        "job_title": "Systems Engineer - Boston - Commercial",
+        "achievements": [
+            "Successfully prepared and delivered eight technical presentations to customers, resulting in the sale of three security solutions.",
+            "Developed and executed a business plan to sell cloud-based security solutions to small and medium-sized businesses, exceeding quarterly sales targets by 20%.",
+            "Conducted discovery calls with 15 potential customers, identifying and articulating key technical, operational, and commercial imperatives.",
+            "Assisted in planning and building technical and business-focused solutions for seven sales opportunities, driving adoption and growth across the portfolio.",
+            "Participated in five technical workshops, providing technical guidance and support to customers and internal teams.",
+            "Collaborated with the sales team to develop and deliver proposals for three major security solutions, resulting in two wins.",
+            "Provided technical expertise and support to customers, resolving 10 technical issues and improving overall customer satisfaction by 15%.",
+            "Authored and presented two case studies on the successful implementation of zero-trust solutions for mid-sized businesses."
+        ],
+        "location": "Boston, MA",
+        "site": "https://www.paloaltonetworks.com/"
+    },
+    "3902758318": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Technical Business Analyst",
+        "achievements": [
+            "Developed technical requirements documents for a team project, resulting in improved communication between technical andnon-technical stakeholders.",
+            "Conducted user research through surveys and focus groups to identify key user needs and preferences.",
+            "Collaborated with developers to refine product features based on user feedback, leading to increased user satisfaction and adoption.",
+            "Designed and implemented a help desk system to streamline customer service processes.",
+            "Analyzed business process flows to identify areas for improvement, resulting in increased efficiency and reduced costs.",
+            "Created user stories and acceptance criteria for a team project, ensuring clear expectations and deliverables.",
+            "Developed and presented documentation for a project, including requirements, design, and test plans.",
+            "Participated in Agile methodology training and applied knowledge to improve team collaboration and workflow.",
+            "Contributed to a team project's backlog refinement process, ensuring prioritized features aligned with business goals.",
+            "Utilized data analysis tools to identify key performance indicators and trends, informing business decisions."
+        ],
+        "location": "McLean, VA",
+        "site": "https://www.boozallen.com/"
+    },
+    "3902758923": {
+        "company_name": "Amazon",
+        "job_title": "Software Dev Engineer - 1",
+        "achievements": [
+            "Collaborated with offshore development team to deliver a customer-facing web application.",
+            "Designed and developed a micro-service using Node.js and RESTful APIs.",
+            "Improved code quality by identifying and addressing technical debt in existing codebase.",
+            "Developed and implemented a testing framework using Jest and React Testing Library.",
+            "Optimized database queries to improve application performance by 30%.",
+            "Created technical documentation for internal development team and stakeholders.",
+            "Implemented a logging system using Log4j and ELK Stack.",
+            "Contributed to code reviews and provided constructive feedback on peer code.",
+            "Developed a proof-of-concept prototype for a new feature using React and React Hooks."
+        ],
+        "location": "Austin, TX",
+        "site": "https://www.amazon.com/"
+    },
+    "3902760109": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Data Scientist",
+        "achievements": [
+            "Analyzed a dataset of 500 records using Python and SQL to identify trends and relationships.",
+            "Built a simple machine learning model in R to predict customer churn using a public dataset.",
+            "Developed a data visualization dashboard in Tableau to present findings to clients.",
+            "Cleaned and processed a data set of 2000 records using Python and Excel to prepare it for analysis.",
+            "Collaborated with a team of 3 to design and implement a data pipeline using AWS S3 and Spark.",
+            "Created a Python script to automate data extraction and processing from a website.",
+            "Worked with a client to understand their business needs and developed a data science plan to meet those needs.",
+            "Used statistical methods to analyze the relationship between variables in a dataset and drew conclusions about the data.",
+            "Implemented data quality checks to ensure data accuracy and integrity in a dataset.",
+            "Built a simple web scraper using Python to collect data from a website."
+        ],
+        "location": "Norfolk, VA",
+        "site": "https://www.boozallen.com/"
+    },
+    "3902760111": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Cybersecurity Test Engineer, Mid",
+        "achievements": [
+            "Conducted vulnerability assessments using Kali Linux and Burp Suite to identify security flaws in a DoD system.",
+            "Developed and executed test plans and procedures for a Small Form Factor Pluggable (SFFP) network device.",
+            "Analyzed and created technical documentation for a Linux-based system's firewall configuration.",
+            "Assisted in the development of a penetration testing framework using Python and Bash scripting.",
+            "Performed basic debugging and troubleshooting using Ruby and Python.",
+            "Collaborated with a team to conduct adversarial emulation testing on a virtualized environment.",
+            "Utilized Wireshark to capture and analyze network traffic for system monitoring and debugging.",
+            "Assisted in creating and maintaining a security incident response plan for a DoD system.",
+            "Conducted vulnerability scanning using OpenVAS and Nessus.",
+            "Developed and executed a script to automate basic system administration tasks using Bash scripting.",
+            "Created a technical document detailing the security controls used in a DoD system.",
+            "Conducted basic system testing using functional and integration testing techniques.",
+            "Assisted in the development of a system for tracking and monitoring system vulnerabilities."
+        ],
+        "location": "Rome, NY",
+        "site": "https://www.boozallen.com/"
+    },
+    "3902761493": {
+        "company_name": "Amazon",
+        "job_title": "Software Dev. Engineer I",
+        "achievements": [
+            "Developed and maintained multiple backend APIs using Java and Spring Framework",
+            "Designed and implemented a database schema for a large-scale e-commerce platform",
+            "Collaborated with cross-functional teams to identify and prioritize technical tasks",
+            "Contributed to the development of a real-time analytics dashboard using D3.js",
+            "Improved code quality by implementing automated testing and CI/CD pipelines",
+            "Participated in code reviews and provided feedback to team members",
+            "Refactored legacy code to improve performance and scalability",
+            "Developed and implemented a chatbot using Amazon Lex and Lambda",
+            "Improved application security by implementing SSL encryption and authentication",
+            "Solved complex technical problems and bugs in a timely manner",
+            "Designed and implemented multiple front-end components using React and Redux",
+            "Implemented data visualization using Power BI and Tableau",
+            "Collaborated with a team to develop a new product feature from scratch",
+            "Automated manual testing processes using Jenkins and Selenium"
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.amazon.com/"
+    },
+    "3902762474": {
+        "company_name": "Amazon",
+        "job_title": "Software Dev. Engineer I",
+        "achievements": [
+            "Developed a simple e-commerce platform using Java and Spring Framework for a group project.",
+            "Implemented a RESTful API using Python and Flask for a team project.",
+            "Designed and developed a web scraper using JavaScript and Cheerio.",
+            "Wrote unit tests and integrated tests for a Java-based project using JUnit and TestNG.",
+            "Improved code quality and reduced bugs by implementing code reviews and pair programming.",
+            "Collaborated with a team to design and develop a web application using Agile methodologies.",
+            "Participated in code refactoring and optimization to improve application performance.",
+            "Worked on bug fixing and troubleshooting to ensure application reliability."
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.amazon.com/"
+    },
+    "3902765105": {
+        "company_name": "Amazon",
+        "job_title": "Software Dev. Engineer I",
+        "achievements": [
+            "Improved testing efficiency by 20% through automation of unit tests in Python",
+            "Contributed to the development of a scalable e-commerce search engine using Elasticsearch and Java",
+            "Assisted in debugging and troubleshooting issues in a production codebase using AWS CloudWatch and AWS X-Ray",
+            "Participated in code reviews and provided constructive feedback to team members",
+            "Developed and deployed a RESTful API using AWS API Gateway and Node.js",
+            "Improved code quality by implementing and enforcing coding standards through GitHub Actions",
+            "Worked with the QA team to identify and troubleshoot defects in the application",
+            "Implemented a caching mechanism using Redis to reduce database queries by 30%",
+            "Collaborated with cross-functional teams including design, product management, and operations to deliver a feature-rich e-commerce platform"
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.amazon.com/"
+    },
+    "3902765108": {
+        "company_name": "Amazon",
+        "job_title": "Software Dev. Engineer I",
+        "achievements": [
+            "Contributed to the development of a new feature for the Amazon Business website, implementing a SQL database query to improve search results by 20%.",
+            "Collaborated with a cross-functional team to troubleshoot and resolve a critical issue affecting business customer orders, reducing resolution time by 30%.",
+            "Improved application performance by 15% through optimization of code and database query optimization.",
+            "Developed and implemented a unit testing framework to ensure code quality and reliability.",
+            "Assisted in the design and development of a new UI component for the Amazon Business mobile app, receiving positive feedback from customers.",
+            "Designed and implemented a caching mechanism to reduce requests to external APIs by 25%.",
+            "Participated in code reviews, ensuring adherence to best practices and design patterns.",
+            "Worked closely with the Quality Assurance team to identify and fix defects, reducing the defect rate by 15%."
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.amazon.com/"
+    },
+    "3902783925": {
+        "company_name": "Honeywell",
+        "job_title": "Advanced Systems Engineer",
+        "achievements": [
+            "Developed and tested multiple software components using C/C++ and Java for aerospace avionics systems.",
+            "Successfully integrated multiple software modules using Git and Bitbucket.",
+            "Debugged and optimized system-level performance using profiling tools and system-level logging.",
+            "Coordinated with cross-functional teams to design and develop advanced systems, including mechanical, electrical, and systems engineers.",
+            "Implemented automated testing frameworks using JIRA and Python for agile development.",
+            "Improved system documentation and quality by identifying and prioritizing tasks for automation and streamlining processes.",
+            "Utilized system development lifecycle (SDLC) knowledge to create standardized project templates and guidelines for junior engineers.",
+            "Assisted in the development and delivery of a project plan, including budget and schedule oversight.",
+            "Generated innovative solutions to complex engineering challenges, leveraging experience and judgment to plan and accomplish goals."
+        ],
+        "location": "Phoenix, AZ",
+        "site": "https://www.honeywell.com/us/en"
+    },
+    "3902786588": {
+        "company_name": "Honeywell",
+        "job_title": "Project Automation Engineer II",
+        "achievements": [
+            "Designed and developed a control system for a small industrial automation project, implementing PLC programming and HMI development.",
+            "Analyzed and debugged control system issues, increasing system uptime by 25% through efficient troubleshooting and optimization.",
+            "Collaborated with cross-functional teams to develop and implement control system software, including programming and configuration.",
+            "Conducted system testing and validation, ensuring functionality and performance in accordance with industry standards.",
+            "Implemented industry-standard automation control software and tools, including Proficy, Wonderware, and Allen-Bradley.",
+            "Designed and implemented a control system for a manufacturing process, resulting in a 15% reduction in production time through optimized automation.",
+            "Traveled for on-site system installation and training, gaining hands-on experience with system integration and testing.",
+            "Researched and implemented advanced control strategies and algorithms, improving system efficiency and performance."
+        ],
+        "location": "Houston, TX",
+        "site": "https://www.honeywell.com/us/en"
+    },
+    "3902839676": {
+        "company_name": "Microsoft",
+        "job_title": "Software Engineer II",
+        "achievements": [
+            "Improved error handling in a distributed system to reduce downtime by 30%",
+            "Developed a proof-of-concept for a new network protocol using Python and socket programming",
+            "Designed and implemented a test automation script for a network service using Python and Pytest",
+            "Assisted in the deployment of a new network architecture to a production environment",
+            "Collaborated with team members to identify and resolve performance issues in a highly available system",
+            "Created a documentation guide for a network service using Sphinx and Markdown",
+            "Implemented a monitoring solution using Prometheus and Grafana to monitor system performance",
+            "Participated in design reviews and provided input to improve design decisions",
+            "Contributed to the development of a code review process and guidelines for the team"
+        ],
+        "location": "Redmond, WA",
+        "site": "https://www.microsoft.com/"
+    },
+    "3902860436": {
+        "company_name": "Tandem Diabetes Care",
+        "job_title": "Product Manager, Commercial Marketing",
+        "achievements": [
+            "Developed marketing campaigns for t:slim X2 insulin pump, resulting in 15% increase in sales revenue.",
+            "Collaborated with cross-functional teams to launch new product features, reducing time-to-market by 30%.",
+            "Analyzed market research data to identify trends and areas for improvement, presenting findings to senior management.",
+            "Created sales tools and collateral materials, including product brochures and presentation slides.",
+            "Conducted market research interviews with end-users and healthcare professionals, providing insights for product development.",
+            "Worked with strategic partners to develop business development activities, resulting in 20% increase in business partnerships.",
+            "Developed and managed social media content calendar, increasing followers by 50%.",
+            "Monitored and reported on product performance, identifying areas for improvement and making recommendations.",
+            "Participated in product development process, providing feedback on product design and functionality.",
+            "Assisted in the development of a product training plan for sales and marketing teams.",
+            "Created and maintained product data sheets, pricing and competitors' analysis."
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.facebook.com/TandemDiabetes/"
+    },
+    "3902860960": {
+        "company_name": "Oracle",
+        "job_title": "Software Engineer",
+        "achievements": [
+            "Simplified error logging system for distributed batch processing using Java and Apache Log4j.",
+            "Improved resource allocation efficiency in a test environment by 20% through script automation.",
+            "Collaborated with a team to develop a scalable database storage solution for high-traffic applications.",
+            "Updated and refined documentation for internal APIs using Doxygen and Markdown.",
+            "Implemented a caching mechanism using Redis to reduce database queries by 50%.",
+            "Participated in code reviews and implemented feedback to improve code quality.",
+            "Developed a proof-of-concept for a cloud-based data processing pipeline using Apache Beam and GCS.",
+            "Enhanced test coverage for a critical component by 30% through unit testing and integration testing.",
+            "Researched and evaluated NoSQL databases for a proposed future project, producing a comprehensive report.",
+            "Improved automated testing framework for cloud infrastructure using SmokeTests and Pytest."
+        ],
+        "location": "United States",
+        "site": "https://www.oracle.com/"
+    },
+    "3902861922": {
+        "company_name": "Oracle",
+        "job_title": "Technical Operations Engineer",
+        "achievements": [
+            "Implemented a monitoring script for Oracle Cloud Infrastructure using Python and Ansible.",
+            "Improved system performance by 30% through optimization of resource allocation and configuration changes.",
+            "Collaborated with the NOC team to troubleshoot and resolve a complex issue resulting in 99.99% uptime.",
+            "Developed and maintained a knowledge base article on Linux system administration for peer support.",
+            "Assisted in migrating a production environment to OCI, with a focus on backup and recovery processes.",
+            "Successfully resolved a high-priority incident within a 2-hour SLA, earning a recognition award.",
+            "Developed and presented a training webinar on Oracle Cloud Infrastructure features and best practices to junior colleagues.",
+            "Participated in a cross-functional team to design and implement a disaster recovery plan for a critical application.",
+            "Assisted in quarterly security audits, ensuring compliance with Oracle's security policies and procedures.",
+            "Implemented a logging and alerting system for critical production environments using Nagios and Loggly.",
+            "Improved documentation quality by 25% through standardizing and updating existing documentation templates."
+        ],
+        "location": "United States",
+        "site": "https://www.oracle.com/"
+    },
+    "3903471065": {
+        "company_name": "Palo Alto Networks",
+        "job_title": "Systems Engineer - Major Accounts",
+        "achievements": [
+            "Developed technical presentations for prospective clients showcasing Palo Alto Networks solutions.",
+            "Collaborated with colleagues to create a comprehensive technical account plan for a major account.",
+            "Conducted discovery sessions with IT teams to understand their security concerns and pain points.",
+            "Presented technical demos to key stakeholders, resulting in a 25% increase in sales-qualified leads.",
+            "Worked closely with customer support to ensure successful implementation of sold solutions.",
+            "Participated in industry events, gathering valuable insights and networking with experts in the field.",
+            "Designed and delivered technical workshops for customers, focusing on cloud and SASE solutions.",
+            "Built relationships with key stakeholders, influencing buying decisions and driving revenue growth.",
+            "Demonstrated strong communication skills, effectively presenting complex technical information to non-technical audiences.",
+            "Partnered with the sales team to develop and deliver persuasive pitches to potential clients."
+        ],
+        "location": "Chicago, IL",
+        "site": "https://www.paloaltonetworks.com/"
+    },
+    "3903476070": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Software and Systems Engineer",
+        "achievements": [
+            "Managed development and testing of cloud-based software systems",
+            "Developed technical documentation for software systems using CDRL format",
+            "Contributed to agile team by participating in sprint planning and retrospective meetings",
+            "Collaborated with cross-functional teams to identify and track technical debt and risks",
+            "Translated technical requirements into well-written documentation for customer support",
+            "Gained experience with agile methodology and Scrum framework",
+            "Improved documentation quality through peer review and feedback",
+            "Assisted in the creation of system documentation and requirements traceability",
+            "Developed skills in cloud software development and requirements traceability",
+            "Participated in sprint reviews and demonstrated software products"
+        ],
+        "location": "Chantilly, VA",
+        "site": "https://www.boozallen.com/"
+    },
+    "3903800866": {
+        "company_name": "Capital One",
+        "job_title": "Software Engineer, Full Stack",
+        "achievements": [
+            "Built and deployed a cloud-based RESTful API using Node.js, Express.js, and AWS Lambda, with 500+ request responses per day",
+            "Improved code quality by implementing unit tests and test-driven development using Jest and Enzyme",
+            "Implemented a scalable and optimized database design using MongoDB and Mongoose, resulting in a 30% reduction in query time",
+            "Collaborated with a cross-functional team to design and develop a full-stack web application using React, Redux, and GraphQL",
+            "Designed and implemented a reusable and modular frontend component library using React, Tailwind CSS, and CSS Grid",
+            "Developed and optimized a Kubernetes deployment configuration file for a cloud-native application, resulting in a 25% reduction in deployment time",
+            "Improved application performance by implementing caching using Redis and implementing API rate limiting using AWS API Gateway",
+            "Participated in daily stand-up meetings and contributed to agile development processes, including prioritizing features and identifying technical debt",
+            "Created and maintained technical documentation for a software project, including writing technical guides, API documentation, and developer tutorials"
+        ],
+        "location": "New York, NY",
+        "site": "https://www.capitalone.com/"
+    },
+    "3903802647": {
+        "company_name": "Capital One",
+        "job_title": "Software Engineer, Full Stack",
+        "achievements": [
+            "Improved code quality by refactoring existing code using modern JavaScript best practices.",
+            "Collaborated with agile teams to prioritize features and developed a web application using React and Node.js.",
+            "Designed and implemented a scalable database using AWS DynamoDB and a NoSQL database schema.",
+            "Created automated unit tests for a cloud-based service using Jest and Enzyme.",
+            "Designed and developed a RESTful API using Express.js, connecting to a MySQL database.",
+            "Worked with digital product managers to prioritize features and developed a mobile app using React Native.",
+            "Participated in code reviews, providing feedback and suggestions to improve code maintainability and quality.",
+            "Utilized Docker and Kubernetes for containerization and orchestration of a microservices-based application.",
+            "Developed a chatbot using AWS Lex and integrating it with an existing web application."
+        ],
+        "location": "Cambridge, MA",
+        "site": "https://www.capitalone.com/"
+    },
+    "3903803466": {
+        "company_name": "Capital One",
+        "job_title": "Software Engineer, Full Stack",
+        "achievements": [
+            "Collaborated with cross-functional Agile teams to design and develop a cloud-based loan application system",
+            "Implemented a RESTful API using Node.js andExpress.js for a customer-facing banking platform",
+            "Improved application performance by 30% through optimized database schema and query optimization",
+            "Reduced technical debt by 20% through code refactoring and automated testing",
+            "Developed and deployed a simple web application using AWS services including S3, Lambda, and API Gateway",
+            "Participated in daily stand-up meetings and contributed to code reviews as part of a full-stack development team",
+            "Assisted in debugging and troubleshooting issues with a team of developers to resolve production defects",
+            "Utilized Docker and Kubernetes for containerization and orchestration of a microservices-based application",
+            "efined and documented technical requirements for a cloud-based software project using Asana and GitHub"
+        ],
+        "location": "Plano, TX",
+        "site": "https://www.capitalone.com/"
+    },
+    "3903825325": {
+        "company_name": "Altair",
+        "job_title": "Quality Engineer",
+        "achievements": [
+            "Improved inspection procedures for Body in White line, resulting in a 15% reduction in defects.",
+            "Collaborated with suppliers to establish quality expectations for incoming materials, leading to a 20% decrease in rework.",
+            "Designed and implemented a control plan for new vehicle assembly, achieving 99% first-pass quality.",
+            "Conducted root cause analysis of defects on General Assembly line, identifying and implementing corrective actions that reduced defect rate by 25%.",
+            "Collaborated with engineering team to implement Design for Six Sigma (DFSS) principles, resulting in 15% reduction in design changes during manufacturing phase.",
+            "Developed quality documentation, including control plans and inspection procedures, for the new vehicle launch.",
+            "Performed regular audits and inspections of manufacturing processes, ensuring adherence to quality standards and specifications.",
+            "Implemented a quality monitoring system for Battery Assembly line, resulting in a 10% reduction in scrap rate.",
+            "Assisted in training production staff on quality control procedures, improving employee knowledge and confidence in quality processes.",
+            "Collaborated with cross-functional teams to implement quality improvements, achieving a 5% reduction in overall manufacturing time.",
+            "Conducted statistical process control reviews to ensure manufacturing processes were within specifications."
+        ],
+        "location": "Troy, MI",
+        "site": "https://altair.com/"
+    },
+    "3903847262": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Cybersecurity Engineer",
+        "achievements": [
+            "Identified and documented security vulnerabilities in a simulated network environment using commercially available tools",
+            "Developed and presented a cybersecurity risk assessment report to a client using Microsoft Office tools",
+            "Assisted in the creation of a network architecture diagram using Visio software",
+            "Conducted a network configuration audit using nmap and identified potential security threats",
+            "Created a case study on the effectiveness of security measures in a hypothetical cyber attack",
+            "Authored a technical brief on cybersecurity best practices for senior leadership",
+            "Participated in a cyber defense exercise and contributed to the identification of potential threats",
+            "Collaborated with a team to develop a phishing campaign to educate employees on cybersecurity awareness",
+            "Designed and implemented a basic cybersecurity awareness training presentation using Microsoft PowerPoint",
+            "Completed a Secret clearance application and successfully passed a background investigation",
+            "Successfully obtained Security+ certification through self-study and online resources"
+        ],
+        "location": "Colorado Springs, CO",
+        "site": "https://www.boozallen.com/"
+    },
+    "3903847751": {
+        "company_name": "Amazon",
+        "job_title": "Supply Base Manufacturing Engineer, Supply Chain Engineering and Operations",
+        "achievements": [
+            "Coordinated with cross-functional teams to develop and launch a new product, ensuring timely delivery and meeting customer requirements.",
+            "Conducted site visits to assess supplier capability and identify areas for improvement.",
+            "Developed and implemented a supplier quality control checklist, resulting in a 25% reduction in defects.",
+            "Collaborated with design engineering to develop and communicate engineering specifications and manufacturing details.",
+            "Assisted in creating and presenting a presentation on supplier manufacturing capabilities for a senior management review.",
+            "Implemented process improvements in supplier auditing, resulting in a 30% reduction in audit time.",
+            "Designed and developed documentation packages for suppliers, including manufacturing and quality control procedures.",
+            "Conducted root cause analysis and implemented corrective actions to resolve manufacturing defects.",
+            "Worked with suppliers to implement instrumentation for process monitoring and optimization."
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.amazon.com/"
+    },
+    "3903877728": {
+        "company_name": "Adobe",
+        "job_title": "Software Development Engineer",
+        "achievements": [
+            "Developed a responsive web component for Adobe's new web-based Photoshop interface, resulting in a 25% increase in user engagement.",
+            "Collaborated with cross-functional teams to create a seamless user experience, ensuring compatibility with various devices and platforms.",
+            "Improved code quality by implementing automated testing and coding standards, resulting in a 30% reduction in bugs and defects.",
+            "Designed and deployed a reusable UI module for Photoshop's web applications, reducing development time by 20%.",
+            "Developed a performance optimization strategy, resulting in a 40% reduction in page load times and improved user experience.",
+            "Implemented accessibility features, ensuring compliance with WCAG 2.1 guidelines and improving user experience for people with disabilities.",
+            "Integrated Adobe's Design System into the web-based Photoshop interface, enhancing consistency and usability.",
+            "Improved the web-based Photoshop interface's search functionality, resulting in a 50% increase in search usability and user satisfaction.",
+            "Created a documentation repository for Adobe's web-based Photoshop components, improving knowledge sharing and development efficiency.",
+            "Collaborated with designers to implement interactive web experiences, showcasing Photoshop's features and technology.",
+            "Participated in code reviews, providing constructive feedback and improving team-wide coding standards."
+        ],
+        "location": "New York, NY",
+        "site": "https://www.adobe.com/"
+    },
+    "3903886973": {
+        "company_name": "ASML",
+        "job_title": "Production Engineer",
+        "achievements": [
+            "Contributed to the development of a lean manufacturing process, resulting in a 15% reduction in production cycle time.",
+            "Conducted experiments to identify bottlenecks in manufacturing and implemented process improvements, resulting in a 20% increase in productivity.",
+            "Created and maintained detailed records and reports for manufacturing operations, ensuring accurate tracking and analysis of factory metrics.",
+            "Worked in a cross-functional team to design and implement a new tooling solution, resulting in a 25% reduction in production costs.",
+            "Designed and executed test plans to qualify changes in manufacturing processes, ensuring compliance with quality and safety standards.",
+            "Collaborated with design engineering to coordinate the release of new products, ensuring timely and accurate delivery.",
+            "Participated in a six-month project to optimize production workflows, resulting in a 10% reduction in labor costs.",
+            "Improved communication among team members by creating and distributing a weekly factory news bulletin.",
+            "Wrote and presented a report on the implementation of a new production process, highlighting key results and future recommendations."
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.asml.com/"
+    },
+    "3903890932": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Consultant, Mid",
+        "achievements": [
+            "Supported the subcontracts team in administering multiple subcontracts, ensuring timely and effective delivery of services to clients.",
+            "Conducted price analysis on subcontractor proposals, resulting in a 10% reduction in costs for a major project.",
+            "Assisted in drafting subcontract solicitation packages, resulting in a 25% increase in the number of proposals received.",
+            "Processed task orders and modifications, ensuring compliance with Booz Allen procurement systems and federal regulations.",
+            "Negotiated subcontract agreements, resulting in a 15% increase in savings for the company.",
+            "Coordinated with prime contract and project leads to develop price strategies and price-to-win concepts.",
+            "Reviewed and analyzed prime solicitation packages, identifying areas for improvement and making recommendations for increased competitiveness.",
+            "Created file documentation for all subcontract agreements, ensuring compliance with Contractor Purchasing System Review (CPSR) requirements.",
+            "Provided excellent customer service to subcontractors, responding to inquiries and resolving issues in a timely and professional manner.",
+            "Worked closely with the procurement team to ensure the timely and accurate processing of subcontract modifications.",
+            "Assisted in developing small business subcontracting plans for proposal efforts, resulting in a 20% increase in small business utilization."
+        ],
+        "location": "Chantilly, VA",
+        "site": "https://www.boozallen.com/"
+    },
+    "3903895666": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "General Management Consultant, Junior",
+        "achievements": [
+            "Coordinated and facilitated workshops with leadership and support staff to gather data and insights on client operations.",
+            "Developed and maintained relationships with clients to understand their goals and objectives.",
+            "Used Microsoft Office Suite to analyze data and create reports to present findings to clients.",
+            "Assisted in conducting operations analysis and planning exercises to identify areas for improvement.",
+            "Worked as part of a team to develop and implement process improvements and recommendations for clients.",
+            "Conducted client site visits to gather information and observe operations firsthand.",
+            "Created and presented executive-level briefs to communicate findings and recommendations to clients.",
+            "Assisted in developing and implementing project plans and timelines to ensure successful project delivery.",
+            "Identified and evaluated potential clients and opportunities for Booz Allen Hamilton."
+        ],
+        "location": "McLean, VA",
+        "site": "https://www.boozallen.com/"
+    },
+    "3904392638": {
+        "company_name": "Workday",
+        "job_title": "Software Development Engineer",
+        "achievements": [
+            "Collaborated on design and implementation of a feature to improve database query performance.",
+            "Improved code quality by implementing unit tests and automated testing for a microservice.",
+            "Participated in code reviews with engineers and architects, providing constructive feedback.",
+            "Developed and deployed a RESTful API using Java and GraphQL.",
+            "Implemented a solution to optimize database schema for improved data retrieval.",
+            "Assisted in debugging and troubleshooting issues with the Lodestar Application team.",
+            "Designed and implemented a scalable front-end component using React.",
+            "Worked with designers to iterate on UI/UX design for a new feature.",
+            "Participated in a sprint team, contributing to the development of a customer-facing feature.",
+            "Enhanced the scalability of a web application by implementing caching mechanisms.",
+            "Refactored code to improve maintainability and readability.",
+            "Contributed to the development of an innovative solution for a complex business problem.",
+            "Implemented security protocols to ensure data integrity and confidentiality."
+        ],
+        "location": "Boulder, CO",
+        "site": "https://www.workday.com/"
+    },
+    "3904393479": {
+        "company_name": "Cisco",
+        "job_title": "Manager, Solutions Engineer",
+        "achievements": [
+            "Managed a team of 3 students to develop a customized technical sales presentation for a major customer, resulting in a 25% increase in sales pipeline",
+            "Coordinated with multiple stakeholders to plan and execute a product launch event, generating 500 leads and 200 follows on social media",
+            "Developed and maintained a spreadsheet to track team metrics and pipeline progress, increasing productivity by 30%",
+            "Designed and implemented a customer relationship management (CRM) process, reducing sales cycle time by 15%",
+            "Assisted the Regional Sales Manager in developing a regional sales strategy, resulting in a 10% increase in revenue",
+            "Conducted research on industry trends and customer needs, presenting findings to senior management and informing product development decisions",
+            "Collaborated with cross-functional teams to develop a solutions-focused marketing campaign, resulting in a 20% increase in brand awareness"
+        ],
+        "location": "Dallas, TX",
+        "site": "https://www.cisco.com/"
+    },
+    "3904393534": {
+        "company_name": "Qualcomm",
+        "job_title": "Staff Engineer (Software)",
+        "achievements": [
+            "Collaborated on a team to develop a Linux-based build integration script for Snapdragon Automotive Platform chipsets",
+            "Implemented automated testing for multiple features on QNX and Android operating systems",
+            "Debugged and resolved build integration issues for several software modules",
+            "Developed and maintained a Git-based source code management system for a small team",
+            "Improved the overall efficiency of the build process by 30% through script optimization",
+            "Contributed to the development of a Jenkins-based continuous integration environment",
+            "Assisted in identifying and troubleshooting system-level build integration issues",
+            "Created and executed automated test plans for key software features",
+            "Participated in code reviews and provided feedback to team members",
+            "Built and verified software builds for multiple hardware platforms",
+            "Implemented basic test scenarios for various software modules"
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.qualcomm.com/"
+    },
+    "3904394353": {
+        "company_name": "Granite Construction",
+        "job_title": "Engineer I",
+        "achievements": [
+            "Assisted in preparing and disseminating job control documents such as status reports and punch lists to ensure accuracy and efficiency.",
+            "Conducted research and provided recommendations for resolving drawing interpretation problems, resulting in a 25% reduction in rework.",
+            "Developed and maintained job essential data including quantity take-offs, material price lists, and labor costs to support accurate estimates and bids.",
+            "Prepared and presented project updates to senior engineers and project managers to improve communication and collaboration.",
+            "Collaborated with the estimating team to develop and implement a standardized process for costing and scheduling, resulting in a 15% increase in efficiency.",
+            "Built and maintained relationships with field personnel and supervisors to ensure timely and accurate communication of technical information.",
+            "Provided technical support and training to junior engineers and field staff, enhancing the team's overall knowledge and productivity.",
+            "Analyzed and resolved conflicts and errors in project documentation, reducing errors by 20%.",
+            "Developed and presented a cost improvement proposal to senior management, resulting in a 5% reduction in project costs.",
+            "Assisted in developing and implementing a quality control program, resulting in a 10% reduction in defects and errors.",
+            "Improved the accuracy of job estimates by 12% through accurate and timely data entry and analysis."
+        ],
+        "location": "Honey Grove, TX",
+        "site": "https://www.graniteconstruction.com/"
+    },
+    "3904409701": {
+        "company_name": "Uber",
+        "job_title": "Software Engineer II",
+        "achievements": [
+            "Improved code organization and scalability of fare retrieval algorithm resulting in 20% reduction in API response time.",
+            "Developed and integrated a new fare calculation service using Go, increasing overall system reliability by 15%.",
+            "Collaborated with data scientists to implement data-driven pricing models, resulting in 12% increase in driver acceptance rates.",
+            "Worked with frontend engineers to implement a new fare display feature, achieving a 95% customer satisfaction rate.",
+            "Improved code coverage by 30% through unit testing and integration testing of new fare-related features.",
+            "Participated in code review process, providing feedback and suggestions to improve code quality and reduce bugs.",
+            "Enhanced error handling and logging for fare configuration errors, reducing average resolution time by 40%.",
+            "Developed and maintained technical documentation for Fare configuration and calculation process.",
+            "Contributed to the development of a new fares dashboard for platform operations, resulting in 25% reduction in ticketing issues.",
+            "Implemented logging and monitoring tools to track fare-related issues, increasing system transparency and issue resolution time by 20%.",
+            "Identified and resolved multiple critical bugs affecting fare calculation, resulting in 99.99% system uptime."
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.uber.com/global/en/sign-in/"
+    },
+    "3904414222": {
+        "company_name": "Uber",
+        "job_title": "Staff Software Engineer",
+        "achievements": [
+            "Improved error handling in fare calculation to reduce downtime by 20% through disciplined testing and refactoring of critical code paths.",
+            "Optimized fare processing by 30% by implementing caching and efficient data retrieval strategies.",
+            "Designed and implemented a scalable and secure API for fare data export, allowing for faster and more reliable integration with external partners.",
+            "Developed and deployed a proof-of-concept feature for real-time fare estimates, demonstrating expertise in React, GraphQL, and Uber's internal tech stack.",
+            "Collaborated with data scientists to integrate machine learning models into fare calculation pipeline, improving pricing accuracy by 15%.",
+            "Contributed to technical documentation, creating clear and concise guides for maintaining and troubleshooting fare calculation services.",
+            "Participated in code reviews, providing constructive feedback and improving the overall quality of codebase by 25%.",
+            "Successfully mentored junior teammates on microservices architecture and Go programming language."
+        ],
+        "location": "Seattle, WA",
+        "site": "https://www.uber.com/global/en/sign-in/"
+    },
+    "3904420614": {
+        "company_name": "ServiceNow",
+        "job_title": "Software Quality Engineer",
+        "achievements": [
+            "Improved test coverage by 25% through developing and implementing automated tests for multiple features using Java and Selenium.",
+            "Created a comprehensive testing framework for a new application, reducing testing time by 30%.",
+            "Automated 15 test cases using TestNG, increasing test efficiency and consistency by 40%.",
+            "Developed and executed test plans for a high-priority feature, identifying and reporting 10 critical bugs to the development team.",
+            "Collaborated with developers to design and automate unit tests for a complex module, resulting in a 20% reduction in defects.",
+            "Contributed to the development of a test automation dashboard, providing real-time testing metrics to stakeholders.",
+            "Implemented and configured CI/CD pipelines to automate testing and deployment of multiple applications.",
+            "Identified and reported critical performance issues in a production application, working with the development team to resolve the issues.",
+            "Developed and maintained a test data management system, ensuring data consistency and accuracy across multiple testing environments.",
+            "Assisted in the development of a testing framework for a new language, contributing to its adoption across the organization.",
+            "Improved code quality by 15% through participating in peer code reviews and providing constructive feedback to team members."
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.servicenow.com/"
+    },
+    "3904701924": {
+        "company_name": "Adobe",
+        "job_title": "Data Scientist",
+        "achievements": [
+            "Developed and deployed a data pipeline using Python and Apache Spark to extract insights from 1 million user interactions.",
+            "Built a dashboard using Tableau to visualize user engagement metrics and presented findings to product managers.",
+            "Conducted exploratory data analysis on customer purchase data using SQL and R, identifying trends and correlations.",
+            "Designed and executed an A/B test using Google Optimize to improve in-app notification conversion rates by 15%.",
+            "Developed a machine learning model using scikit-learn to predict user churn based on behavioral data.",
+            "Worked closely with the product team to develop a data-driven recommendation engine for personalized in-app content.",
+            "Researched and implemented a data quality control process using data validation scripts to ensure accurate data reporting.",
+            "Created data visualizations and stories using Power BI and presented to cross-functional teams.",
+            "Collaborated with the engineering team to develop a data warehousing solution using AWS Redshift."
+        ],
+        "location": "San Jose, CA",
+        "site": "https://www.adobe.com/"
+    },
+    "3904722490": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Data Scientist",
+        "achievements": [
+            "Analyzed and visualized healthcare data using Tableau to identify trends in patient demographics and treatment outcomes.",
+            "Implemented data quality control measures to improve data accuracy by 20% using Python and Pandas.",
+            "Developed predictive models using machine learning algorithms to identify high-risk patients and optimize healthcare resource allocation.",
+            "Collaborated with health experts to design and implement data-driven dashboards to track patient outcomes and quality of care.",
+            "Created data stories using infographics to communicate complex data insights to non-technical stakeholders.",
+            "Improved data extraction efficiency by 30% using SQL queries and data pipelines.",
+            "Participated in data architecture design to integrate disparate data sources and improve data governance.",
+            "Provided data analysis and visualization support to healthcare professionals to inform clinical decisions.",
+            "Monitored and maintained data quality by implementing data validation rules and error handling procedures."
+        ],
+        "location": "Melbourne, FL",
+        "site": "https://www.boozallen.com/"
+    },
+    "3904726091": {
+        "company_name": "Booz Allen Hamilton",
+        "job_title": "Data Architect",
+        "achievements": [
+            "Conducted data analysis for a small-scale project, resulting in improved data visualization using Tableau.",
+            "Developed and implemented data processing pipelines using Python and Databricks.",
+            "Researched and implemented efficient data cleaning techniques for a dataset of 1 million records.",
+            "Designed and implemented a basic data modeling framework using SQL and Hive.",
+            "Collaborated with a team to develop a proof-of-concept data warehousing solution using Spark.",
+            "Improved data quality by identifying and correcting data errors through data exploration using Python.",
+            "Created data visualizations to present findings and insights to stakeholders.",
+            "Implemented data governance best practices to ensure data integrity and security.",
+            "Researched and implemented a data quality control mechanism using data validation and data normalization."
+        ],
+        "location": "Hickam Village, HI",
+        "site": "https://www.boozallen.com/"
+    },
+    "3904982850": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Student Nurse (Intern)",
+        "achievements": [
+            "Improved patient care by effectively communicating with healthcare team members through regular updates and discussions.",
+            "Assisted in maintaining a clean and organized clinical environment, adhering to hospital standards.",
+            "Observed and took notes on various medical procedures, demonstrating attention to detail and interest in learning.",
+            "Developed strong time management skills by prioritizing tasks and managing multiple responsibilities simultaneously.",
+            "Participated in team-building activities, promoting collaboration and camaraderie among colleagues.",
+            "Provided emotional support to patients and families, demonstrating empathy and compassion.",
+            "Assisted in preparing patient charts and records, ensuring accuracy and completeness.",
+            "Increased knowledge of medical terminology and procedures through on-the-job training and experience.",
+            "Generated reports and data summaries, practicing data analysis and presentation skills.",
+            "Made suggestions for process improvements, enhancing efficiency and effectiveness in the clinical setting."
+        ],
+        "location": "Los Angeles, California, United States",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904982891": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Summer Intern",
+        "achievements": [
+            "Assisted in maintaining a clean and organized work environment.",
+            "Improved communication between summer youth participants through daily huddles and team meetings.",
+            "Developed and implemented a system for tracking participant progress and progress.",
+            "Researched and compiled data on summer youth programs to inform program improvement.",
+            "Assisted in planning and coordinating summer youth activities and events.",
+            "Provided support to the summer youth program team with administrative tasks.",
+            "Built relationships with summer youth participants and team members to improve program engagement.",
+            "Implemented a process for tracking and reporting summer youth program metrics.",
+            "Enhanced participant feedback and evaluation processes to improve program quality.",
+            "Assisted in preparing and distributing summer youth program materials and resources.",
+            "Contributed to the development of summer youth program policies and procedures.",
+            "Administrative tasks"
+        ],
+        "location": "Riverside, CA",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904982892": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Summer Intern",
+        "achievements": [
+            "Improved communication skills by effectively collaborating with a team to complete tasks.",
+            "Developed problem-solving skills by resolving minor issues independently.",
+            "Learned to prioritize tasks and manage time efficiently to meet deadlines.",
+            "Enhanced knowledge of software applications used in the workplace.",
+            "Demonstrated attention to detail through accurate data entry and record keeping.",
+            "Made informed decisions by analyzing data and considering multiple perspectives.",
+            "Improved organizational skills by maintaining a clean and organized workspace.",
+            "Contributed to a positive work environment by being proactive and flexible.",
+            "Assisted in task management by delegating responsibilities to junior team members.",
+            "Developed adaptability by adjusting to last-minute changes and unexpected tasks."
+        ],
+        "location": "Riverside, CA",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904983825": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Student Nurse (Intern)",
+        "achievements": [
+            "Organized and maintained accurate patient records",
+            "Assisted with medication administration and documentation",
+            "Developed strong communication skills through interactions with interdisciplinary team members",
+            "Participated in team huddles to discuss patient care and daily goals",
+            "Generated and maintained accurate reports of observed patient data",
+            "Improved knowledge of electronic medical records system",
+            "Provided emotional support and care to patients and families",
+            "Effectively prioritized tasks and responsibilities under the supervision of RN mentors",
+            "Observed and documented patient vital signs and medical conditions"
+        ],
+        "location": "Ontario, CA",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904984601": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Student Nurse (Intern)",
+        "achievements": [
+            "Observed and assisted RN mentors with clinical procedures and patient care.",
+            "Participated in patient rounds and documentation under RN mentor supervision.",
+            "Developed basic patient assessment skills through observation and hands-on exercises.",
+            "Assisted with vital sign checks and minor treatments under RN mentor guidance.",
+            "Contributed to team discussions and shared ideas for improving patient care.",
+            "Improved time management skills by juggling academic and work responsibilities.",
+            "Applied theoretical knowledge from nursing courses to real-world clinical scenarios.",
+            "Cultivated strong communication skills through regular interactions with patients, families, and healthcare team members.",
+            "Demonstrated professionalism and confidence in interacting with patients and staff."
+        ],
+        "location": "Ontario, CA",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904986387": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Student Nurse (Intern)",
+        "achievements": [
+            "Obtained insight into patient care operations and contributed to team discussions during daily huddles.",
+            "Developed communication skills through interactions with RN mentors and multidisciplinary healthcare teams.",
+            "Assisted with medical record documentation and reviewed patient charts to improve understanding of healthcare systems.",
+            "Participated in patient rounding and observed effective bedside manner techniques.",
+            "Built relationships with RN mentors and gained confidence in nursing skills and knowledge.",
+            "Attended and participated in educational seminars and workshops focused on patient care and healthcare trends.",
+            "Maintained accurate and timely documentation of patient care activities.",
+            "Improved understanding of electronic medical records and assisted with data entry tasks.",
+            "Observed and assisted with various nursing procedures and treatments.",
+            "Demonstrated adaptability and flexibility in a dynamic healthcare environment."
+        ],
+        "location": "Los Angeles, California, United States",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904986419": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Summer Intern",
+        "achievements": [
+            "Assisted with data entry and maintained accurate records for summer youth programs.",
+            "Developed and implemented effective communication strategies with staff and participants.",
+            "Contributed to the organization of events and activities for summer youth program.",
+            "Improved administrative processes and created procedural documentation.",
+            "Updated and maintained program databases and spreadsheets.",
+            "Provided exceptional customer service to summer youth program participants and their families.",
+            "Assisted with social media management and created engaging content.",
+            "Coordinated and participated in volunteer activities and events.",
+            "Improved team collaboration and developed effective working relationships with staff.",
+            "Created visual aids and materials to support program activities and presentations.",
+            "Enhanced organizational skills and time management to meet deadlines.",
+            "Assisted with budgeting and financial record-keeping for the summer youth program."
+        ],
+        "location": "Riverside, CA",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904987159": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "IT Graduate Intern",
+        "achievements": [
+            "Created a growth/margin curve flex model using MS Excel, ensuring accuracy and efficiency in financial analysis.",
+            "Developed a cost structure analysis report for Specialty vs PCP, providing insights for financial optimization.",
+            "Built a product performance model using financial data, facilitating data-driven decision making.",
+            "Designed and implemented a dashboard for monthly performance KPIs, enhancing executive reporting and visibility.",
+            "Analyzed and updated cost accounts for accurate financial modeling and planning.",
+            "Utilized SQL to extract and manipulate data for financial analysis and reporting."
+        ],
+        "location": "Denver, CO",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3904988195": {
+        "company_name": "Kaiser Permanente",
+        "job_title": "Summer Intern",
+        "achievements": [
+            "Assisted in administrative tasks within the Labor/Management Partnership environment.",
+            "Improved communication skills through daily interactions with coworkers and supervisors.",
+            "Developed basic computer skills using office software and technology.",
+            "Demonstrated ability to work in a fast-paced environment with tight deadlines.",
+            "Displayed flexibility and adaptability working irregular day shifts.",
+            "Accurately and efficiently completed data entry tasks.",
+            "Enhanced time management skills prioritizing tasks with multiple responsibilities.",
+            "Improved organization skills maintaining accurate records and files.",
+            "Learned and applied new procedures and policies in a short period.",
+            "Displayed teamwork and collaboration with colleagues to achieve shared goals.",
+            "Provided general administrative support to the Riverside Med Center team."
+        ],
+        "location": "Riverside, CA",
+        "site": "https://healthy.kaiserpermanente.org/"
+    },
+    "3905205755": {
+        "company_name": "Qualcomm",
+        "job_title": "Graphics Software Engineer",
+        "achievements": [
+            "Implemented a 3D graphics rendering engine using C++ with 10% increased performance",
+            "Collaborated with a team to develop a real-time graphics rendering framework for mobile devices",
+            "Designed and optimized a GPU driver for Android-based systems",
+            "Developed a feature-rich graphics API using OpenGl with 20% improved code readability",
+            "Contributed to the development of a graphics debugging tool with improved error detection",
+            "Written and maintained comprehensive documentation for graphics-related projects",
+            "Participated in code reviews and provided constructive feedback to peers",
+            "Collaborated with cross-functional teams to integrate graphics-related features with other software components"
+        ],
+        "location": "San Diego, CA",
+        "site": "https://www.qualcomm.com/"
+    },
+    "3905293730": {
+        "company_name": "GitHub",
+        "job_title": "Software Engineer III",
+        "achievements": [
+            "Contributed to the development of a vulnerability disclosure workflow automation tool using Ruby on Rails.",
+            "Developed and deployed a RESTful API for fetching vulnerability data using GraphQL.",
+            "Participated in a code review process, providing constructive feedback to team members on code quality and best practices.",
+            "Implemented a reachability analysis feature for the open-source advisory database, improving data accuracy and reliability.",
+            "Worked with a distributed team to troubleshoot and resolve issues with the curation tooling for the advisory database.",
+            "Created technical documentation for the advisory database API, improving documentation completeness and clarity.",
+            "Assisted in the development of a vulnerability scoring system, using data analytics and machine learning algorithms.",
+            "Conducted unit testing and integration testing for the API, ensuring high-quality code and reducing bugs.",
+            "Participated in a security audit of the advisory database, identifying vulnerabilities and implementing fixes.",
+            "Collaborated with community members to improve the overall user experience of the advisory database.",
+            "Contributed to a project that added support for new ecosystems to the advisory database, improving data coverage and accuracy."
+        ],
+        "location": "United States",
+        "site": "https://github.com/"
+    },
+    "3905294793": {
+        "company_name": "Boeing",
+        "job_title": "Embedded Software Engineer (Associate, Experienced Or Lead)",
+        "achievements": [
+            "Successfully debugged and optimized firmware for a prototype sensor device resulting in a 30% reduction in execution time",
+            "Collaborated with team to integrate third-party hardware components into a custom-designed System on Chip (SoC)",
+            "Developed and maintained documentation for software architecture, design, and testing procedures",
+            "Implemented automated testing scripts using Python and Pytest, reducing manual testing time by 50%",
+            "Designed and implemented a real-time data acquisition system using C++, including data visualization via Matlab",
+            "Assisted in the development of a driver for a custom-designed FPGA-based peripheral",
+            "Reviewed and provided feedback on code reviews for team members, improving overall code quality",
+            "Participated in daily stand-up meetings and contributed to agile project planning and task assignment"
+        ],
+        "location": "Kirtland, NM",
+        "site": "https://www.boeing.com/"
+    },
+    "3905295522": {
+        "company_name": "Boeing",
+        "job_title": "Experienced Quality Engineer",
+        "achievements": [
+            "Conducted root cause analysis and implemented corrective actions for minor non-conformities in fabrication processes, resulting in a 25% reduction in defects.",
+            "Developed and implemented process control plans for multiple manufacturing lines, improving process efficiency by 15%.",
+            "Coordinated with cross-functional teams to integrate quality requirements into proposal documents, resulting in a 90% compliance rate.",
+            "Generated and analyzed data to identify trends and opportunities for process improvement, presenting findings to quality engineering team and implementation team.",
+            "Assisted in the development of inspection and test methods, including the creation of measurement systems and process validation plans.",
+            "Participated in audits and site visits to assess manufacturing processes against quality management system requirements, identifying areas for improvement and recommending corrective actions.",
+            "Collaborated with manufacturing team to optimize processes using design of experiments and statistical process control tools, resulting in a 20% reduction in defects.",
+            "Assisted in the introduction of new inspection technologies, including training and implementation support for manufacturing personnel.",
+            "Analyzed and interpreted data to optimize processes, ensuring compliance with contractual, company, and regulatory requirements.",
+            "Supported quality engineering team with tasks such as annual review of statistical plans, first article inspections, and inspection records change requests."
+        ],
+        "location": "Puyallup, WA",
+        "site": "https://www.boeing.com/"
+    },
+    "3905298318": {
+        "company_name": "Boeing",
+        "job_title": "Quality Engineer and Program Manager",
+        "achievements": [
+            "Developed and implemented a project management system using Microsoft Excel and SharePoint, improving workflow efficiency by 25%.",
+            "Conducted quality inspections and audits, identifying and resolving 15% of quality defects on a major program.",
+            "Created and presented a quality plan to a senior management team, resulting in a 20% reduction in errors.",
+            "Improved root cause analysis by implementing a standardized template, reducing average investigation time by 30%.",
+            "Collaborated with cross-functional teams to develop and implement process improvements, resulting in a 15% reduction in manufacturing time.",
+            "Assisted in the design and development of a new quality system, applying advanced skills in data analysis and presentation.",
+            "Analyzed and presented quality data to program managers, resulting in a 10% reduction in quality defects.",
+            "Completed several customer service-focused tasks, ensuring 100% customer satisfaction with quality-related issues.",
+            "Managed and coordinated a team of quality engineers, providing guidance and mentorship to junior team members.",
+            "Developed and maintained relationships with suppliers and partners, ensuring compliance with quality standards.",
+            "Assisted in the development and implementation of corrective actions, reducing the average number of iterations by 20%.",
+            "Improved document control by implementing a digital filing system, reducing paper storage by 50%.",
+            "Participated in several quality training sessions, ensuring compliance with regulations and industry standards."
+        ],
+        "location": "St Louis, MO",
+        "site": "https://www.boeing.com/"
+    },
+    "3905299289": {
+        "company_name": "Boeing",
+        "job_title": "Experienced Quality Engineer",
+        "achievements": [
+            "Assisted in developing and implementing a Quality Control Process for composite materials, resulting in a 25% reduction in defects.",
+            "Conducted comprehensive inspections of composite materials at various stages of the manufacturing process, identifying and correcting 30% of defects identified.",
+            "Successfully trained junior quality engineers and production staff on composite material quality control, resulting in a 20% increase in quality awareness.",
+            "Collaborated with engineering and production teams to resolve quality issues related to composite components, implementing corrective and preventive actions that reduced defects by 40%.",
+            "Utilized statistical analysis and quality tools to monitor and improve production processes, resulting in a 15% reduction in cycle time.",
+            "Developed and implemented a First Article Inspection (FAI) process for composite components, ensuring compliance with company standards.",
+            "Participated in root cause analysis investigations for quality issues related to composite components, identifying and implementing corrective actions that reduced defects by 25%.",
+            "Applied Six Sigma techniques and AS9100 standards to root cause analysis investigations, resulting in a 15% reduction in defects.",
+            "Developed and maintained quality standards for composite materials, processes, and finished products, ensuring compliance with company and industry standards."
+        ],
+        "location": "Berkeley, MO",
+        "site": "https://www.boeing.com/"
+    },
+    "3905328650": {
+        "company_name": "Five9",
+        "job_title": "Associate Sales Operations Analyst",
+        "achievements": [
+            "Created and maintained accurate sales reports using Excel, achieving a 95% accuracy rate",
+            "Assisted in the development of a sales dashboard using Domo, resulting in improved team visibility and communication",
+            "Developed and implemented a process for tracking sales metrics, reducing data inquiry response time by 30%",
+            "Consistently provided exceptional administrative support to the sales team, receiving positive feedback from sales managers",
+            "Assisted with data migration from one Salesforce instance to another, ensuring minimal disruptions to sales operations",
+            "Built and maintained a database of sales targets and performance metrics, streamlining reporting and analysis",
+            "Provided research and data analysis to support sales strategies, demonstrating ability to work independently",
+            "Collaborated with sales operations colleagues to resolve technical issues, improving team efficiency by 25%",
+            "Supported the creation of new sales accounts, ensuring accurate and timely setup in Salesforce",
+            "Maintained data integrity by identifying and resolving errors in salesforce, resulting in improved data quality",
+            "Developed and presented reports to sales management, demonstrating ability to communicate complex data insights effectively",
+            "Assisted in the design and development of a sales territory alignment tool, improving sales team effectiveness"
+        ],
+        "location": "United States",
+        "site": "https://www.five9.com/"
+    },
+    "3905337458": {
+        "company_name": "Workday",
+        "job_title": "Software Development Engineer - Devops",
+        "achievements": [
+            "Designed and implemented automated deployment scripts for a microservice using Python and Docker.",
+            "Optimized database query performance by 30% through caching and indexing.",
+            "Developed and deployed a scalable security solution using Kubernetes and Helm.",
+            "Improved team collaboration by creating a shared documentation repository on GitHub.",
+            "Designed and implemented a logging system using ELK Stack to monitor production environment.",
+            "Successfully tested and deployed a containerized application on AWS.",
+            "Improved backup and restore processes for a production database.",
+            "Created and maintained a comprehensive knowledge base for DevOps tools and technologies."
+        ],
+        "location": "Atlanta, GA",
+        "site": "https://www.workday.com/"
+    },
+    "3905397635": {
+        "company_name": "Cisco",
+        "job_title": "Software Engineer \u2013 UCS",
+        "achievements": [
+            "Collaborated with cross-functional teams to design and implement automated tests for UCS servers using Python and Selenium.",
+            "Developed and maintained a Python-based automation framework for testing UCS server functionality.",
+            "Created and executed test plans for new UCS server features, resulting in a 25% reduction in test cycle time.",
+            "Improved test coverage by 15% through the creation of new test cases for UCS server components.",
+            "Participated in peer code reviews, providing constructive feedback on code structure and design.",
+            "Identified and resolved several critical bugs in UCS server software through proactive debugging and troubleshooting.",
+            "Developed and presented a design spec for a new UCS server feature to the engineering team, receiving positive feedback from colleagues.",
+            "Worked with the development team to implement a new automated test script, resulting in a 30% reduction in test development time.",
+            "Improved code quality by implementing code reviews and using version control system Git.",
+            "Collaborated with colleagues to create a knowledge base of technical documentation, making it easier for team members to find information."
+        ],
+        "location": "San Jose, CA",
+        "site": "https://www.cisco.com/"
+    },
+    "3905845755": {
+        "company_name": "Dell Technologies",
+        "job_title": "Data Science Consultant",
+        "achievements": [
+            "Improved data processing speed by 30% through efficient data wrangling and pipeline optimization.",
+            "Developed a machine learning model using Python and scikit-learn that achieved 85% accuracy on a binary classification task.",
+            "Created a data dictionary for a reusable dataset, increasing team data access by 40%.",
+            "Built a data pipeline using Apache Airflow that streamlined data processing and reduced errors by 25%.",
+            "Assisted in deploying a machine learning model to production using Domino Data Lab, resulting in a 20% reduction in costs.",
+            "Collaborated with cross-functional teams to design and develop a data visualization dashboard using Tableau.",
+            "Conducted exploratory data analysis on a large datasets, identifying key trends and insights that informed business decisions.",
+            "Developed and implemented a natural language processing (NLP) script using NLTK and spaCy to extract key phrases from unstructured text data.",
+            "Improved data quality by 15% through data cleaning and validation best practices."
+        ],
+        "location": "Round Rock, TX",
+        "site": "https://www.dell.com/"
+    },
+    "3906257561": {
+        "company_name": "Qualcomm",
+        "job_title": "Systems Test Engineer",
+        "achievements": [
+            "Developed and executed 20+ test cases for WLAN protocol testing, resulting in 95% reduction in test cycle time",
+            "Collaborated with cross-functional teams to design and implement system test plans for feature phones and smartphones, ensuring 100% feature completeness",
+            "Built and maintained comprehensive documentation of test cases, failures, and fixes for WLAN and BT systems",
+            "Conducted RF signal quality characterization testing for WLAN and WWAN technologies, achieving 99% accurate results",
+            "Implemented automated testing tools using Python, resulting in 30% reduction in manual testing efforts",
+            "Identified and reported 5 critical bugs in WLAN and BT systems, contributing to product stability and optimization",
+            "Conducted competitive analysis of WLAN protocols, identifying 2 key areas for product differentiation",
+            "Enhanced test automation framework by incorporating WLAN sniffer analysis, increasing test coverage by 25%",
+            "Participated in code reviews and provided constructive feedback to improve test planning and execution efficiency",
+            "Developed and delivered training sessions on WLAN and BT system testing for junior engineers, resulting in 90% knowledge retention"
+        ],
+        "location": "Santa Clara, CA",
+        "site": "https://www.qualcomm.com/"
+    },
+    "3906261027": {
+        "company_name": "Cisco",
+        "job_title": "Solutions Engineer",
+        "achievements": [
+            "Assisted in setting up product demonstrations for customers, resulting in seamless technology showcase.",
+            "Created and presented product training sessions for account team members, enhancing their technical knowledge.",
+            "Designed and configured product solutions to meet specific customer needs, receiving positive feedback from customers.",
+            "Conducted market research on competitors' solutions, identifying key differentiators and product strengths.",
+            "Developed and presented sales plans and proposals for assigned opportunities, demonstrating effective communication skills.",
+            "Participated in virtual team meetings, contributing innovative ideas and technical expertise to discussions.",
+            "Collaborated with account executives to recommend and develop customer solution offerings, improving customer satisfaction.",
+            "Designed and implemented product demonstrations for trade shows and events, showcasing Cisco's product portfolio.",
+            "Authored and reviewed technical documents, ensuring accuracy and clarity for internal use.",
+            "Provided consultative support to internal stakeholders, demonstrating technical knowledge and problem-solving skills.",
+            "Utilized collaboration software to collaborate with cross-functional teams, enhancing communication and project management."
+        ],
+        "location": "Herndon, VA",
+        "site": "https://www.cisco.com/"
+    }
+}
