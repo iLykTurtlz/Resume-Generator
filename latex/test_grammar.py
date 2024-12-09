@@ -1,7 +1,7 @@
 import subprocess
 from grammar.nonterminal import S
 from grammar.terminal import Terminal
-from data_generators.data_generator import ResumeDataGenerator
+from data_generators.generators import ResumeDataGenerator
 import json
 
 class CustomJSONEncoder(json.JSONEncoder):
