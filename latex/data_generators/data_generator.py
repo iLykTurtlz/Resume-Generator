@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 import random
 import pandas as pd
 import numpy as np
+from config import current_year
 
 
 class DataGenerator(ABC):
@@ -87,8 +88,26 @@ class EducationDataGenerator(DataGenerator):
     def generate(self, context):
         context[0]["EduInstitution"].value = "California Polytechnic State University San Luis Obispo"
         context[0]["EduGeographicalInfo"].value = "San Luis Obispo, CA"
-        context[0]["EduDegreeName"].value = "B.S. Computer Science"
-        context[0]["EduDate"].value = "December 2020"
+
+        #Determine Bachelor's or masters: assume uniform distribution by year within each.
+        #src=https://www.usnews.com/best-colleges/california-polytechnic-state-university-san-luis-obispo-1143/student-life#:~:text=Obispo%20Student%20Body-,Total%20enrollment,(fall%202023)
+        p_undergrad = 21497 / 22297
+        p_grad = 782 / 22297
+        #assume uniform dist of year_in_school given status
+        p_year_in_school = [p_undergrad * 0.25]*4 + [p_grad * 0.5]*2 
+        self.year_in_school = random.choices(list(range(1,7)), p_year_in_school)[0]
+
+        context[0]["EduDegreeName"].value = "B.S. Computer Science" if self.year_in_school < 5 else "M.S. Computer Science"
+        
+        graduation_season = ["December", "March", "June"]
+        grad_season_p = [0.05, 0.05, 0.9]
+
+        if self.year_in_school < 5:
+            graduation_year = str(4 - self.year_in_school + int(current_year))
+        else:
+            graduation_year = str(2 - (self.year_in_school - 4) + int(current_year))
+        
+        context[0]["EduDate"].value = random.choices(graduation_season, grad_season_p)[0] + " " + graduation_year
 
         #GPA
         fourscale = 4.0
