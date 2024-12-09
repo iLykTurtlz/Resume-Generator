@@ -172,21 +172,25 @@ class ProjectDataGenerator(DataGenerator):
              "Housing Pricing Analysis in NYC",
              "Facial Recognition",
              "Average Face Generator",
-             "Hackathon"
+             "Hackathon",
+             "Sewing Website"
              ]
     verb_phrases = [
         ["Used Socket API to send a simple HTTP request to a website.",
-         "Implemented a TCP with simple data management and provided an interface application."],
+         "Implemented a TCP with simple data management and provided an interface application.",
+         "Corruption is detected using boolean hashing."],
 
         ["Wrote a simple memory allocator in C, and adjusted allocated memory to align to a page boundary.",
-         "Wrote a simplistic Unix shell in C."],
+         "Wrote a simplistic Unix shell in C.",
+         "Extended to include a file system checker."],
 
         ["Used query selectors functions to perform transitions in between states.",
          "Implemented backtracking search with look-ahead prediction.",
          "Presented the validated game states in a UI for strategy analysis."],
 
         ["Used open API OpenWeatherMap to gather forecasted data on weather patterns based on users' geographic location.",
-         "Implemented UI app to serve the forecasted weather data, with visualizations on compatible web hosted app."],
+         "Implemented UI app to serve the forecasted weather data, with visualizations on compatible web hosted app.",
+         "Past weather queries are stored in AWS RDS cloud to query against for history view."],
 
         ["Built a Full-Stack React Native to-do app with Apollo’s new Query and Mutation components.",
          "App has functionality to add tasks, view them, mark/unmark them as complete and delete them.",
@@ -201,35 +205,44 @@ class ProjectDataGenerator(DataGenerator):
          "Application returns a JSON file with the 50 top trending topics of the last day."],
 
         ["Scraped a list of top 50 popular movies for each year from 1898–present as listed on IMDb",
-         "Used BeautifulSoup to serve and get data from IMDb site."],
+         "Used BeautifulSoup to serve and get data from IMDb pages",
+         "Word processor extracts the top reviews and makes recommendations based on stored user keywords."],
 
         ["Incorporated algorithm and data structures into a game for mobile apps.",
-         "Added customization features for the users' characters using random generation."],
+         "Added customization features for the users' characters using random generation.",
+         "Leaderboard mods available through the use of cookie tracking."],
 
         ["Implemented a live blog web app that supports social media feeds, videos, and calendars.",
-         "Programmed widgets for readers to share blog posts or leave comments."],
+         "Programmed widgets for readers to share blog posts or leave comments.",
+         "Users may share 3 sponsored blog posts a month on an explore feed, implemented with graph connections."],
 
         ["Wrote an app that takes in 2 CSVs to perform linear regression and generate analytical insights based on user-selected variables.",
-         "Insights are accompanied by optional confidence tests and variable interaction visualizations."],
+         "Insights are accompanied by optional confidence tests and variable interaction visualizations.",
+         "Makes API calls to wordMarket for contextual specifications on the analysis."],
 
         ["Tuned a BERT model to take in 2 phrases as input and output a detected relation between the statements.",
          "Statements could be Complimentary, Opposition, Neutral.",
-         "Model tested against Twitter scraped statements reported a 93% accuracy."],
+         "Model tested against Twitter scraped statements reported a 93 percent accuracy."],
 
         ["Created a program to predict housing prices based on aggregate data against multiple features of a home.",
          "Took multiple variables into account, including: boroughs, districts, housing type, school districts.",
          "Explored the use of KNN, Random Forests, Regression"],
 
         ["Created a Facial recognition app using OpenCV and a pre-trained Deep Learning face detector.",
-         "Used Haar cascades for face detection in videos, using frame-by-frame movement vector sampling."],
+         "Used Haar cascades for face detection in videos, using frame-by-frame movement vector sampling.",
+         "Performs with a 89 percent accuracy over 100 trials."],
 
-        ["Create an average face using OpenCV",
-         "Used Facial feature detection with OpenCV to transform coordinates across image, calculating facial alighnment.",
+        ["Created an average face using aggregated facial image data from Kaggle.",
+         "Used Facial feature detection with OpenCV to transform coordinates across image, calculating facial alignment.",
          "Performed face averaging across all samples from images returned from query."],
 
         ["Worked under a mentor during a 72 hour period to develop a password wallet.",
          "Retrieved encrypted password from Cloud database and hashed against a personal key.",
-         "Wallet is kept personal as an automated decrypter on mobile devices."]
+         "Wallet is kept personal as an automated decrypter on mobile devices."],
+
+        ["Developed a Sewing Almanac for avid sewists in the San Luis Obispo country area.",
+         "Completed with a social media forum for sharing results and tips on garment items.",
+         "Users can trade garment cards through a central admin database."]
 
     ]
     tools = ["C, C++",
@@ -247,13 +260,15 @@ class ProjectDataGenerator(DataGenerator):
              "Python, Pandas, Tensorflow",
              "Python, Haar",
              "C++, Python",
-             "C, C++, GoLang"
+             "C, C++, GoLang",
+             "CSS, HTML, Typescript"
 
              ]
-    dates = ["May 2016", "September 2017", "May 2018", "October 2019", "April 2020", "February 2021", "December 2021"]
+    dates = ["December 2021", "August 2022", "November 2023", "March 2024", "October 2024"]
     unique_titles = set()
 
     def generate(self, context):
+        # print(f"context is here: {context[::-1]}")
         for i, proj in enumerate(context[::-1]):
             description = random.choice(ProjectDataGenerator.title)
             while description in ProjectDataGenerator.unique_titles:
