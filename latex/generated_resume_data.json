@@ -1,0 +1,124 @@
+{
+  "Head": {
+    "Title": {
+      "FullName": "Chana Thurston"
+    },
+    "PhoneEmail": {
+      "Phone": "+1 415-555-5242",
+      "Email": "cthurston@calpoly.edu"
+    },
+    "LinkedInGitHub": {
+      "LinkedInField": {
+        "LinkedIn": "anastasia-beaverhousen-a4a06969"
+      },
+      "GitHubField": {
+        "GitHub": "sweetDude"
+      }
+    },
+    "GeographicalInfoField": {
+      "GeographicalInfo": "San Luis Obispo, CA"
+    }
+  },
+  "Body": {
+    "SelfSummarySection": {
+      "SelfSummary": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+    },
+    "EducationSection": [
+      {
+        "EduInstitution": "California Polytechnic State University San Luis Obispo",
+        "EduGeographicalInfo": "San Luis Obispo, CA",
+        "EduDegreeName": "B.S. Computer Science",
+        "EduDate": "December 2020",
+        "EduGPA": "3.9/4.0\n\\item Relevant Coursework: \\footnotesize{Linear Algebra, Speech and Language Processing, Data Structures}"
+      }
+    ],
+    "ExperienceSection": [
+      {
+        "CompanyName": "Amazon [\\href{https://www.amazon.com/}{\\faIcon{globe}}]",
+        "JobTitle": "Data Scientist, PeopleInsight",
+        "DateRange": "October 2021 - March 2023",
+        "GeographicalInfo": "Seattle, WA",
+        "ExperienceTasks": [
+          "Reduced model deployment time by 30\\% through automation of the deployment process using AWS and Docker.",
+          "Improved data quality by 20\\% through data cleaning and preprocessing, resulting in more accurate insights and recommendations for product development.",
+          "Collaborated with cross-functional teams to design and develop a novel employee engagement initiative, resulting in a 12\\% increase in employee satisfaction."
+        ]
+      },
+      {
+        "CompanyName": "Amazon [\\href{https://www.amazon.com/}{\\faIcon{globe}}]",
+        "JobTitle": "Software Dev Engineer - 1",
+        "DateRange": "March 2021 - September 2021",
+        "GeographicalInfo": "Austin, TX",
+        "ExperienceTasks": [
+          "Contributed to code reviews and provided constructive feedback on peer code.",
+          "Developed and implemented a testing framework using Jest and React Testing Library.",
+          "Designed and developed a micro-service using Node.js and RESTful APIs."
+        ]
+      },
+      {
+        "CompanyName": "Workday [\\href{https://www.workday.com/}{\\faIcon{globe}}]",
+        "JobTitle": "Product Manager",
+        "DateRange": "March 2020 - February 2021",
+        "GeographicalInfo": "Atlanta, GA",
+        "ExperienceTasks": [
+          "Participated in agile development ceremonies, including daily stand-ups and sprint planning.",
+          "Developed and tracked key performance indicators to measure efficiency of new payroll features.",
+          "Collaborated with cross-functional teams to define product backlog for new payroll features.",
+          "Integrated customer feedback from research sessions into product roadmap and prioritized features."
+        ]
+      }
+    ],
+    "ProjectSection": [
+      {
+        "ProjectDescription": "ToDo App",
+        "ProjectTools": "Javascript, React Native, Apollo, GraphQL",
+        "ProjectDate": "August 2022",
+        "ProjectAchievements": [
+          "Built a Full-Stack React Native to-do app with Apollo\u2019s new Query and Mutation components.",
+          "App has functionality to add tasks, view them, mark/unmark them as complete and delete them.",
+          "Utilized GraphQL backend to store the state of the app."
+        ]
+      },
+      {
+        "ProjectDescription": "Linear Regression App",
+        "ProjectTools": "Python, R",
+        "ProjectDate": "December 2021",
+        "ProjectAchievements": [
+          "Wrote an app that takes in 2 CSVs to perform linear regression and generate analytical insights based on user-selected variables."
+        ]
+      }
+    ],
+    "SkillsSection": {
+      "ProgrammingLanguageSkills": [
+        "Zig",
+        "Fortran",
+        "Racket",
+        "Ada"
+      ],
+      "WebTechnologySkills": [
+        "React",
+        "Django",
+        "Angular",
+        "Node.js"
+      ],
+      "DatabaseSystemSkills": [
+        "MySQL",
+        "ElasticSearch"
+      ],
+      "DataScienceMLSkills": [
+        "Matplotlib",
+        "Pandas",
+        "SpaCy",
+        "PyTorch"
+      ],
+      "CloudSkills": [
+        "Google Cloud"
+      ],
+      "DevOpsSkills": [
+        "Selenium",
+        "Puppet",
+        "Ansible"
+      ]
+    }
+  }
+}
