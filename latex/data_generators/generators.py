@@ -136,7 +136,11 @@ class EducationDataGenerator(DataGenerator):
             context[1]["EduDate"].value = random.choice(dates)
             #GPA
             fourscale = 4.0
-            gpa = random.normalvariate(3.0, 0.5)
+            gpa = random.normalvariate(3.3, 0.5)
+            if gpa < 3.0:
+                gpa = 3.0
+            elif gpa > 4.0:
+                gpa = 4.0
             formats = "{}/{}"
             number = formats.format(str(round(gpa, 1)), str(fourscale))
             context[1]["EduGPA"].value = number
