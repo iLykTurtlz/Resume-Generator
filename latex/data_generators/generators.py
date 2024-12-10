@@ -83,7 +83,7 @@ class EducationDataGenerator(DataGenerator):
         context[0]["EduInstitution"].value = "California Polytechnic State University San Luis Obispo"
         context[0]["EduGeographicalInfo"].value = "San Luis Obispo, CA"
         context[0]["EduDegreeName"].value = "B.S. Computer Science"
-        context[0]["EduDate"].value = "December 2020"
+        context[0]["EduDate"].value = random.choice(["December 2023", "December 2024", "June 2025", "March 2025"])
 
         #GPA
         fourscale = 4.0
@@ -128,7 +128,7 @@ class EducationDataGenerator(DataGenerator):
                              ("Hartnell Community College", "Salinas, CA"), ("Santa Monica College", "Santa Monica, CA")]
             feederSchoolsWeights = [189, 168, 45, 43, 41, 34, 27, 26, 25, 25]
             randomFeeder = random.choices(feederSchools, weights=feederSchoolsWeights, k=1)
-            dates = ["December 2021", "August 2022", "November 2023", "March 2024", "October 2024"]
+            dates = ["December 2021", "August 2021", "November 2022", "March 2022"]
 
             context[1]["EduInstitution"].value = randomFeeder[0][0]
             context[1]["EduGeographicalInfo"].value = randomFeeder[0][1]
@@ -136,7 +136,11 @@ class EducationDataGenerator(DataGenerator):
             context[1]["EduDate"].value = random.choice(dates)
             #GPA
             fourscale = 4.0
-            gpa = random.normalvariate(3.0, 0.5)
+            gpa = random.normalvariate(3.3, 0.5)
+            if gpa < 3.0:
+                gpa = 3.0
+            elif gpa > 4.0:
+                gpa = 4.0
             formats = "{}/{}"
             number = formats.format(str(round(gpa, 1)), str(fourscale))
             context[1]["EduGPA"].value = number
