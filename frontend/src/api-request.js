@@ -5,11 +5,6 @@ export async function makeApiRequest(
   headers = {}
 ) {
   const baseUrl = process.env.REACT_APP_API_URL;
-
-  if (!baseUrl) {
-    throw new Error("API base URL is not defined in REACT_APP_API_ENV");
-  }
-
   const url = `${baseUrl}${endpoint}`;
 
   const defaultHeaders = {
@@ -40,10 +35,6 @@ export async function makeApiRequest(
 export async function fetchFile(endpoint, headers = {}) {
   // Get the base API URL from environment variables
   const baseUrl = process.env.REACT_APP_API_URL;
-
-  if (!baseUrl) {
-    throw new Error("API base URL is not defined in REACT_APP_API_ENV");
-  }
 
   // Construct the full URL
   const url = `${baseUrl}${endpoint}`;
