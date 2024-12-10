@@ -145,7 +145,7 @@ class EducationDataGenerator(DataGenerator):
 
         # TODO support more than two institutions?  Or different kinds, like HS?
         if len(context) > 1:
-            context[1]["EduInstitution"].value = "Cuesta College"
+            context[1]["EduInstitution"].value = "Cuestasfsfsf College"
             context[1]["EduGeographicalInfo"].value = "San Luis Obispo, CA"
             context[1]["EduDegreeName"].value = "N/A"
             context[1]["EduDate"].value = "June 2018"

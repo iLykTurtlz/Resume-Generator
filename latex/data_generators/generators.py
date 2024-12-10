@@ -121,10 +121,19 @@ class EducationDataGenerator(DataGenerator):
 
         # TODO support more than two institutions?  Or different kinds, like HS?
         if len(context) > 1:
-            context[1]["EduInstitution"].value = "Cuesta College"
-            context[1]["EduGeographicalInfo"].value = "San Luis Obispo, CA"
-            context[1]["EduDegreeName"].value = "N/A"
-            context[1]["EduDate"].value = "June 2018"
+            feederSchools = [("Cuesta College", "San Luis Obispo, CA"), ("Allan Hancock College", "Santa Maria, CA"),
+                             ("Moorpark College", "Moorpark, CA"), ("De Anza Community College", "Cupertino, CA"),
+                             ("Santa Barbara City College", "Santa Barbara, CA"), ("Diablo Valley College", "Pleasant Hill, CA"),
+                             ("Foothill College", "Los Altos Hills, CA"), ("Santa Rosa Junior College", "Santa Rosa, CA"),
+                             ("Hartnell Community College", "Salinas, CA"), ("Santa Monica College", "Santa Monica, CA")]
+            feederSchoolsWeights = [189, 168, 45, 43, 41, 34, 27, 26, 25, 25]
+            randomFeeder = random.choices(feederSchools, weights=feederSchoolsWeights, k=1)
+            dates = ["December 2021", "August 2022", "November 2023", "March 2024", "October 2024"]
+
+            context[1]["EduInstitution"].value = randomFeeder[0][0]
+            context[1]["EduGeographicalInfo"].value = randomFeeder[0][1]
+            context[1]["EduDegreeName"].value = "Computer Science"
+            context[1]["EduDate"].value = random.choice(dates)
             #GPA
             fourscale = 4.0
             gpa = random.normalvariate(3.0, 0.5)

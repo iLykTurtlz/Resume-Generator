@@ -69,6 +69,7 @@ class ExperienceDataGenerator(DataGenerator):
     
     def generate(self, context):
         date_ranges = self._generate_date_ranges(len(context))
+        self.all_achievements = [] # list of all achievements
         for experience, (start_date, end_date) in zip(context, list(reversed(date_ranges))):
             company = random.choices(list(self.company_proportions.keys()), list(self.company_proportions.values()))[0]
             job_id = random.choice(self.jobs_by_company[company])
@@ -84,12 +85,13 @@ class ExperienceDataGenerator(DataGenerator):
             
             experience["GeographicalInfo"].value = job["location"]
             
-            tasks = random.sample(
+            # list of strings
+            job_achievements = random.sample(
                 job["achievements"], 
                 len(experience["ExperienceTasks"])
             )
             
-            for task, achievement in zip(experience["ExperienceTasks"], tasks):
-                task.value = achievement.replace("%", "\%")
-                task.value = achievement.replace("#", "\#")
-
+            self.all_achievements += [achievement.value for achievement in job_achievements]
+            
+            for task, achievement in zip(experience["ExperienceTasks"], job_achievements):
+                task.value = achievement.replace("%", "\%").replace("#", "\#")
