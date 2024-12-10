@@ -1,0 +1,119 @@
+{
+  "Head": {
+    "Title": {
+      "FullName": "Ali Dejong"
+    },
+    "PhoneEmail": {
+      "Phone": "1-415-555-5015",
+      "Email": "adejong@calpoly.edu"
+    },
+    "LinkedInGitHub": {
+      "GitHubField": {
+        "GitHub": "sweetDude"
+      },
+      "LinkedInField": {
+        "LinkedIn": "anastasia-beaverhousen-a4a06969"
+      }
+    },
+    "GeographicalInfoField": {
+      "GeographicalInfo": "San Luis Obispo, CA"
+    }
+  },
+  "Body": {
+    "SelfSummarySection": {
+      "SelfSummary": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+    },
+    "EducationSection": [
+      {
+        "EduInstitution": "California Polytechnic State University San Luis Obispo",
+        "EduGeographicalInfo": "San Luis Obispo, CA",
+        "EduDegreeName": "B.S. Computer Science",
+        "EduDate": "December 2020",
+        "EduGPA": "3.0/4.0\n\\item Relevant Coursework: \\footnotesize{Advanced Data Mining, Advanced Artificial Intelligence, Speech and Language Processing, Probability Theory}"
+      },
+      {
+        "EduInstitution": "De Anza Community College",
+        "EduGeographicalInfo": "Cupertino, CA",
+        "EduDegreeName": "Computer Science",
+        "EduDate": "November 2023",
+        "EduGPA": "3.5/4.0"
+      }
+    ],
+    "ExperienceSection": [
+      {
+        "CompanyName": "Amazon [\\href{https://www.amazon.com/}{\\faIcon{globe}}]",
+        "JobTitle": "Software Dev. Engineer I",
+        "DateRange": "April 2022 - August 2023",
+        "GeographicalInfo": "Seattle, WA",
+        "ExperienceTasks": [
+          "Implemented a caching mechanism using Redis to reduce database queries by 30\\%",
+          "Participated in code reviews and provided constructive feedback to team members",
+          "Worked with the QA team to identify and troubleshoot defects in the application",
+          "Developed and deployed a RESTful API using AWS API Gateway and Node.js"
+        ]
+      }
+    ],
+    "ProjectSection": [
+      {
+        "ProjectDescription": "ToDo App",
+        "ProjectTools": "Javascript, React Native, Apollo, GraphQL",
+        "ProjectDate": "November 2023",
+        "ProjectAchievements": [
+          "Built a Full-Stack React Native to-do app with Apollo\u2019s new Query and Mutation components.",
+          "App has functionality to add tasks, view them, mark/unmark them as complete and delete them."
+        ]
+      },
+      {
+        "ProjectDescription": "Blog Web App",
+        "ProjectTools": "Javascript, Typescript, HMTL, CSS",
+        "ProjectDate": "August 2022",
+        "ProjectAchievements": [
+          "Implemented a live blog web app that supports social media feeds, videos, and calendars.",
+          "Programmed widgets for readers to share blog posts or leave comments.",
+          "Users may share 3 sponsored blog posts a month on an explore feed, implemented with graph connections."
+        ]
+      },
+      {
+        "ProjectDescription": "Tic Tac Toe Game using JavaScript",
+        "ProjectTools": "JavaScript, HTML, CSS",
+        "ProjectDate": "December 2021",
+        "ProjectAchievements": [
+          "Used query selectors functions to perform transitions in between states.",
+          "Implemented backtracking search with look-ahead prediction.",
+          "Presented the validated game states in a UI for strategy analysis."
+        ]
+      }
+    ],
+    "SkillsSection": {
+      "ProgrammingLanguageSkills": [
+        "Zig",
+        "PL/SQL",
+        "TypeScript"
+      ],
+      "WebTechnologySkills": [
+        "React",
+        "Angular",
+        "Node.js"
+      ],
+      "DatabaseSystemSkills": [
+        "Microsoft SQL Server",
+        "MariaDB",
+        "MongoDB",
+        "Redis"
+      ],
+      "DataScienceMLSkills": [
+        "TensorFlow",
+        "Numpy"
+      ],
+      "CloudSkills": [
+        "AWS"
+      ],
+      "DevOpsSkills": [
+        "Kubernetes",
+        "Chef",
+        "Nagios",
+        "Docker"
+      ]
+    }
+  }
+}

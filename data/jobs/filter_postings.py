@@ -1,4 +1,3 @@
-# Much of this is ChatGPT generated
 import pandas as pd
 import json
 from sentence_transformers import SentenceTransformer, util
