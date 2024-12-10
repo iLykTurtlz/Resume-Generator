@@ -91,7 +91,7 @@ class ExperienceDataGenerator(DataGenerator):
                 len(experience["ExperienceTasks"])
             )
             
-            self.all_achievements += [achievement.value for achievement in job_achievements]
+            self.all_achievements += [achievement for achievement in job_achievements]
             
             for task, achievement in zip(experience["ExperienceTasks"], job_achievements):
                 task.value = achievement.replace("%", "\%").replace("#", "\#")
