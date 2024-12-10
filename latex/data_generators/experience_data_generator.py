@@ -92,3 +92,4 @@ class ExperienceDataGenerator(DataGenerator):
             for task, achievement in zip(experience["ExperienceTasks"], tasks):
                 task.value = achievement.replace("%", "\%")
                 task.value = achievement.replace("#", "\#")
+

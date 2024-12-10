@@ -5,7 +5,13 @@ import latex_formats as lf
 
 
 class ExperienceSection(Nonterminal):
-    rules = [(("Experience",) * i, 1 / 3) for i in range(1, 4)]
+    #rules = [(("Experience",) * i, 1 / 3) for i in range(1, 4)]
+    rules = [
+        (("Experience",), 0.67),
+        (("Experience", "Experience"), 0.2),
+        (("Experience", "Experience", "Experience"), 0.13),
+    ]
+
     latex = lf.latex["ExperienceSection"]
     
     def __init__(self):

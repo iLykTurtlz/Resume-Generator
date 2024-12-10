@@ -1611,7 +1611,7 @@
         "job_title": "Software Engineer, Full Stack",
         "achievements": [
             "Collaborated with cross-functional Agile teams to design and develop a cloud-based loan application system",
-            "Implemented a RESTful API using Node.js andExpress.js for a customer-facing banking platform",
+            "Implemented a RESTful API using Node.js and Express.js for a customer-facing banking platform",
             "Improved application performance by 30% through optimized database schema and query optimization",
             "Reduced technical debt by 20% through code refactoring and automated testing",
             "Developed and deployed a simple web application using AWS services including S3, Lambda, and API Gateway",
