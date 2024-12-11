@@ -2,17 +2,19 @@ from grammar.terminal import Terminal
 from grammar.nonterminal import Nonterminal
 import random
 import latex_formats as lf
+from grammar.rules import rules
 
 
 class EducationSection(Nonterminal):
-    rules = [
-        (("Education",), 0.5),
-        (("Education", "Education"), 0.5)
-    ]
+    # rules = [
+    #     (("Education",), 0.5),
+    #     (("Education", "Education"), 0.5)
+    # ]
+  
     latex = lf.latex["EducationSection"]
 
     def __init__(self):
-        super().__init__(EducationSection.rules, EducationSection.latex)
+        super().__init__(rules[str(self)], EducationSection.latex)
         self.ordered = True
 
     # def expand(self):
@@ -23,21 +25,21 @@ class EducationSection(Nonterminal):
     #     return self
 
 
-class CalPolyEducation(Nonterminal):
-    rules = [
-        (("CalPoly", "CalPolyEduGeographicalInfo", "EduDegreeName", "EduDate", "EduGPA"), 1.0)
-    ]
-    latex = lf.latex["Education"]
+# class CalPolyEducation(Nonterminal):
+#     rules = [
+#         (("CalPoly", "CalPolyEduGeographicalInfo", "EduDegreeName", "EduDate", "EduGPA"), 1.0)
+#     ]
+#     latex = lf.latex["Education"]
 
-    def __init__(self):
-        super().__init__(CalPolyEducation.rules, CalPolyEducation.latex)
-        self.ordered = False
+#     def __init__(self):
+#         super().__init__(CalPolyEducation.rules, CalPolyEducation.latex)
+#         self.ordered = False
 
-    def to_latex(self):
-        if self.has_expanded():
-            return self.latex % tuple(child.to_latex() for child in self.children)
-        else:
-            raise Exception(f"{self} must be expanded first")
+#     def to_latex(self):
+#         if self.has_expanded():
+#             return self.latex % tuple(child.to_latex() for child in self.children)
+#         else:
+#             raise Exception(f"{self} must be expanded first")
 
 class Education(Nonterminal):
     rules = [
@@ -46,7 +48,7 @@ class Education(Nonterminal):
     latex = lf.latex["Education"]
 
     def __init__(self):
-        super().__init__(Education.rules, Education.latex)
+        super().__init__(rules[str(self)], Education.latex)
         self.ordered = False
 
     def to_latex(self):
