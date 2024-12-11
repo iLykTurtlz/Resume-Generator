@@ -57,7 +57,7 @@ class ProjectSection(Nonterminal):
 class Project(Nonterminal):
     # count = 0
     rules = [
-        (("ProjectDescription", "ProjectTools", "ProjectDate", "ProjectAchievements"), 0.5),
+        (("ProjectDescription", "ProjectTools", "ProjectDate", "ProjectAchievements"), 1.0),
         
     ]
     latex = lf.latex["Project"]
