@@ -82,6 +82,7 @@ class HeadDataGenerator(DataGenerator):
 
 
 class EducationDataGenerator(DataGenerator):
+    zipCode = "93405"
     #Note: this context is ORDERED, i.e. a list
     def generate(self, context):
         context[0]["EduInstitution"].value = "California Polytechnic State University San Luis Obispo"
@@ -129,16 +130,17 @@ class EducationDataGenerator(DataGenerator):
             # California (930), Washington (251), Colorado (94), Oregon (68), Texas (48)
             formerSchoolType = random.choices(["transfer", "direct"], weights=[445, 728], k=1)
             if formerSchoolType[0] == "transfer":
-                feederSchools = [("Cuesta College", "San Luis Obispo, CA"), ("Allan Hancock College", "Santa Maria, CA"),
-                                 ("Moorpark College", "Moorpark, CA"), ("De Anza Community College", "Cupertino, CA"),
-                                 ("Santa Barbara City College", "Santa Barbara, CA"), ("Diablo Valley College", "Pleasant Hill, CA"),
-                                 ("Foothill College", "Los Altos Hills, CA"), ("Santa Rosa Junior College", "Santa Rosa, CA"),
-                                 ("Hartnell Community College", "Salinas, CA"), ("Santa Monica College", "Santa Monica, CA")]
+                feederSchools = [("Cuesta College", "San Luis Obispo, CA", "93407"), ("Allan Hancock College", "Santa Maria, CA", "93454"),
+                                 ("Moorpark College", "Moorpark, CA", "93021"), ("De Anza Community College", "Cupertino, CA", "95014"),
+                                 ("Santa Barbara City College", "Santa Barbara, CA", "93109"), ("Diablo Valley College", "Pleasant Hill, CA", "94523"),
+                                 ("Foothill College", "Los Altos Hills, CA", "94022"), ("Santa Rosa Junior College", "Santa Rosa, CA", "95401"),
+                                 ("Hartnell Community College", "Salinas, CA", "93901"), ("Santa Monica College", "Santa Monica, CA", "90405")]
                 feederSchoolsWeights = [189, 168, 45, 43, 41, 34, 27, 26, 25, 25]
                 randomFeeder = random.choices(feederSchools, weights=feederSchoolsWeights, k=1)
 
                 context[1]["EduInstitution"].value = randomFeeder[0][0]
                 context[1]["EduGeographicalInfo"].value = randomFeeder[0][1]
+                EducationDataGenerator.zipCode = randomFeeder[0][2]
             else:
                 state = random.choices(["ca", "wa", "or", "tx"], weights=[930, 251, 68, 48], k=1)
                 df = pd.read_csv(f"../data/HighSchools/{state[0]}Students.csv")
@@ -147,6 +149,7 @@ class EducationDataGenerator(DataGenerator):
                 location = df.iloc[index, 1].title() + ", " + df.iloc[index, 2]
                 context[1]["EduInstitution"].value = schoolName
                 context[1]["EduGeographicalInfo"].value = location
+                EducationDataGenerator.zipCode = df.iloc[index, 3]
 
             dates = ["December 2021", "August 2021", "November 2022", "March 2022"]
             context[1]["EduDegreeName"].value = "Computer Science"
