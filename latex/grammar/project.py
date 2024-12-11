@@ -1,19 +1,20 @@
 from grammar.nonterminal import Nonterminal
 from grammar.terminal import Terminal
 import latex_formats as lf
+from grammar.rules import rules
 
 
 
 class ProjectSection(Nonterminal):
-    rules = [
-        (("Project",), 0.1),
-        (("Project", "Project"), 0.2),
-        (("Project", "Project", "Project"), 0.4),
-        (("Project", "Project", "Project", "Project"), 0.3),
-    ]
+    # rules = [
+    #     (("Project",), 0.1),
+    #     (("Project", "Project"), 0.2),
+    #     (("Project", "Project", "Project"), 0.4),
+    #     (("Project", "Project", "Project", "Project"), 0.3),
+    # ]
     latex = lf.latex["ProjectSection"]
     def __init__(self):
-        super().__init__(ProjectSection.rules, ProjectSection.latex)
+        super().__init__(rules[str(self)], ProjectSection.latex)
         self.ordered = True
         # self.context[str(self)] = {}
         
@@ -56,13 +57,13 @@ class ProjectSection(Nonterminal):
 
 class Project(Nonterminal):
     # count = 0
-    rules = [
-        (("ProjectDescription", "ProjectTools", "ProjectDate", "ProjectAchievements"), 1.0),
+    # rules = [
+    #     (("ProjectDescription", "ProjectTools", "ProjectDate", "ProjectAchievements"), 1.0),
         
-    ]
+    # ]
     latex = lf.latex["Project"]
     def __init__(self):
-        super().__init__(Project.rules, Project.latex)
+        super().__init__(rules[str(self)], Project.latex)
         self.ordered = False
         # Project.count += 1
         # self.id = f"{self}_{Project.count}"
@@ -151,13 +152,14 @@ class ProjectDate(Terminal):
 
     
 class ProjectAchievements(Nonterminal):
-    rules = [
-        (("ProjectAchievementItem",), 0.2),
-        (("ProjectAchievementItem","ProjectAchievementItem"), 0.5),
-        (("ProjectAchievementItem","ProjectAchievementItem","ProjectAchievementItem"), 0.3),
-    ]
+    # rules = [
+    #     (("ProjectAchievementItem",), 0.2),
+    #     (("ProjectAchievementItem","ProjectAchievementItem"), 0.5),
+    #     (("ProjectAchievementItem","ProjectAchievementItem","ProjectAchievementItem"), 0.3),
+    # ]
     latex = lf.latex["ProjectAchievements"]
     def __init__(self):
+        super().__init__(rules[str(self)], ProjectAchievements.latex)
         self.value = None
         self.ordered = True
     

@@ -331,8 +331,19 @@ class SelfSummaryDataGenerator(DataGenerator):
         jsn = self._get_expanded_json(context)
         prompt = f"{jsn}\n\nThe above json represents a CS student resume. Generate a self-summary/objective section for the resume. Output the result in a JSON format, with 'summary' as the key, e.g." + "{summary: <summary_goes_here>}. Do NOT output anything besides the final JSON."
         self_summary = generate_text(prompt)
+        print(f"self_summary: {self_summary}")
+        
+
+
         try:
-            self_summary = json.loads(self_summary)['summary']
+            output = json.loads(self_summary)
+            if len(output) == 1:
+                self_summary = list(output.values())[0]
+            elif len(output) > 1:
+                for k,v in output.items():
+                    if "summary" in k.lower():
+                        self_summary = v
+                        break
         except:
             self_summary = random.choice(self.DEFAULT_SELF_SUMMARIES)
         context["SelfSummarySection"]["SelfSummary"].value = self_summary

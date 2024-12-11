@@ -1,39 +1,41 @@
 
 from grammar.nonterminal import Nonterminal
 from grammar.terminal import Terminal
+from grammar.rules import rules
 import latex_formats as lf
 
 
 
+
 class Head(Nonterminal):
-    rules = [
-        (("Title", "PhoneEmail", "LinkedInGitHub", "GeographicalInfoField"), 1.0)
-    ]
+    # rules = [
+    #     (("Title", "PhoneEmail", "LinkedInGitHub", "GeographicalInfoField"), 1.0)
+    # ]
     latex = lf.latex["Head"]
     def __init__(self):
-        super().__init__(Head.rules, Head.latex)
+        super().__init__(rules[str(self)], Head.latex)
         self.ordered = False
 
 
 class Title(Nonterminal):
-    rules = [
-        (("FullName",), 1.0)
-    ]
+    # rules = [
+    #     (("FullName",), 1.0)
+    # ]
     latex = lf.latex["Title"]
     def __init__(self):
-        super().__init__(Title.rules, Title.latex)
+        super().__init__(rules[str(self)], Title.latex)
         self.ordered = False
 
 
 
 class PhoneEmail(Nonterminal):
-    rules = [
-       (("Phone", "Email"), 0.5),
-       (("Email", "Phone"), 0.5),
-    ]
+    # rules = [
+    #    (("Phone", "Email"), 0.5),
+    #    (("Email", "Phone"), 0.5),
+    # ]
     latex = lf.latex["PhoneEmail"]
     def __init__(self):
-        super().__init__(PhoneEmail.rules, PhoneEmail.latex)
+        super().__init__(rules[str(self)], PhoneEmail.latex)
         self.ordered = False
 
     def to_latex(self):
@@ -50,13 +52,13 @@ class PhoneEmail(Nonterminal):
 
 
 class LinkedInGitHub(Nonterminal):
-    rules = [
-        (("LinkedInField", "GitHubField"), 0.5),
-        (("GitHubField", "LinkedInField"), 0.5),
-    ]
+    # rules = [
+    #     (("LinkedInField", "GitHubField"), 0.5),
+    #     (("GitHubField", "LinkedInField"), 0.5),
+    # ]
     latex = lf.latex["LinkedInGitHub"]
     def __init__(self):
-        super().__init__(LinkedInGitHub.rules, LinkedInGitHub.latex)
+        super().__init__(rules[str(self)], LinkedInGitHub.latex)
         self.ordered = False
 
     def to_latex(self):
@@ -68,12 +70,12 @@ class LinkedInGitHub(Nonterminal):
 
 
 class LinkedInField(Nonterminal):
-    rules = [
-        (("LinkedIn",), 1.0)
-    ]
+    # rules = [
+    #     (("LinkedIn",), 1.0)
+    # ]
     latex = lf.latex["LinkedInField"]
     def __init__(self):
-        super().__init__(LinkedInField.rules, LinkedInField.latex)
+        super().__init__(rules[str(self)], LinkedInField.latex)
         self.ordered = False
 
     def to_latex(self):
@@ -87,12 +89,12 @@ class LinkedInField(Nonterminal):
 
 
 class GitHubField(Nonterminal):
-    rules = [
-        (("GitHub",), 1.0)
-    ]
+    # rules = [
+    #     (("GitHub",), 1.0)
+    # ]
     latex = lf.latex["GitHubField"]
     def __init__(self):
-        super().__init__(GitHubField.rules, GitHubField.latex)
+        super().__init__(rules[str(self)], GitHubField.latex)
         self.ordered = False
 
     def to_latex(self):
@@ -106,12 +108,12 @@ class GitHubField(Nonterminal):
 
 
 class GeographicalInfoField(Nonterminal):
-    rules = [
-        (("GeographicalInfo",), 1.0)
-    ]
+    # rules = [
+    #     (("GeographicalInfo",), 1.0)
+    # ]
     latex = lf.latex["GeographicalInfoField"]
     def __init__(self):
-        super().__init__(GeographicalInfoField.rules, GeographicalInfoField.latex)
+        super().__init__(rules[str(self)], GeographicalInfoField.latex)
         self.ordered = False
 
     

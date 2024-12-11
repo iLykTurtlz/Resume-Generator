@@ -1,18 +1,19 @@
 from grammar.nonterminal import Nonterminal
 import latex_formats as lf
+from grammar.rules import rules
 
 
 
 class Body(Nonterminal):
-    rules = [
-        #(("Education", "ExperienceSection"), 1.0)
-        (("SelfSummarySection", "EducationSection", "ExperienceSection", "ProjectSection", "SkillsSection"), 1.0)
-        # (("EducationSection",), 1.0)
-    ]
+    # rules = [
+    #     #(("Education", "ExperienceSection"), 1.0)
+    #     (("SelfSummarySection", "EducationSection", "ExperienceSection", "ProjectSection", "SkillsSection"), 1.0)
+    #     # (("EducationSection",), 1.0)
+    # ]
     latex = lf.latex["Body"]
 
     def __init__(self):
-        super().__init__(Body.rules, Body.latex)
+        super().__init__(rules[str(self)], Body.latex)
         self.ordered = False
 
     def expand(self):

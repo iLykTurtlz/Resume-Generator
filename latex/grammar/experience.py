@@ -2,30 +2,31 @@ from grammar.terminal import Terminal
 from grammar.nonterminal import Nonterminal
 import random
 import latex_formats as lf
+from grammar.rules import rules
 
 
 class ExperienceSection(Nonterminal):
     #rules = [(("Experience",) * i, 1 / 3) for i in range(1, 4)]
-    rules = [
-        (("Experience",), 0.67),
-        (("Experience", "Experience"), 0.2),
-        (("Experience", "Experience", "Experience"), 0.13),
-    ]
+    # rules = [
+    #     (("Experience",), 0.67),
+    #     (("Experience", "Experience"), 0.2),
+    #     (("Experience", "Experience", "Experience"), 0.13),
+    # ]
 
     latex = lf.latex["ExperienceSection"]
     
     def __init__(self):
-        super().__init__(ExperienceSection.rules, ExperienceSection.latex)
+        super().__init__(rules[str(self)], ExperienceSection.latex)
         self.ordered = True
         
 class Experience(Nonterminal):
-    rules = [
-        (("CompanyName", "JobTitle", "DateRange", "GeographicalInfo", "ExperienceTasks"), 1.0)
-    ]
+    # rules = [
+    #     (("CompanyName", "JobTitle", "DateRange", "GeographicalInfo", "ExperienceTasks"), 1.0)
+    # ]
     latex = lf.latex["Experience"]
     
     def __init__(self):
-        super().__init__(Experience.rules, Experience.latex)
+        super().__init__(rules[str(self)], Experience.latex)
         self.ordered = False
         
     def to_latex(self):
@@ -35,14 +36,14 @@ class Experience(Nonterminal):
             raise Exception(f"{self} must be expanded first")
         
 class ExperienceTasks(Nonterminal):
-    rules = [
-        (("ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.4),
-        (("ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.5),
-        (("ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.1),
-    ]
+    # rules = [
+    #     (("ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.4),
+    #     (("ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.5),
+    #     (("ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask", "ExperienceTask"), 0.1),
+    # ]
     latex = lf.latex["ExperienceTasks"]
     def __init__(self):
-        super().__init__(ExperienceTasks.rules, ExperienceTasks.latex)
+        super().__init__(rules[str(self)], ExperienceTasks.latex)
         self.ordered = True
         
     def to_latex(self):
