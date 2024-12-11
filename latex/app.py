@@ -17,6 +17,7 @@ def generate():
             os.makedirs(RESUME_FOLDER)
         
         random_token = str(uuid.uuid4())
+        print("RANDOM_TOKEN:",random_token)
         
         token_folder = os.path.join(RESUME_FOLDER, random_token)
         os.makedirs(token_folder, exist_ok=True)

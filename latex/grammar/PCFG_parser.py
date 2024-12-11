@@ -2,7 +2,7 @@ class Parser:
     def parse_grammar(self, filepath: str) -> dict:
         try:
             with open(filepath, "r") as f:
-                lines = [line for line in f.read().split("\n") if line != ""]
+                lines = filter(lambda line : line != "", f.read().split("\n")) #[line for line in f.read().split("\n") if line != ""]
 
             rules = {}
             for line in lines:
