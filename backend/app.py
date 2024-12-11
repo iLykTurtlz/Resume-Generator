@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, abort, send_file, send_from_directory
-# TODO: Rename?
-from test_grammar import generate_resume
+from generate_latex import generate_resume
 import os
 from flask_cors import CORS
 import uuid

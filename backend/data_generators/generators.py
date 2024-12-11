@@ -323,8 +323,8 @@ class ProjectDataGenerator(DataGenerator):
              ["Python, React, Heroku", "Python", "React", "Heroku", "", "", ""],
              ["Javascript, Typescript, HTML, CSS", "Javascript", "Typescript, HMTL, CSS", "", "", "", ""],
              ["Python, R", "Python", "", "", "R", "", ""],
-             ["Python, Tensorflow", "Python, Tensorflow", "", "", "", "", ""],
-             ["Python, Pandas, Tensorflow", "Python, Pandas, Tensorflow", "", "", "", "", ""],
+             ["Python, TensorFlow", "Python, TensorFlow", "", "", "", "", ""],
+             ["Python, Pandas, TensorFlow", "Python, Pandas, TensorFlow", "", "", "", "", ""],
              ["Python, Haar", "Python", "", "", "Haar", "", ""],
              ["C++, Python", "C++, Python", "", "", "", "", ""],
              ["C, C++, GoLang", "C, C++, GoLang", "", "", "", "", ""],
@@ -448,7 +448,8 @@ class SkillsDataGenerator(DataGenerator):
                         difference = k - len(found_skills[skill_type])
             
                 for term, skill in zip(skill_terminals, list(found_skills[skill_type])[:len(skill_terminals)]):
-                    term.value = skill
+                    #latex issues
+                    term.value = skill.replace("%", "\%").replace("#", "\#").replace("&", "\&")
 
 
 class SelfSummaryDataGenerator(DataGenerator):
