@@ -1,6 +1,10 @@
 import random
 import pandas as pd
 import numpy as np
+import json
+
+from grammar.terminal import Terminal
+from llm import generate_text
 
 from .data_generator import DataGenerator
 from .experience_data_generator import ExperienceDataGenerator
@@ -308,9 +312,44 @@ class SkillsDataGenerator(DataGenerator):
 
 
 class SelfSummaryDataGenerator(DataGenerator):
+    # In case things go wrong
+    DEFAULT_SELF_SUMMARIES = [
+        "Aspiring software engineer with a strong foundation in computer science and a passion for creating impactful, user-friendly applications. Experienced in building scalable systems and contributing to cross-functional teams.",
+        "Dedicated developer with expertise in full-stack web development, cloud computing, and database optimization. Excels in delivering innovative solutions to complex problems under tight deadlines.",
+        "Creative problem-solver with experience in designing and implementing AI-driven applications. Passionate about advancing technology and driving efficiency in software systems.",
+        "Motivated software engineer with a background in developing user-centric applications. Skilled in modern frameworks, APIs, and optimizing for performance at scale.",
+        "Results-driven software developer with a proven ability to deliver clean, maintainable code. Passionate about collaborating with teams to solve challenging technical problems.",
+        "Enthusiastic computer scientist skilled in Python, JavaScript, and modern web frameworks. Focused on creating reliable, scalable, and user-friendly solutions.",
+        "Proactive engineer specializing in cloud-native architectures and DevOps practices. Eager to contribute to high-impact projects that push the boundaries of technology.",
+        "Adaptable developer with experience in building secure, scalable applications for web and mobile platforms. Passionate about delivering value to users through innovative design.",
+        "Detail-oriented software engineer with a strong background in algorithms, data structures, and distributed systems. Committed to building efficient and effective software solutions.",
+        "Passionate programmer with experience in AI/ML applications, backend services, and database optimization. Enjoys solving challenging problems and driving impactful results."
+    ]
+
+    
     def generate(self, context):
         # TODO LLM magic
-        context["SelfSummary"].value = "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+        jsn = self._get_expanded_json(context)
+        prompt = f"{jsn}\n\nThe above json represents a CS student resume. Generate a self-summary/objective section for the resume. Output the result in a JSON format, with 'summary' as the key, e.g." + "{summary: <summary_goes_here>}. Do NOT output anything besides the final JSON."
+        self_summary = generate_text(prompt)
+        try:
+            self_summary = json.loads(self_summary)['summary']
+        except:
+            self_summary = random.choice(self.DEFAULT_SELF_SUMMARIES)
+        context["SelfSummarySection"]["SelfSummary"].value = self_summary
+        
+        
+    def _get_expanded_json(self, context):
+        if isinstance(context, Terminal):
+            try:
+                return context.to_latex()
+            except:
+                return None
+        elif isinstance(context, list):
+            return [self._get_expanded_json(ctx) for ctx in context]
+        return {
+            k: self._get_expanded_json(v) for k, v in context.items()
+        }
 
 
 class BodyDataGenerator(DataGenerator):
@@ -324,7 +363,7 @@ class BodyDataGenerator(DataGenerator):
         if "SkillsSection" in context:
             SkillsDataGenerator().generate(context["SkillsSection"])
         if "SelfSummarySection" in context:
-            SelfSummaryDataGenerator().generate(context["SelfSummarySection"])
+            SelfSummaryDataGenerator().generate(context)
 
 
 class ResumeDataGenerator(DataGenerator):
