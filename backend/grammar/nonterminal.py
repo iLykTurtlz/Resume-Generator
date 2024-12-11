@@ -1,10 +1,9 @@
-# from __future__ import annotations
 import random
 from grammar.symbol import Symbol, SymbolFactory
 from grammar.rules import rules
 import latex_formats as lf
 from abc import ABC
-# from collections import ChainMap
+
 
 
 class Nonterminal(Symbol, ABC):
@@ -13,9 +12,7 @@ class Nonterminal(Symbol, ABC):
         self.latex = latex
         self.children = None
 
-    #Nonterminals do not need to override expand
     def expand(self):
-        # print(f"rules: {self.rules}")
         child_types = random.choices(*zip(*self.rules))[0]
         self.children = [child.expand() for child in SymbolFactory.create_instances(child_types)]
         try:
@@ -42,19 +39,7 @@ class Nonterminal(Symbol, ABC):
 
 
 class S(Nonterminal):
-    # rules = [
-    #     # (("Head", "Body"), 1.0),
-    #     # (("Head", "Body", "Footer"), 0.0)
-    #     (("Head", "Body"), 1.0)
-    # ]
     latex = lf.latex["S"]
-
     def __init__(self):
-        # instance attributes
         super().__init__(rules[str(self)], S.latex)
-
-        # In reality the document is ordered, but for purpose of generating content there is no need for order
         self.ordered = False
-    
-    
-    

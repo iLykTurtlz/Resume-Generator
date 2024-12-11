@@ -13,7 +13,7 @@ from .experience_data_generator import ExperienceDataGenerator
 
 
 class NameDataGenerator(DataGenerator):
-    path_to_dir = "./name_distributions/"
+    path_to_dir = "../data/name_distributions/"
     cp_r = (['white', 'black', 'api', 'latinx'], [0.589522, 0.008218, 0.15972, 0.24254])
 
     #source: year 2020 https://ir.calpoly.edu/2020-ceng-enrollment-ugrd-grad-profile
