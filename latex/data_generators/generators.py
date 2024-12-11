@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import json
 from collections import Counter
+from nltk.tokenize import word_tokenize
 
 from grammar.terminal import Terminal
 from llm import generate_text
@@ -49,13 +50,6 @@ class NameDataGenerator(DataGenerator):
         context["FullName"].value = full_name
         return full_name
 
-
-# # Question: COULD THINGS LIKE THIS BE USEFUL???
-# class SampledHometown:
-#     #TODO: generate this based on real CalPoly data, then use it in HeadDataGenerator
-#     def __init__(self):
-#         self.zip_code = None  #random.choice
-#         self.area_code = None  #lookup
 
 
 class HeadDataGenerator(DataGenerator):
@@ -401,13 +395,15 @@ class SkillsDataGenerator(DataGenerator):
         all_skills = self._read_skills()
         found_skills = {skill_type:set() for skill_type in all_skills}
 
+        tokenized_achievements = [set(word_tokenize(a.lower())) for a in self.achievements]
+
         for skill_type, skillset in all_skills.items():
             for skill in skillset:
                 if skill.lower() in self.tools:
                     found_skills[skill_type].add(skill)
                     continue
-                for achievement in self.achievements:
-                    if skill.lower() in achievement.lower():
+                for tokens in tokenized_achievements:
+                    if skill.lower() in tokens:
                         found_skills[skill_type].add(skill)
                     
         
