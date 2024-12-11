@@ -140,6 +140,7 @@ class EducationDataGenerator(DataGenerator):
 
                 context[1]["EduInstitution"].value = randomFeeder[0][0]
                 context[1]["EduGeographicalInfo"].value = randomFeeder[0][1]
+                context[1]["EduDegreeName"].value = "Computer Science"
                 EducationDataGenerator.zipCode = randomFeeder[0][2]
             else:
                 state = random.choices(["ca", "wa", "or", "tx"], weights=[930, 251, 68, 48], k=1)
@@ -149,10 +150,10 @@ class EducationDataGenerator(DataGenerator):
                 location = df.iloc[index, 1].title() + ", " + df.iloc[index, 2]
                 context[1]["EduInstitution"].value = schoolName
                 context[1]["EduGeographicalInfo"].value = location
+                context[1]["EduDegreeName"].value = "High School Student"
                 EducationDataGenerator.zipCode = df.iloc[index, 3]
 
             dates = ["December 2021", "August 2021", "November 2022", "March 2022"]
-            context[1]["EduDegreeName"].value = "Computer Science"
             context[1]["EduDate"].value = random.choice(dates)
             #GPA
             fourscale = 4.0
