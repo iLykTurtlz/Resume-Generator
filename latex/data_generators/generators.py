@@ -142,9 +142,8 @@ class EducationDataGenerator(DataGenerator):
             else:
                 state = random.choices(["ca", "wa", "or", "tx"], weights=[930, 251, 68, 48], k=1)
                 df = pd.read_csv(f"../data/HighSchools/{state[0]}Students.csv")
-                print(df.head())
                 index = random.randint(0, len(df)-1)
-                schoolName = df.iloc[index, 0].title()
+                schoolName = df.iloc[index, 0].replace("ELEMENTARY", "").replace("MIDDLE", "").title()
                 location = df.iloc[index, 1].title() + ", " + df.iloc[index, 2]
                 context[1]["EduInstitution"].value = schoolName
                 context[1]["EduGeographicalInfo"].value = location
