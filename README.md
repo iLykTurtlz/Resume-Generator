@@ -16,10 +16,21 @@ Python (3.9.20 or later)
 
 ### Python packages
 
-Flask (3.1.0) - pip install Flask
-Flask-Cors (5.0.0) - pip install -U flask-cors
-python-dotenv (1.0.1) -  pip install python-dotenv
-groq (0.13.0) - pip install groq
+Flask (3.1.0) 
+
+Flask-Cors (5.0.0) 
+
+python-dotenv (1.0.1) 
+
+groq (0.13.0) 
+
+Numpy (1.26.2)
+
+Pandas (2.1.3)
+
+NLTK (3.8.1)
+
+
 
 ### Standard Python libraries
 
