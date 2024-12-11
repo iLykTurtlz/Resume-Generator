@@ -1,4 +1,3 @@
-
 from grammar.nonterminal import Nonterminal
 from grammar.terminal import Terminal
 from grammar.rules import rules

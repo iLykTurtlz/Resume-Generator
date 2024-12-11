@@ -1,4 +1,4 @@
-from grammar.symbol import Symbol, SymbolFactory
+from grammar.symbol import Symbol
 from abc import ABC
 
 class Terminal(Symbol, ABC):

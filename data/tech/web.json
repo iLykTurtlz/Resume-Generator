@@ -3,6 +3,10 @@
         "filename": "category_web_frameworks.json",
         "url": "https://en.wikipedia.org/wiki/Category:Web_frameworks#Pages_in_category",
         "technologies": [
+            "HTML",
+            "CSS",
+            "Vite",
+            "Lit",
             "ActiveVFP",
             "Agavi",
             "AIDA/Web",

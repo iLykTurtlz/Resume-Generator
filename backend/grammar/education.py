@@ -1,6 +1,5 @@
 from grammar.terminal import Terminal
 from grammar.nonterminal import Nonterminal
-import random
 import latex_formats as lf
 from grammar.rules import rules
 
