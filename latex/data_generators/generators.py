@@ -119,19 +119,33 @@ class EducationDataGenerator(DataGenerator):
         courses_str = "\n\\item Relevant Coursework: \\footnotesize{%s}" % (', '.join(selected_courses),)
         context[0]["EduGPA"].value = number + courses_str
 
-        # TODO support more than two institutions?  Or different kinds, like HS?
+        # Support Transfer students & High School Institutions
         if len(context) > 1:
-            feederSchools = [("Cuesta College", "San Luis Obispo, CA"), ("Allan Hancock College", "Santa Maria, CA"),
-                             ("Moorpark College", "Moorpark, CA"), ("De Anza Community College", "Cupertino, CA"),
-                             ("Santa Barbara City College", "Santa Barbara, CA"), ("Diablo Valley College", "Pleasant Hill, CA"),
-                             ("Foothill College", "Los Altos Hills, CA"), ("Santa Rosa Junior College", "Santa Rosa, CA"),
-                             ("Hartnell Community College", "Salinas, CA"), ("Santa Monica College", "Santa Monica, CA")]
-            feederSchoolsWeights = [189, 168, 45, 43, 41, 34, 27, 26, 25, 25]
-            randomFeeder = random.choices(feederSchools, weights=feederSchoolsWeights, k=1)
-            dates = ["December 2021", "August 2021", "November 2022", "March 2022"]
+            # 445 / 1173 = ratio of transfer
+            # California (930), Washington (251), Colorado (94), Oregon (68), Texas (48)
+            formerSchoolType = random.choices(["transfer", "direct"], weights=[445, 728], k=1)
+            if formerSchoolType[0] == "transfer":
+                feederSchools = [("Cuesta College", "San Luis Obispo, CA"), ("Allan Hancock College", "Santa Maria, CA"),
+                                 ("Moorpark College", "Moorpark, CA"), ("De Anza Community College", "Cupertino, CA"),
+                                 ("Santa Barbara City College", "Santa Barbara, CA"), ("Diablo Valley College", "Pleasant Hill, CA"),
+                                 ("Foothill College", "Los Altos Hills, CA"), ("Santa Rosa Junior College", "Santa Rosa, CA"),
+                                 ("Hartnell Community College", "Salinas, CA"), ("Santa Monica College", "Santa Monica, CA")]
+                feederSchoolsWeights = [189, 168, 45, 43, 41, 34, 27, 26, 25, 25]
+                randomFeeder = random.choices(feederSchools, weights=feederSchoolsWeights, k=1)
 
-            context[1]["EduInstitution"].value = randomFeeder[0][0]
-            context[1]["EduGeographicalInfo"].value = randomFeeder[0][1]
+                context[1]["EduInstitution"].value = randomFeeder[0][0]
+                context[1]["EduGeographicalInfo"].value = randomFeeder[0][1]
+            else:
+                state = random.choices(["ca", "wa", "or", "tx"], weights=[930, 251, 68, 48], k=1)
+                df = pd.read_csv(f"../data/HighSchools/{state[0]}Students.csv")
+                print(df.head())
+                index = random.randint(0, len(df)-1)
+                schoolName = df.iloc[index, 0].title()
+                location = df.iloc[index, 1].title() + ", " + df.iloc[index, 2]
+                context[1]["EduInstitution"].value = schoolName
+                context[1]["EduGeographicalInfo"].value = location
+
+            dates = ["December 2021", "August 2021", "November 2022", "March 2022"]
             context[1]["EduDegreeName"].value = "Computer Science"
             context[1]["EduDate"].value = random.choice(dates)
             #GPA
