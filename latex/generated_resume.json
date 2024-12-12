@@ -1,0 +1,148 @@
+{
+  "Head": {
+    "Title": {
+      "FullName": "Carlos Martinez"
+    },
+    "PhoneEmail": {
+      "Phone": "415-555-6267",
+      "Email": "cmartinez@calpoly.edu"
+    },
+    "LinkedInGitHub": {
+      "GitHubField": {
+        "GitHub": "sweetDude"
+      },
+      "LinkedInField": {
+        "LinkedIn": "anastasia-beaverhousen-a4a06969"
+      }
+    },
+    "GeographicalInfoField": {
+      "GeographicalInfo": "San Luis Obispo, CA"
+    }
+  },
+  "Body": {
+    "SelfSummarySection": {
+      "SelfSummary": "Detail-oriented software engineer with a strong background in algorithms, data structures, and distributed systems. Committed to building efficient and effective software solutions."
+    },
+    "EducationSection": [
+      {
+        "EduInstitution": "California Polytechnic State University San Luis Obispo",
+        "EduGeographicalInfo": "San Luis Obispo, CA",
+        "EduDegreeName": "B.S. Computer Science",
+        "EduDate": "March 2025",
+        "EduGPA": "3.2/4.0\n\\item Relevant Coursework: \\footnotesize{Knowledge Discovery from Data, Advanced Data Mining}"
+      },
+      {
+        "EduInstitution": "Santa Monica College",
+        "EduGeographicalInfo": "Santa Monica, CA",
+        "EduDegreeName": "Computer Science",
+        "EduDate": "August 2021",
+        "EduGPA": "3.2/4.0"
+      }
+    ],
+    "ExperienceSection": [
+      {
+        "CompanyName": "Veeva Systems [\\href{https://www.veeva.com/}{\\faIcon{globe}}]",
+        "JobTitle": "QA Operations Specialist",
+        "DateRange": "June 2023 - August 2023",
+        "GeographicalInfo": "United States",
+        "ExperienceTasks": [
+          "Developed and presented training materials to enhance employee knowledge and skills.",
+          "Collaborated with QA operations team to develop and implement process improvements.",
+          "Assisted in creating and modifying LMS reports to improve data analysis and decision-making.",
+          "Coordinated training events for international employees, ensuring successful onboarding and improved team performance."
+        ]
+      },
+      {
+        "CompanyName": "Palo Alto Networks [\\href{https://www.paloaltonetworks.com/}{\\faIcon{globe}}]",
+        "JobTitle": "Systems Engineer, Majors - Northeast",
+        "DateRange": "August 2021 - May 2023",
+        "GeographicalInfo": "Hartford, CT",
+        "ExperienceTasks": [
+          "Assisted in coordinating and participating in a multi-partner solution showcase for a major enterprise client",
+          "Collaborated with a senior engineer to develop and deliver a technical training session for a local partner",
+          "Worked closely with the sales team to design a comprehensive security solution for a major healthcare organization",
+          "Generated and edited technical documents, including RFP responses and proof-of-concept statements"
+        ]
+      },
+      {
+        "CompanyName": "Workday [\\href{https://www.workday.com/}{\\faIcon{globe}}]",
+        "JobTitle": "Software Development Engineer",
+        "DateRange": "October 2020 - July 2021",
+        "GeographicalInfo": "Boulder, CO",
+        "ExperienceTasks": [
+          "Enhanced the scalability of a web application by implementing caching mechanisms.",
+          "Assisted in debugging and troubleshooting issues with the Lodestar Application team.",
+          "Implemented security protocols to ensure data integrity and confidentiality."
+        ]
+      }
+    ],
+    "ProjectSection": [
+      {
+        "ProjectDescription": "Full-Stack Chore App",
+        "ProjectTools": "Python, MySQL, HTML, CSS, Vite, Lit",
+        "ProjectDate": "March 2024",
+        "ProjectAchievements": [
+          "Used Python and SQL to build a web app for tracking chores within households.",
+          "Created multiple views within a screen to serve all steps of chore tracking, with a point incentivization system.",
+          "Provided users with challenge analysis breakdown with a regression of responsibility by commitment."
+        ]
+      },
+      {
+        "ProjectDescription": "ToDo App",
+        "ProjectTools": "Javascript, React Native, Apollo, GraphQL",
+        "ProjectDate": "November 2023",
+        "ProjectAchievements": [
+          "Built a Full-Stack React Native to-do app with Apollo\u2019s new Query and Mutation components.",
+          "App has functionality to add tasks, view them, mark/unmark them as complete and delete them."
+        ]
+      },
+      {
+        "ProjectDescription": "TCP/IP Server",
+        "ProjectTools": "C, C++",
+        "ProjectDate": "August 2022",
+        "ProjectAchievements": [
+          "Used Socket API to send a simple HTTP request to a website."
+        ]
+      },
+      {
+        "ProjectDescription": "Memory Allocator in C",
+        "ProjectTools": "C, C++",
+        "ProjectDate": "December 2021",
+        "ProjectAchievements": [
+          "Wrote a simple memory allocator in C, and adjusted allocated memory to align to a page boundary.",
+          "Wrote a simplistic Unix shell in C.",
+          "Extended to include a file system checker."
+        ]
+      }
+    ],
+    "SkillsSection": {
+      "ProgrammingLanguageSkills": [
+        "Java",
+        "Python",
+        "Pascal"
+      ],
+      "WebTechnologySkills": [
+        "Node.js",
+        "React",
+        "Angular"
+      ],
+      "DatabaseSystemSkills": [
+        "MongoDB",
+        "Redis",
+        "Microsoft SQL Server"
+      ],
+      "DataScienceMLSkills": [
+        "Scikit-Learn",
+        "PyTorch"
+      ],
+      "CloudSkills": [
+        "Google Cloud"
+      ],
+      "DevOpsSkills": [
+        "Docker",
+        "Ansible",
+        "Selenium"
+      ]
+    }
+  }
+}

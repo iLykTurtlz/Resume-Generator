@@ -1,0 +1,119 @@
+{
+  "Head": {
+    "Title": {
+      "FullName": "Sophia Delmonte"
+    },
+    "PhoneEmail": {
+      "Email": "sdelmonte@calpoly.edu",
+      "Phone": "415-555-0779"
+    },
+    "LinkedInGitHub": {
+      "GitHubField": {
+        "GitHub": "sweetDude"
+      },
+      "LinkedInField": {
+        "LinkedIn": "anastasia-beaverhousen-a4a06969"
+      }
+    },
+    "GeographicalInfoField": {
+      "GeographicalInfo": "San Luis Obispo, CA"
+    }
+  },
+  "Body": {
+    "SelfSummarySection": {
+      "SelfSummary": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+    },
+    "EducationSection": [
+      {
+        "EduInstitution": "California Polytechnic State University San Luis Obispo",
+        "EduGeographicalInfo": "San Luis Obispo, CA",
+        "EduDegreeName": "B.S. Computer Science",
+        "EduDate": "December 2023",
+        "EduGPA": "3.2/4.0\n\\item Relevant Coursework: \\footnotesize{Speech and Language Processing, Advanced Deep Learning, Operating Systems, Functional Programming}"
+      },
+      {
+        "EduInstitution": "Allan Hancock College",
+        "EduGeographicalInfo": "Santa Maria, CA",
+        "EduDegreeName": "Computer Science",
+        "EduDate": "December 2021",
+        "EduGPA": "3.6/4.0"
+      }
+    ],
+    "ExperienceSection": [
+      {
+        "CompanyName": "Amazon [\\href{https://www.amazon.com/}{\\faIcon{globe}}]",
+        "JobTitle": "Software Dev. Engineer I",
+        "DateRange": "February 2022 - April 2023",
+        "GeographicalInfo": "Seattle, WA",
+        "ExperienceTasks": [
+          "Contributed to the development of a scalable e-commerce search engine using Elasticsearch and Java",
+          "Implemented a caching mechanism using Redis to reduce database queries by 30\\%",
+          "Participated in code reviews and provided constructive feedback to team members"
+        ]
+      }
+    ],
+    "ProjectSection": [
+      {
+        "ProjectDescription": "Twitter Data Mining",
+        "ProjectTools": "Python, TweePy",
+        "ProjectDate": "November 2023",
+        "ProjectAchievements": [
+          "Created an app that interacts with the Twitter API.",
+          "Connected with Twitter REST APIs with TweePy to provie authorization and provide interacing with explore feed.",
+          "Application returns a JSON file with the 50 top trending topics of the last day."
+        ]
+      },
+      {
+        "ProjectDescription": "Blog Web App",
+        "ProjectTools": "Javascript, Typescript, HMTL, CSS",
+        "ProjectDate": "August 2022",
+        "ProjectAchievements": [
+          "Implemented a live blog web app that supports social media feeds, videos, and calendars.",
+          "Programmed widgets for readers to share blog posts or leave comments."
+        ]
+      },
+      {
+        "ProjectDescription": "TCP/IP Server",
+        "ProjectTools": "C, C++",
+        "ProjectDate": "December 2021",
+        "ProjectAchievements": [
+          "Used Socket API to send a simple HTTP request to a website.",
+          "Implemented a TCP with simple data management and provided an interface application.",
+          "Corruption is detected using boolean hashing."
+        ]
+      }
+    ],
+    "SkillsSection": {
+      "ProgrammingLanguageSkills": [
+        "C",
+        "R",
+        "Fortran",
+        "Prolog"
+      ],
+      "WebTechnologySkills": [
+        "Angular",
+        "Node.js",
+        "Django"
+      ],
+      "DatabaseSystemSkills": [
+        "Redis",
+        "Microsoft SQL Server",
+        "MongoDB",
+        "PostgreSQL"
+      ],
+      "DataScienceMLSkills": [
+        "Matplotlib",
+        "TensorFlow",
+        "PyTorch",
+        "Pandas"
+      ],
+      "CloudSkills": [
+        "Google Cloud"
+      ],
+      "DevOpsSkills": [
+        "Nagios",
+        "Chef"
+      ]
+    }
+  }
+}
