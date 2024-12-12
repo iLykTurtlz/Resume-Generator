@@ -24,7 +24,7 @@ def generate():
         generate_resume(token_folder)
         return jsonify({"success": True, "token": random_token})
     except Exception as e:
-        return jsonify({"success": False, "error": e})
+        return jsonify({"success": False, "error": str(e)})
     
 @app.route('/resumes/<token>', methods=['GET'])
 def get_resume(token):
