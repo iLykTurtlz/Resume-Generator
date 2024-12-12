@@ -70,10 +70,10 @@ class HeadDataGenerator(DataGenerator):
         code_table = pd.read_csv("../data/zipcode/zipcode_areacode.csv")
         result = code_table[code_table['zip_code'] == self.zip_code]['area_code'].values
         if len(result) == 0:
-            print("#########ONE")
+            # print("#########ONE")
             area_code = code_table['area_code'].sample(n=1).values[0]
         else:
-            print("########TWO")
+            # print("########TWO")
             area_code = result[0]
         # if isinstance(area_code, pd.Series):
         #     area_code = 
@@ -82,7 +82,7 @@ class HeadDataGenerator(DataGenerator):
 
         last_four = [random.randint(0, 9) for _ in range(4)]
         formats = ["({}) 555-{}", "{}-555-{}", "+1 {}-555-{}", "1-{}-555-{}"]
-        #TODO: add format weights
+        
         phone_number = random.choice(formats).format(area_code, "".join(str(num) for num in last_four))
 
         # Remaining fields

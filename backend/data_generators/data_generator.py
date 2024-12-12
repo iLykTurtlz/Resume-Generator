@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 import random
 import pandas as pd
 import numpy as np
-from config import current_year
 
 
 class DataGenerator(ABC):
