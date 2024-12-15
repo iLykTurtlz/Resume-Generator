@@ -4,7 +4,7 @@
 
 ## About
 
-The CP-CSV-NPC-CV-Generator is a React web app that generates a resume representing a fictitious Computer Science student from California Polytechnic State University San Luis Obispo circa 2024.  This happens in a few stages:
+The CP-CSC-NPC-CV-Generator is a React web app that generates a resume representing a fictitious Computer Science student from California Polytechnic State University San Luis Obispo circa 2024.  This happens in a few stages:
 * A Probabilistic Context-Free Grammar expands a start nonterminal symbol into a parse tree elaborating the sections, whose leaves are fields in the resume.
 * Various datasets are sampled to fill in the personal information and other attributes with data representative of the Cal Poly Computer Science student body.
 * An LLM API call generates a self-summary based on all the data available so far.
